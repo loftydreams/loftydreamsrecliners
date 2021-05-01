@@ -1,0 +1,118 @@
+.trackourorder__main h1 {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-family: system-ui;
+  color: #e57200;
+}
+
+.trackourorder__main p {
+  color: #515151;
+  font-size: 14px;
+  color: #595857;
+  text-align: justify;
+  padding: 8px 4px 4px 4px;
+  font-weight: 300;
+  line-height: normal;
+  font-family: robotoregular;
+}
+.orderid-input {
+  margin-right: 8px;
+  border: 2px solid rgb(207, 206, 206);
+  border-radius: 5px;
+  width: 20%;
+}
+
+.orderid-input::placeholder {
+  font-size: 11px;
+}
+.orderemail-input::placeholder {
+    font-size: 11px;
+  }
+.orderemail-input {
+  border: 2px solid rgb(207, 206, 206);
+  border-radius: 5px;
+  width: 20%;
+}
+
+.order-form-label {
+    margin-right: 10px;
+    font-weight: 900;
+    
+}
+
+@media screen and (min-width: 600px) {
+  .trackourorder__main h1 {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  .trackourorder__main p {
+    text-align: center;
+  }
+  .order-div {
+    margin: 32px;
+    text-align: center;
+  }
+  .order-form {
+    margin: 2px;
+  }
+  
+  .orderid-input {
+    margin-right: 60px;
+  }
+  .order-btn{
+      
+    background: #e76e3c;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    padding: 3px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+    border-radius: 5px;
+   
+    font-family: Mr Eaves XL Modern,sans-serif;
+        margin-top: 15px;
+        margin-left: 25px;
+        margin-bottom: 10px;
+    }
+}
+
+@media  screen and (max-width:600px) {
+    .order-form-label{
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .order-div{
+        display: flex;
+    }
+    .orderid-input {
+        border: 2px solid rgb(207, 206, 206);
+        border-radius: 5px;
+        width: 90%;
+        margin-left: 6px;
+      }
+    .orderemail-input {
+        border: 2px solid rgb(207, 206, 206);
+        border-radius: 5px;
+        width: 90%;
+        margin-left: 6px;
+      }
+    
+    .order-btn{
+      
+    background: #e76e3c;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    padding: 3px;
+    font-size: 15px;
+   
+    font-family: Mr Eaves XL Modern,sans-serif;
+        margin-top: 15px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    
+}

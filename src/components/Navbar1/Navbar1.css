@@ -1,0 +1,79 @@
+.navbar1-body
+{
+    display: flex;
+    width: 100%;
+    margin-top: 10px;
+    justify-content:space-evenly;
+    flex-wrap: nowrap;
+   
+}
+.amazon-btn Button
+{
+   height: 25px;
+   font-size: 13px;
+
+}
+.icon
+{
+    font-size: 21px;
+    margin-left: 5px;
+    align-items: center;
+
+}
+.social-icons a
+{
+   color : grey;
+   font-size: 21px;
+   margin: 1px;
+}
+
+.topbar-right
+{
+    display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+.topbar-left
+{
+    display: flex;
+    flex: 0.8;
+    align-items: center;
+    flex-wrap: nowrap;
+   
+
+
+}
+.topbar-span span{
+    margin-right: 5px;
+    font-size: 12px;
+}
+.topbar-span span:hover
+{
+    border-bottom: 2px solid black;
+    cursor: pointer;
+}
+.hov-icon:hover
+{
+    transform: scale(1.15);
+}
+
+@media screen and (max-width:600px) {
+    .topbar-right
+    {
+        display: none;
+    }
+    .topbar-left
+    {
+        justify-content: center;
+    }
+    .amazon-btn Button
+    {
+      
+        font-size: 11px;
+    }
+    
+}
+.topbar-hr{
+    border: 1px solid rgb(236, 236, 236);
+}

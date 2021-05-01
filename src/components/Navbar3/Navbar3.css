@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+.navbar3-body {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  background-color: white;
+}
+.navbar3-body span {
+  margin-right: 20px;
+  margin-left: 10px;
+  font-size: 16px;
+  color: rgb(73, 72, 72);
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+.navbar3-body span:hover {
+  border-bottom: 2px solid rgb(180, 211, 80);
+  cursor: pointer;
+}
+.hr-bottom {
+  margin-top: 10px;
+  border: 1px solid rgb(236, 236, 236);
+}
+.search-bar-bottom {
+  display: none;
+
+  justify-self: center;
+  margin-right: 5px;
+}
+.search-input-bottom {
+  height: 34px;
+  border: 1px solid rgb(142 142 142);
+  width: 80%;
+  text-align: center;
+  border-radius: 5px;
+}
+.search-icon-bottom {
+  padding: 4px;
+  margin-left: 0px;
+  align-self: center;
+  position: relative;
+  background-color: rgb(180, 211, 80);
+  margin-top: 0px;
+  transform: scale(1.46);
+  border-radius: 3px;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar3-body {
+    display: none;
+   
+  }
+  .search-bar-bottom {
+    display: flex;
+    justify-content: center;
+  }
+}
