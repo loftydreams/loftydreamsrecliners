@@ -18,10 +18,6 @@ export const useStyles = makeStyles({
     width: "100%",
     display: "flex",
     justifyContent: "center",
-    "@media (max-width: 768px)": {
-      display: "flex",
-      justifyContent: "center",
-    },
   },
   card: {
     maxWidth: 349,
