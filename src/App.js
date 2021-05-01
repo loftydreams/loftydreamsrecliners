@@ -12,7 +12,7 @@ import AboutUs from "./components/About/About";
 import { Home1 } from "./components/HomePage/Home1";
 import { Home2 } from "./components/HomePage/Home2";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
-import { ProductPage } from "./components/Product/ProductPage";
+import ProductPage from "./components/Product/ProductPage";
 import TrackOurOrder from "./components/TrackOrder/TrackOurOrder";
 import MyAccount from "./components/MyAccount/MyAccount";
 import TermsAndCondition from "./components/TermsAndCondition/TermsAndCondition";
