@@ -31,8 +31,16 @@ function App() {
           <CarouselContainer />
           <Home1 />
           <Home2 />
-          <CardCollection heading={"BEST SELLING PRODUCTS"} />
-          <CardCollection heading={"TOP DISCOUNTED PRODUCTS"} />
+          <CardCollection
+            heading={"BEST SELLING PRODUCTS"}
+            topSelling
+            topDiscount={false}
+          />
+          <CardCollection
+            heading={"TOP DISCOUNTED PRODUCTS"}
+            topSelling={false}
+            topDiscount
+          />
           <Contact />
           <Review />
         </Route>
@@ -57,7 +65,7 @@ function App() {
         <Route path="/track-order">
           <TrackOurOrder />
         </Route>
-        <Route path="/product-page">
+        <Route path="/product/:productId">
           <ProductPage />
         </Route>
         <Route path="*">

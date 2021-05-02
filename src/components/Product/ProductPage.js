@@ -1,4 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { connect } from "react-redux";
+import { useDocumentDataOnce } from "react-firebase-hooks/firestore";
+import { useParams } from "react-router-dom";
+
+import { addItem } from "../../redux/cart/cart.actions";
+import { firestore } from "../../firebase";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faYoutube,
@@ -10,182 +17,192 @@ import {
 
 import "./ProductPage.css";
 
-const all_image = [
-  "https://www.loftydreamsrecliners.com/wp-content/uploads/2021/02/Lofty-Dreams-3-Seater-Manual-Recliner-in-Brown-Color.jpg",
-  "https://www.loftydreamsrecliners.com/wp-content/uploads/2021/02/Lofty-Dreams-Three-Seater-Manual-Recliner-in-Brown-Color-510x318.jpg",
-  "https://www.loftydreamsrecliners.com/wp-content/uploads/2021/02/Lofty-Dreams-Three-Seater-Manual-Recliner-in-Brown-Colour-510x318.jpg",
-  "https://www.loftydreamsrecliners.com/wp-content/uploads/2021/02/Lofty-Dreams-3-Seater-Manual-Recliner-in-Brown-Colour-510x338.jpg",
-];
+const ProductPage = ({ addItem }) => {
+  const { productId } = useParams();
+  const [product, loading] = useDocumentDataOnce(
+    productId && firestore.doc(`products/${productId}`)
+  );
+  const [src, setSrc] = useState(product?.image1);
 
-const ProductPage = () => {
-  const [src, setSrc] = useState(all_image[0]);
-
-  const slide = (id) => {
-    setSrc(all_image[id]);
+  const slide = (url) => {
+    setSrc(url);
   };
 
+  const sp = product?.price - (product?.price * product?.discount) / 100;
+
+  console.log(product);
+
+  const ratedStars = (rating) => {
+    let stars = "";
+    for (let i = 0; i < rating; i++) {
+      stars += "⭐️";
+    }
+    return stars;
+  };
+
+  const handleClick = () => {
+    const item = {
+      id: productId,
+      name: product?.name,
+      price: sp,
+      imageUrl: product?.image1,
+    };
+
+    addItem(item);
+  };
+
+  useEffect(() => {
+    if (product) {
+      setSrc(product?.image1);
+    }
+  }, [product]);
+
   return (
-    <div className="product-page">
-      <div class="card-wrapper">
-        <div class="card">
-          <div class="product-imgs">
-            <div class="img-display">
-              <div class="img-showcase">
-                <img src={src} alt="product" />
+    !loading && (
+      <div className="product-page">
+        <div className="card-wrapper">
+          <div className="card">
+            <div className="product-imgs">
+              <div className="img-display">
+                <div className="img-showcase">
+                  <img src={src} alt="product" />
+                </div>
+              </div>
+              <div className="img-select">
+                <div
+                  onClick={() => {
+                    slide(product?.image1);
+                  }}
+                  className="img-item"
+                >
+                  <span data-id="1">
+                    <img src={product?.image1} alt="more product images" />
+                  </span>
+                </div>
+                <div
+                  onClick={() => {
+                    slide(product?.image2);
+                  }}
+                  className="img-item"
+                >
+                  <span data-id="2">
+                    <img src={product?.image2} alt="more product images" />
+                  </span>
+                </div>
+                <div
+                  onClick={() => {
+                    slide(product?.image3);
+                  }}
+                  className="img-item"
+                >
+                  <span data-id="3">
+                    <img src={product?.image3} alt="more product images" />
+                  </span>
+                </div>
+                <div
+                  onClick={() => {
+                    slide(product?.image4);
+                  }}
+                  className="img-item"
+                >
+                  <span data-id="4">
+                    <img src={product?.image4} alt="more product images" />
+                  </span>
+                </div>
               </div>
             </div>
-            <div class="img-select">
-              <div
-                onClick={() => {
-                  slide(0);
-                }}
-                class="img-item"
-              >
-                <span data-id="1">
-                  <img
-                    src="https://www.loftydreamsrecliners.com/wp-content/uploads/2021/02/Lofty-Dreams-3-Seater-Manual-Recliner-in-Brown-Colour-510x338.jpg"
-                    alt="more product images"
+
+            <div className="product-content">
+              <h2 className="product-title">{product?.name}</h2>
+              <a href="#" className="product-link">
+                visit store
+              </a>
+              <div className="product-rating">
+                {ratedStars(product?.rating)}
+                <span>{product?.rating}</span>
+              </div>
+
+              <div className="product-price">
+                <p className="last-price">
+                  Old Price: <span>{product?.price}</span>
+                </p>
+                <p className="new-price">
+                  New Price:{" "}
+                  <span>
+                    {sp} ({product?.discount}%)
+                  </span>
+                </p>
+              </div>
+
+              <div className="product-detail">
+                <h2>about this item: </h2>
+
+                <ul>
+                  {product?.description?.map((item, i) => (
+                    <li key={i}>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="purchase-info">
+                <button type="button" className="btn">
+                  Buy <i className="fas fa-shopping-cart"></i>
+                </button>
+                <button type="button" className="btn" onClick={handleClick}>
+                  Add to Cart
+                </button>
+              </div>
+
+              <div className="social-links">
+                <p>Share At: </p>
+                <a href="#">
+                  <FontAwesomeIcon
+                    icon={faYoutube}
+                    size="1x"
+                    className="hov-icon"
                   />
-                </span>
-              </div>
-              <div
-                onClick={() => {
-                  slide(1);
-                }}
-                class="img-item"
-              >
-                <span data-id="2">
-                  <img
-                    src="https://www.loftydreamsrecliners.com/wp-content/uploads/2021/02/Lofty-Dreams-Three-Seater-Manual-Recliner-in-Brown-Colour-510x318.jpg"
-                    alt="more product images"
+                </a>
+                <a href="#">
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    size="1x"
+                    className="hov-icon"
                   />
-                </span>
-              </div>
-              <div
-                onClick={() => {
-                  slide(2);
-                }}
-                class="img-item"
-              >
-                <span data-id="3">
-                  <img
-                    src="https://www.loftydreamsrecliners.com/wp-content/uploads/2021/02/Lofty-Dreams-Three-Seater-Manual-Recliner-in-Brown-Color-510x318.jpg"
-                    alt="more product images"
+                </a>
+                <a href="#">
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    size="1x"
+                    className="hov-icon"
                   />
-                </span>
-              </div>
-              <div
-                onClick={() => {
-                  slide(3);
-                }}
-                class="img-item"
-              >
-                <span data-id="4">
-                  <img
-                    src="https://www.loftydreamsrecliners.com/wp-content/uploads/2021/02/Lofty-Dreams-3-Seater-Manual-Recliner-in-Brown-Colour-247x296.jpg"
-                    alt="more product images"
+                </a>
+                <a href="#">
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    size="1x"
+                    className="hov-icon"
                   />
-                </span>
+                </a>
+                <a href="#">
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    size="1x"
+                    className="hov-icon"
+                  />
+                </a>
               </div>
-            </div>
-          </div>
-
-          <div class="product-content">
-            <h2 class="product-title">
-              Elion 3 Seater Manual Recliner Sofa (Brown)
-            </h2>
-            <a href="#" class="product-link">
-              visit store
-            </a>
-            <div class="product-rating">
-              ⭐️⭐️⭐️⭐️⭐️
-              <span>4.7(21)</span>
-            </div>
-
-            <div class="product-price">
-              <p class="last-price">
-                Old Price: <span>2000.00</span>
-              </p>
-              <p class="new-price">
-                New Price: <span>1500.00 (5%)</span>
-              </p>
-            </div>
-
-            <div class="product-detail">
-              <h2>about this item: </h2>
-
-              <ul>
-                <li>
-                  Color: <span>Black</span>
-                </li>
-                <li>
-                  Available: <span>in stock</span>
-                </li>
-                <li>
-                  Category: <span>Shoes</span>
-                </li>
-                <li>
-                  Shipping Area: <span>All over the world</span>
-                </li>
-                <li>
-                  Shipping Fee: <span>Free</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="purchase-info">
-              <input type="number" min="1" placeholder="1" />
-              <button type="button" class="btn">
-                Buy <i class="fas fa-shopping-cart"></i>
-              </button>
-              <button type="button" class="btn">
-                Add to Cart
-              </button>
-            </div>
-
-            <div class="social-links">
-              <p>Share At: </p>
-              <a href="#">
-                <FontAwesomeIcon
-                  icon={faYoutube}
-                  size="1x"
-                  className="hov-icon"
-                />
-              </a>
-              <a href="#">
-                <FontAwesomeIcon
-                  icon={faFacebook}
-                  size="1x"
-                  className="hov-icon"
-                />
-              </a>
-              <a href="#">
-                <FontAwesomeIcon
-                  icon={faTwitter}
-                  size="1x"
-                  className="hov-icon"
-                />
-              </a>
-              <a href="#">
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  size="1x"
-                  className="hov-icon"
-                />
-              </a>
-              <a href="#">
-                <FontAwesomeIcon
-                  icon={faLinkedin}
-                  size="1x"
-                  className="hov-icon"
-                />
-              </a>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    )
   );
 };
 
-export default ProductPage;
+const mapDispatchToProps = (dispatch) => ({
+  addItem: (item) => dispatch(addItem(item)),
+});
+
+export default connect(null, mapDispatchToProps)(ProductPage);
