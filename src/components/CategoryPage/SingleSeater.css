@@ -1,0 +1,67 @@
+.single-seater
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}  
+.single-seater h2
+{
+    border-bottom: 1px solid rgb(172, 168, 168);
+    margin-left: 20;
+}
+.top
+{
+    margin-top: 20px;
+}
+
+.bottom img
+{
+    width: 252px;
+    height: 300px;
+    margin: 10px;
+    object-fit: contain;
+    justify-self: flex-start;
+}
+.top p
+{
+    width: 50%;
+justify-self: center;
+padding-left: 60px;
+text-align: left;
+
+}
+.bottom
+{ 
+    width: 100% ;
+    margin-top: 0px;
+    margin-left: 25px;
+}
+
+@media (max-width:600px)
+{
+    .top p
+    {
+        width: 100%;
+        padding-left: 7px;
+    }
+    .single-seater h2 
+    {
+        font-size: 17px;
+        text-align: center;
+        font-weight: 600;
+        border-bottom: 1px solid rgb(179, 179, 179);
+    }
+    .top p 
+    {
+        font-size: 13px ;
+    }
+
+
+}
+
+.single-seater-1 span
+{
+    font-size: 12px;
+}
