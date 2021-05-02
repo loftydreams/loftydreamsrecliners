@@ -17,9 +17,14 @@ import TrackOurOrder from "./components/TrackOrder/TrackOurOrder";
 import MyAccount from "./components/MyAccount/MyAccount";
 import TermsAndCondition from "./components/TermsAndCondition/TermsAndCondition";
 import PaymentPolicy from "./components/Payment Policy/PaymentPolicy";
-
+import {SingleSeater} from './components/CategoryPage/SingleSeater';
 import "./App.css";
-
+import {LivingRoom} from './components/CategoryPage/LivingRoom';
+import { HomeTheater } from "./components/CategoryPage/HomeTheater";
+import { Lounger } from "./components/CategoryPage/Lounger";
+import { Riser } from "./components/CategoryPage/Riser";
+import { Electric } from "./components/CategoryPage/Electric";
+import { Manual} from "./components/CategoryPage/Manual";
 function App() {
   return (
     <div className="App">
@@ -68,6 +73,28 @@ function App() {
         <Route path="/product/:productId">
           <ProductPage />
         </Route>
+        <Route path="/single-seater">
+          <SingleSeater/>
+        </Route>
+        <Route path="/living-room">
+          <LivingRoom />
+        </Route>
+        <Route path="/home-theater">
+          <HomeTheater/>
+        </Route>
+        <Route path="/lounger">
+          <Lounger/>
+        </Route>
+        <Route path="/riser">
+          <Riser/>
+        </Route>
+        <Route path="/electric">
+          <Electric/>
+        </Route>
+        <Route path="/manual">
+          <Manual/>
+        </Route>
+
         <Route path="*">
           <h1>Error 404: Page not found</h1>
         </Route>

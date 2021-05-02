@@ -1,16 +1,17 @@
 import React from 'react';
 import "./Navbar3.css";
 import SearchOutlinedIcon from '@material-ui/icons/SearchOutlined';
+import { Link } from 'react-router-dom';
 const Navbar3 = () => {
     return (
         <>
         <div className="navbar3-body">
-            <span> Single Seater Recliners </span>
-            <span> Living Room Recliners </span>
-            <span> Home Theater Recliners </span>
-            <span> Lounger Sofa </span>
-            <span> Riser Recliners </span>
-            <span> Recliner Chair {"&"}Sofa</span>
+   <Link to ="/single-seater">        <span> Single Seater Recliners </span> </Link>
+    <Link to ="/living-room">      <span> Living Room Recliners </span> </Link>  
+      <Link to="/home-theater"  >    <span> Home Theater Recliners </span> </Link>
+       <Link to="/lounger" >  <span> Lounger Sofa </span>  </Link>
+        <Link to ="/riser" >   <span> Riser Recliners </span> </Link> 
+         
             
         </div>
         <div className="search-bar-bottom">

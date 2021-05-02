@@ -1,0 +1,86 @@
+.single-seater
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}  
+.single-seater h2
+{
+    border-bottom: 1px solid rgb(172, 168, 168);
+    margin-left: 20;
+}
+.top-cat-page
+{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+.bottom-cat-page img
+{
+    width: 252px;
+    height: 300px;
+    margin: 10px;
+    object-fit: contain;
+    justify-self: flex-start;
+}
+.top-cat-page p
+{
+    width: 100%;
+
+text-align: center;
+   
+    justify-content: center;
+  flex-wrap: wrap;
+    padding-left: 10px;
+
+}
+.bottom-cat-page
+{ 
+    width: 100% ;
+    margin-top: 0px;
+    margin-left: 25px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding-left: 10px;
+}
+
+@media (max-width:600px)
+{
+    .top-cat-page
+    {
+        padding-left: 0px;
+    }
+    .top-cat-page p
+    {
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .single-seater h2 
+    {
+        font-size: 17px;
+        text-align: center;
+        font-weight: 600;
+        border-bottom: 1px solid rgb(179, 179, 179);
+    }
+    .top-cat-page p 
+    {
+        font-size: 13px ;
+    }
+
+
+}
+
+.single-seater-1 span
+{
+    font-size: 12px;
+}
