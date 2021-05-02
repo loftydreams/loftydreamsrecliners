@@ -23,7 +23,7 @@ export const SingleSeater = () => {
 </Breadcrumbs>
 <br></br>
             <h2> SINGLE SEATER RECLINERS</h2>
-            <div className="top">
+            <div className="top-cat-page">
               <p className="single-seater-content"> #1 Single Seater Recliners are the armchairs, that are used to keep your body and mind at rest. #1 Single Seater Recliner is for one person only and has more options than the 2 seater recliner, 3 seater recliner, etc. A person can go with rocker recliner, also go with rocker swivel recliner, these two functionality chairs are available in manual and electric mechanisms.
               <p className="sigle-seater-content"></p>
 
@@ -33,7 +33,7 @@ More options are available to add on single-seater recliner chairs like- USB por
 
 </p>
             </div>
-            <div className="bottom">
+            <div className="bottom-cat-page">
                 <div className="single-seater-1">
             <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2019/07/15-247x296.jpg" alt="" /> 
             <span>   ELECTRIC RECLINER

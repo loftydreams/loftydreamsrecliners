@@ -28,7 +28,7 @@ export const LivingRoom = () => {
 </Breadcrumbs>
 <br></br>
             <h2> LIVING ROOM RECLINERS</h2>
-            <div className="top">
+            <div className="top-cat-page">
               <p className="single-seater-content"> Living Room Recliners have had a very miracle history in home design over the past several decades. From past decades to today, recliner manufacturers come up with more functional, more beautiful, and more comfortable designs for living room furnishing.
               <p className="sigle-seater-content"></p>
 
@@ -38,7 +38,7 @@ export const LivingRoom = () => {
 
 </p>
             </div>
-            <div className="bottom">
+            <div className="bottom-cat-page">
                 <div className="living-room-1">
                   <div className="new-card-wrapper">
                     <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/08/Aerio-5-Seater-L-Shape-Recliner-Sofa-Tan-In-Suede-Fabric-by-Lofty-Dreams-Recliners-1-247x296.jpg" alt="" />
