@@ -41,28 +41,28 @@ function CardCollection({ heading, topSelling, topDiscount }) {
           autoplayTimeout={5000}
           responsive={{
             0: {
-              items: 1.6,
+              items: 1,
             },
             370: {
-              items: 1.85,
+              items: 1,
             },
             400: {
-              items: 2,
+              items: 1,
             },
             600: {
-              items: 3,
+              items: 1,
             },
             890: {
-              items: 3,
+              items: 1,
             },
             1000: {
-              items: 4,
+              items: 1,
             },
             1200: {
-              items: 5,
+              items: 1,
             },
             1700: {
-              items: 6.5,
+              items: 1,
             },
           }}
         >
