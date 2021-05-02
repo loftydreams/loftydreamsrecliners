@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { Button } from "@material-ui/core";
@@ -7,33 +7,44 @@ import { addItem } from "../../redux/cart/cart.actions";
 
 import "./Card.css";
 
-function Card({ id, src, addItem }) {
+function Card({ id, src, name, category, price, discount, rating, addItem }) {
   const history = useHistory();
   const [added, setAdded] = useState(false);
 
+  const sp = price - (price * discount) / 100;
+
   const item = {
     id: id,
-    name: "Brolay Electric Recliner Chair (brown)",
-    price: 1200,
+    name: name,
+    price: sp,
     imageUrl: src,
+  };
+
+  const ratedStars = (rating) => {
+    let stars = "";
+    for (let i = 0; i < rating; i++) {
+      stars += "⭐️";
+    }
+    return stars;
+  };
+
+  const handleClick = () => {
+    history.push(`/product/${id}`);
   };
 
   return (
     <>
-    
       <div className="card-body">
         <div className="card1-top">
           <img alt="person-pic" src={src} />
         </div>
 
         <div className="card-bottom">
-          <span className="top-heading">ELECTRIC RECLINERS </span>
-          <h5 className="product-name">
-            Brolay Electric Recliner Chair (brown)
-          </h5>
+          <span className="top-heading">{category}</span>
+          <h5 className="product-name">{name}</h5>
           <span className="h5-position">
-            <del className="price-cut"> ₹2000 </del> ₹1200{" "}
-            <span> ⭐️⭐️⭐️ </span>
+            <del className="price-cut"> ₹{price} </del> ₹{sp}
+            <span> {ratedStars(rating)} </span>
           </span>
           {added ? (
             <Button
@@ -58,14 +69,17 @@ function Card({ id, src, addItem }) {
               Add to Cart
             </Button>
           )}
-
-    <a href="/product-page"> <Button variant="outlined" className="see-details-btn" size="small">
+          <Button
+            variant="outlined"
+            className="see-details-btn"
+            size="small"
+            onClick={handleClick}
+          >
             See Details.....
           </Button>
-          </a>
         </div>
         <div className="offer-text">
-          <span> -30%</span>
+          <span>-{discount}%</span>
         </div>
       </div>
     </>

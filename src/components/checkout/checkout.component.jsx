@@ -18,34 +18,25 @@ import {
   selectCartTotal,
 } from "../../redux/cart/cart.selectors";
 
-import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import Link from '@material-ui/core/Link';
+import Breadcrumbs from "@material-ui/core/Breadcrumbs";
+import Link from "@material-ui/core/Link";
 
-function handleClick(event) {
-  event.preventDefault();
-  console.info('You clicked a breadcrumb.');
-}
 const CheckoutPage = ({ cartItems, total }) => {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
       <Breadcrumbs separator=">" aria-label="breadcrumb">
-      <Link color="inherit" href="/" onClick={handleClick}  aria-current="page">
-        Shopping Cart
-      </Link>
-      <Link color="inherit" href="/getting-started/installation/" onClick={handleClick}>
-        Payment Details
-      </Link>
-      <Link
-        color="inherit"
-        href="/components/breadcrumbs/"
-        onClick={handleClick}
-      
-      >
-        Order Complete
-      </Link>
-    </Breadcrumbs>
+        <Link color="inherit" href="/" aria-current="page">
+          Shopping Cart
+        </Link>
+        <Link color="inherit" href="/getting-started/installation/">
+          Payment Details
+        </Link>
+        <Link color="inherit" href="/components/breadcrumbs/">
+          Order Complete
+        </Link>
+      </Breadcrumbs>
       <TableContainer component={Paper}>
         <Table className={classes.table} aria-label="simple table">
           <TableHead>
