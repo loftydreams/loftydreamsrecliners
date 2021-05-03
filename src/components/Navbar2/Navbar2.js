@@ -6,11 +6,11 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, signInWithGoogle } from "../../firebase";
 
 import Avatar from "@material-ui/core/Avatar";
-import SearchOutlinedIcon from "@material-ui/icons/SearchOutlined";
 import ExitToAppIcon from "@material-ui/icons/ExitToApp";
 import { CgProfile } from "react-icons/cg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
+import SearchBar from "../search-products/search-bar";
 import SideBar from "./Sidebar";
 import CartIcon from "../cart-icon/cart-icon.component";
 import CartDropdown from "../cart-dropdown/cart-dropdown.component";
@@ -45,11 +45,7 @@ const Navbar2 = ({ hidden }) => {
             <img alt="Logo" src="Image/loftyLogo.jpeg" />
           </div>
         </Link>
-        <div className="search-bar">
-          <input type="text" placeholder="Search..." className="search-input" />
-
-          <SearchOutlinedIcon className="search-icon" />
-        </div>
+        <SearchBar cname="search-bar" />
         {/*  <div className="navbarmid-right"> */}
         <div className="dropdown">
           {user ? (

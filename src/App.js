@@ -17,14 +17,17 @@ import TrackOurOrder from "./components/TrackOrder/TrackOurOrder";
 import MyAccount from "./components/MyAccount/MyAccount";
 import TermsAndCondition from "./components/TermsAndCondition/TermsAndCondition";
 import PaymentPolicy from "./components/Payment Policy/PaymentPolicy";
-import {SingleSeater} from './components/CategoryPage/SingleSeater';
-import "./App.css";
-import {LivingRoom} from './components/CategoryPage/LivingRoom';
+import { SingleSeater } from "./components/CategoryPage/SingleSeater";
+import { LivingRoom } from "./components/CategoryPage/LivingRoom";
 import { HomeTheater } from "./components/CategoryPage/HomeTheater";
 import { Lounger } from "./components/CategoryPage/Lounger";
 import { Riser } from "./components/CategoryPage/Riser";
 import { Electric } from "./components/CategoryPage/Electric";
-import { Manual} from "./components/CategoryPage/Manual";
+import { Manual } from "./components/CategoryPage/Manual";
+import SearchResults from "./components/search-products/search-results";
+
+import "./App.css";
+
 function App() {
   return (
     <div className="App">
@@ -73,26 +76,29 @@ function App() {
         <Route path="/product/:productId">
           <ProductPage />
         </Route>
+        <Route path="/search/:keyword">
+          <SearchResults />
+        </Route>
         <Route path="/single-seater">
-          <SingleSeater/>
+          <SingleSeater />
         </Route>
         <Route path="/living-room">
           <LivingRoom />
         </Route>
         <Route path="/home-theater">
-          <HomeTheater/>
+          <HomeTheater />
         </Route>
         <Route path="/lounger">
-          <Lounger/>
+          <Lounger />
         </Route>
         <Route path="/riser">
-          <Riser/>
+          <Riser />
         </Route>
         <Route path="/electric">
-          <Electric/>
+          <Electric />
         </Route>
         <Route path="/manual">
-          <Manual/>
+          <Manual />
         </Route>
 
         <Route path="*">
