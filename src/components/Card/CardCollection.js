@@ -77,8 +77,6 @@ function CardCollection({ heading, topSelling, topDiscount }) {
               rating,
             } = data;
 
-            console.log(data);
-
             return (
               <div className="item" key={id}>
                 <Card

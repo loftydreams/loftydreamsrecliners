@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: center;
 
-
   background-color: white;
 }
 .navbar3-body span {
@@ -47,12 +46,12 @@
   margin-top: 0px;
   transform: scale(1.46);
   border-radius: 3px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 767px) {
   .navbar3-body {
     display: none;
-   
   }
   .search-bar-bottom {
     display: flex;
