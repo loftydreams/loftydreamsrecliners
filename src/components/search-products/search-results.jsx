@@ -61,7 +61,7 @@ const SearchResults = () => {
           })}
         </Grid>
         {filteredProducts?.length > 0 ? null : (
-          <div className={classes.header}>No results found!</div>
+          <div className={classes.header}>No products found!</div>
         )}
       </div>
     )
