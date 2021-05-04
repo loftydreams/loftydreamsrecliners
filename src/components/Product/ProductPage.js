@@ -16,6 +16,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import "./ProductPage.css";
+import ProductMenu from "./ProductMenu";
+import ProductAccordion from "./ProductAccordian";
 
 const ProductPage = ({ addItem }) => {
   const { productId } = useParams();
@@ -64,8 +66,8 @@ const ProductPage = ({ addItem }) => {
           <div className="card">
             <div className="product-imgs">
               <div className="img-display">
-                <div className="img-showcase">
-                  <img src={src} alt="product" />
+                <div >
+                  <img src={src} alt="product" className="img-showcase"/>
                 </div>
               </div>
               <div className="img-select">
@@ -76,7 +78,7 @@ const ProductPage = ({ addItem }) => {
                   className="img-item"
                 >
                   <span data-id="1">
-                    <img src={product?.image1} alt="more product images" />
+                    <img src={product?.image1} alt="more product images"  className="img1"/>
                   </span>
                 </div>
                 <div
@@ -86,7 +88,7 @@ const ProductPage = ({ addItem }) => {
                   className="img-item"
                 >
                   <span data-id="2">
-                    <img src={product?.image2} alt="more product images" />
+                    <img src={product?.image2} alt="more product images" className="img1"/>
                   </span>
                 </div>
                 <div
@@ -96,7 +98,7 @@ const ProductPage = ({ addItem }) => {
                   className="img-item"
                 >
                   <span data-id="3">
-                    <img src={product?.image3} alt="more product images" />
+                    <img src={product?.image3} alt="more product images" className="img1" />
                   </span>
                 </div>
                 <div
@@ -106,7 +108,7 @@ const ProductPage = ({ addItem }) => {
                   className="img-item"
                 >
                   <span data-id="4">
-                    <img src={product?.image4} alt="more product images" />
+                    <img src={product?.image4} alt="more product images" className="img1"/>
                   </span>
                 </div>
               </div>
@@ -195,6 +197,12 @@ const ProductPage = ({ addItem }) => {
               </div>
             </div>
           </div>
+        </div>
+        <div className="bottom-menu">
+          <ProductMenu/>
+        </div>
+        <div className="product-accordian">
+          <ProductAccordion />
         </div>
       </div>
     )
