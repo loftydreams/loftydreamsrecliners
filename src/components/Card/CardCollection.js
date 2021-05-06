@@ -35,10 +35,10 @@ function CardCollection({ heading, topSelling, topDiscount }) {
           margin={0}
           autoplay={true}
           responsiveClass={true}
-          nav
-          dots={false}
+          nav={true}
+          dots={true}
           autoplayHoverPause={true}
-          autoplayTimeout={5000}
+          autoplayTimeout={3000}
           responsive={{
             0: {
               items: 1,
@@ -59,7 +59,7 @@ function CardCollection({ heading, topSelling, topDiscount }) {
               items: 1,
             },
             1200: {
-              items: 1,
+              items: 4.5,
             },
             1700: {
               items: 1,

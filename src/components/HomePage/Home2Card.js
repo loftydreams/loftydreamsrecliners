@@ -6,8 +6,8 @@ export const Home2Card = (props) => {
     <div className="container">
       <img src={props.src} alt="Avatar" className="image" />
       <div className="overlay">
-        <h5 className="text">Living Room Recliner</h5>
-        <span>13 PRODUCTS</span>
+        <h5 className="text">{props.name}</h5>
+        <span> {props.qt} </span>
       </div>
     </div>
   );
