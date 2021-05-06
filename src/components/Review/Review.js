@@ -14,7 +14,7 @@ export const Review = () => {
             <div className="box-top">
               <div className="profile">
                 <div className="profile-img">
-                  <img src="Images/Icons8-customer-480.png" />
+                  <img src="Images/Icons8-customer-480.png"  alt ="review-person" />
                 </div>
 
                 <div className="name-user">
@@ -40,7 +40,7 @@ export const Review = () => {
             <div className="box-top">
               <div className="profile">
                 <div className="profile-img">
-                  <img src="Images/Icons8-customer-480.png" />
+                  <img src="Images/Icons8-customer-480.png"  alt="review-person" />
                 </div>
 
                 <div className="name-user">

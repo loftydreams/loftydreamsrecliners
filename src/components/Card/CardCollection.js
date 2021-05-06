@@ -59,7 +59,7 @@ function CardCollection({ heading, topSelling, topDiscount }) {
               items: 1,
             },
             1200: {
-              items: 4.5,
+              items: 4.6,
             },
             1700: {
               items: 1,
