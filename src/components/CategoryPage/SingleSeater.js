@@ -2,7 +2,7 @@ import React from 'react'
 import "./SingleSeater.css";
 import Typography from '@material-ui/core/Typography';
 import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import Link from '@material-ui/core/Link';
+import {Link} from 'react-router-dom';
 
 function handleClick(event) {
     event.preventDefault();
@@ -38,14 +38,15 @@ More options are available to add on single-seater recliner chairs like- USB por
             <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2019/07/15-247x296.jpg" alt="" /> 
             <span>   ELECTRIC RECLINER
             </span> <br></br>
-            <span> 16 PRODUCTS</span>
+            <span> 25 PRODUCTS</span>
             </div>
+            <Link to="/manual">
              <div className="single-seater-1">
             <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2019/07/lofty-dreams-recliner-chairs-scaled-247x296.jpg" alt="" />
-            <span>   MECHANICAL RECLINER
+            <span>   MANUAL RECLINER
             </span> <br></br>
-            <span> 16 PRODUCTS</span>
-            </div>
+            <span> 31 PRODUCTS</span>
+            </div> </Link>
             </div>
         </div>
     )

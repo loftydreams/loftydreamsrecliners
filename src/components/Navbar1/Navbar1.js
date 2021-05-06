@@ -39,6 +39,7 @@ const Navbar1 = () => {
               <span> About</span>{" "}
             </Link>
             <span> Contact </span>
+        <Link to ="/feedback"  > <span> Feedback </span>  </Link> 
           </div>
           <div className="social-icons">
             <a href="https://www.youtube.com/channel/UCWnQE20f8xJTeXGIfjeAdYg" className="youtube social">

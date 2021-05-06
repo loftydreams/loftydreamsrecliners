@@ -15,7 +15,7 @@ body {
  img {
   width: 100%;
   display: block;
-object-fit: cover;
+object-fit: contain;
 
 }
 .img1
@@ -236,8 +236,8 @@ object-fit: cover;
 }
 .bottom-menu
 {
-  padding-left:9%;
-  padding-right: 9%;
+  padding-left:11%;
+  padding-right: 11%;
 }
 .product-accordian
 {

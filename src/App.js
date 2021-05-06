@@ -27,6 +27,7 @@ import { Manual } from "./components/CategoryPage/Manual";
 import SearchResults from "./components/search-products/search-results";
 
 import "./App.css";
+import Feedback from "./components/Navbar1/Feedback";
 
 function App() {
   return (
@@ -99,6 +100,9 @@ function App() {
         </Route>
         <Route path="/manual">
           <Manual />
+        </Route>
+        <Route path="/feedback">
+         <Feedback></Feedback>
         </Route>
 
         <Route path="*">
