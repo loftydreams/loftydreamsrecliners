@@ -13,7 +13,7 @@ function handleClick(event) {
     event.preventDefault();
     console.info('You clicked a breadcrumb.');
   }
-export const Lounger = () => {
+export default function Lounger() {
 
     return (
         <div className="single-seater">
