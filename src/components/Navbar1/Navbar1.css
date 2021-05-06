@@ -7,6 +7,13 @@
     flex-wrap: nowrap;
    
 }
+.buyfromamazon{
+    text-decoration: none;
+    color: #adb5bd;
+}
+.amazon a:hover{
+    text-decoration: none;
+}
 .amazon-btn Button
 {
    height: 25px;

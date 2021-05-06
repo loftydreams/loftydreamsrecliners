@@ -22,15 +22,19 @@ const Navbar1 = () => {
       <div className="navbar1-body">
         <div className="topbar-left">
           <div className="amazon-btn">
-            <Button variant="contained" className="">
+            <Button variant="contained" className="amazon">
+              <a  className="buyfromamazon" href=" Buy from amazon.in">
               Buy from amazon.in
+              </a>
+             
             </Button>
           </div>
 
           <div className="topbar-icons">
-            <HiOutlineLocationMarker className="icon" />
-            <BiPhone className="icon" />
-            <HiOutlineMail className="icon" />
+            <a  className="social-icons" href="https://www.google.com/maps?q=Block+k-2/6+lane+no-1,+near+Amrita+Public+School,+Sangam+Vihar,+New+Delhi,+Delhi+110080"><HiOutlineLocationMarker className="icon" /></a>
+            <a  className="social-icons"  href="tel:+91 9899027251" >  <BiPhone  className="icon" /></a>
+            <a className="social-icons"  href="mailto:loftydreams18@gmail.com" ><HiOutlineMail className="icon" /></a>
+            
           </div>
         </div>
         <div className="topbar-right">
