@@ -18,12 +18,12 @@ import MyAccount from "./components/MyAccount/MyAccount";
 import TermsAndCondition from "./components/TermsAndCondition/TermsAndCondition";
 import PaymentPolicy from "./components/Payment Policy/PaymentPolicy";
 import { SingleSeater } from "./components/CategoryPage/SingleSeater";
-import { LivingRoom } from "./components/CategoryPage/LivingRoom";
-import { HomeTheater } from "./components/CategoryPage/HomeTheater";
-import { Lounger } from "./components/CategoryPage/Lounger";
-import { Riser } from "./components/CategoryPage/Riser";
-import { Electric } from "./components/CategoryPage/Electric";
-import { Manual } from "./components/CategoryPage/Manual";
+import LivingRoom from "./components/CategoryPage/LivingRoom";
+import HomeTheater from "./components/CategoryPage/HomeTheater";
+import Lounger from "./components/CategoryPage/Lounger";
+import Riser from "./components/CategoryPage/Riser";
+import Electric from "./components/CategoryPage/Electric";
+import Manual from "./components/CategoryPage/Manual";
 import SearchResults from "./components/search-products/search-results";
 
 import "./App.css";
@@ -102,9 +102,8 @@ function App() {
           <Manual />
         </Route>
         <Route path="/feedback">
-         <Feedback></Feedback>
+          <Feedback />
         </Route>
-
         <Route path="*">
           <h1>Error 404: Page not found</h1>
         </Route>

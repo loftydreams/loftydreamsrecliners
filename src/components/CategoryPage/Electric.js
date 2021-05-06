@@ -1,34 +1,37 @@
-import React from "react";
-import "./LivingRoom.css";
+import { connect } from "react-redux";
+import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
 import Typography from "@material-ui/core/Typography";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import Link from "@material-ui/core/Link";
-
 import { Button } from "@material-ui/core";
 
-function handleClick(event) {
-  event.preventDefault();
-  console.info("You clicked a breadcrumb.");
-}
-export const Electric = () => {
+import { firestore } from "../../firebase";
+import { addItem } from "../../redux/cart/cart.actions";
+
+import "./LivingRoom.css";
+
+const Electric = ({ addItem }) => {
+  const [products, loading] = useCollectionDataOnce(
+    firestore.collection("products"),
+    { idField: "id" }
+  );
+
+  const filteredProducts = products?.filter((product) => {
+    return product.category
+      ?.toLowerCase()
+      .includes("ELECTRIC RECLINER".toLowerCase());
+  });
+
   return (
     <div className="single-seater">
       <Breadcrumbs aria-label="breadcrumb" style={{ margin: "20px" }}>
-        <Link color="inherit" href="/" onClick={handleClick}>
+        <Link color="inherit" href="/">
           HOME
         </Link>
-        <Link
-          color="inherit"
-          href="/getting-started/installation/"
-          onClick={handleClick}
-        >
+        <Link color="inherit" href="/getting-started/installation/">
           RECLINERS
         </Link>
-        <Link
-          color="inherit"
-          href="/getting-started/installation/"
-          onClick={handleClick}
-        >
+        <Link color="inherit" href="/getting-started/installation/">
           SINGLE SEATER RECLINERS
         </Link>
         <Typography color="textPrimary">ELECTRIC RECLINERS </Typography>
@@ -62,93 +65,47 @@ export const Electric = () => {
       </div>
       <div className="bottom-cat-page">
         <div className="living-room-1">
-          <div className="new-card-wrapper">
-            <img
-              src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/08/Aerio-5-Seater-L-Shape-Recliner-Sofa-Tan-In-Suede-Fabric-by-Lofty-Dreams-Recliners-1-247x296.jpg"
-              alt=""
-            />
-            <span> ELECTRIC RECLINER</span>
-            <h5> Aerio 5 Seater L Shape Recliner Sofa (Tan) </h5>
-            <del> 225000</del> <span style={{ fontSize: "14px" }}> 165000</span>{" "}
-            <br></br>
-            <Button variant="contained" color="primary" size="small">
-              {" "}
-              Add to Basket{" "}
-            </Button>
-          </div>
+          {!loading &&
+            filteredProducts?.map((data) => {
+              const { id, image1, price, discount, name, category } = data;
 
-          <div className="new-card-wrapper">
-            <img
-              src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/08/Aerio-5-Seater-L-Shape-Recliner-Sofa-Tan-In-Suede-Fabric-by-Lofty-Dreams-Recliners-1-247x296.jpg"
-              alt=""
-            />
-            <span> ELECTRIC RECLINER</span>
-            <h5> Aerio 5 Seater L Shape Recliner Sofa (Tan) </h5>
-            <del> 225000</del> <span style={{ fontSize: "14px" }}> 165000</span>{" "}
-            <br></br>
-            <Button variant="contained" color="primary" size="small">
-              {" "}
-              Add to Basket{" "}
-            </Button>
-          </div>
-          <div className="new-card-wrapper">
-            <img
-              src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/08/Aerio-5-Seater-L-Shape-Recliner-Sofa-Tan-In-Suede-Fabric-by-Lofty-Dreams-Recliners-1-247x296.jpg"
-              alt=""
-            />
-            <span> ELECTRIC RECLINER</span>
-            <h5> Aerio 5 Seater L Shape Recliner Sofa (Tan) </h5>
-            <del> 225000</del> <span style={{ fontSize: "14px" }}> 165000</span>{" "}
-            <br></br>
-            <Button variant="contained" color="primary" size="small">
-              {" "}
-              Add to Basket{" "}
-            </Button>
-          </div>
-          <div className="new-card-wrapper">
-            <img
-              src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/08/Aerio-5-Seater-L-Shape-Recliner-Sofa-Tan-In-Suede-Fabric-by-Lofty-Dreams-Recliners-1-247x296.jpg"
-              alt=""
-            />
-            <span> ELECTRIC RECLINER</span>
-            <h5> Aerio 5 Seater L Shape Recliner Sofa (Tan) </h5>
-            <del> 225000</del> <span style={{ fontSize: "14px" }}> 165000</span>{" "}
-            <br></br>
-            <Button variant="contained" color="primary" size="small">
-              {" "}
-              Add to Basket{" "}
-            </Button>
-          </div>
-          <div className="new-card-wrapper">
-            <img
-              src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/08/Aerio-5-Seater-L-Shape-Recliner-Sofa-Tan-In-Suede-Fabric-by-Lofty-Dreams-Recliners-1-247x296.jpg"
-              alt=""
-            />
-            <span> ELECTRIC RECLINER</span>
-            <h5> Aerio 5 Seater L Shape Recliner Sofa (Tan) </h5>
-            <del> 225000</del> <span style={{ fontSize: "14px" }}> 165000</span>{" "}
-            <br></br>
-            <Button variant="contained" color="primary" size="small">
-              {" "}
-              Add to Basket{" "}
-            </Button>
-          </div>
-          <div className="new-card-wrapper">
-            <img
-              src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/08/Aerio-5-Seater-L-Shape-Recliner-Sofa-Tan-In-Suede-Fabric-by-Lofty-Dreams-Recliners-1-247x296.jpg"
-              alt=""
-            />
-            <span> ELECTRIC RECLINER</span>
-            <h5> Aerio 5 Seater L Shape Recliner Sofa (Tan) </h5>
-            <del> 225000</del> <span style={{ fontSize: "14px" }}> 165000</span>{" "}
-            <br></br>
-            <Button variant="contained" color="primary" size="small">
-              {" "}
-              Add to Basket{" "}
-            </Button>
-          </div>
+              const sp = price - (price * discount) / 100;
+
+              const item = {
+                id: id,
+                name: name,
+                price: sp,
+                imageUrl: image1,
+              };
+
+              return (
+                <div className="new-card-wrapper" key={id}>
+                  <img src={image1} alt="Product img" />
+                  <span>{category}</span>
+                  <h5>{name} </h5> <del>₹{price}</del>
+                  <span style={{ fontSize: "14px" }}>
+                    ₹{sp.toFixed(2)}
+                  </span>{" "}
+                  <br></br>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    size="small"
+                    onClick={() => addItem(item)}
+                  >
+                    Add to Basket
+                  </Button>
+                </div>
+              );
+            })}
         </div>
       </div>
     </div>
   );
 };
+
+const mapDispatchToProps = (dispatch) => ({
+  addItem: (item) => dispatch(addItem(item)),
+});
+
+export default connect(null, mapDispatchToProps)(Electric);
