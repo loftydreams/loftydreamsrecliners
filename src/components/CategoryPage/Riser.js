@@ -29,16 +29,7 @@ export const Riser = () => {
 <br></br>
             <h2> RISER RECLINERS</h2>
             <div className="top-cat-page">
-              <p className="single-seater-content">Home Theater Recliners chair is a luxurious chair generally used in Multiplex, PVR Theater, concert, Hotel, and many more where they needed the new level of comfort. They take 5 times more than the normal charge for this chair. This chair comes only in the motorized mechanism. This chair also known as PVR Recliner Chairs as generally installed in most of the PVR Theater.
-
-
-              <p className="sigle-seater-content"></p>
-
-              Note:- Customization just in the following manners: Dimension, Style, Quality of Upholstery (leatherette, fabric, faux leather), Upholstery shading, Upholstery type (Leatherette, Suede Fabric, Molfino Fabric), Mechanism type (manual or electric), Wood, Foam type.
-
-
-
-</p>
+             
             </div>
             <div className="bottom-cat-page">
                 <div className="living-room-1">

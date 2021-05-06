@@ -28,13 +28,20 @@ export const Lounger = () => {
 </Breadcrumbs>
 <br></br>
             <h2> LOUNGER SOFA RECLINERS</h2>
+          
             <div className="top-cat-page">
-              <p className="single-seater-content">Home Theater Recliners chair is a luxurious chair generally used in Multiplex, PVR Theater, concert, Hotel, and many more where they needed the new level of comfort. They take 5 times more than the normal charge for this chair. This chair comes only in the motorized mechanism. This chair also known as PVR Recliner Chairs as generally installed in most of the PVR Theater.
-
-
+              <p className="single-seater-content">Lofty Dreams Recliners offer you a modern collection of lounger sofa designed by passionate skilled workers under various ranges. For your home, you can select a recliner lounger that is available on any of the sides whether it is in the left or right configurations.
+<p/>
+              <h4> Choose the right Recliner Lounger Sofa for Living Room </h4> 
               <p className="sigle-seater-content"></p>
 
-              Note:- Customization just in the following manners: Dimension, Style, Quality of Upholstery (leatherette, fabric, faux leather), Upholstery shading, Upholstery type (Leatherette, Suede Fabric, Molfino Fabric), Mechanism type (manual or electric), Wood, Foam type.
+              Choosing the recliner lounger right plays an important role in the enjoyment of your living room. When you come to purchasing the best recliner lounger for your home décor, Comfort and Quality should be the only priority rather than price sensitiveness. Have a look at our wide range of lounger chairs with plenty of space.
+
+Note:- Any changes or customization is possible only in the following ways: Dimension/Size, Style, Upholstery color, Mechanism type (manual or electric), Upholstery varieties (Leatherette, Molfino Fabric, Suede Fabric).
+
+-12%
+Recliner
+
 
 
 
