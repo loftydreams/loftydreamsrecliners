@@ -66,8 +66,8 @@ const ProductPage = ({ addItem }) => {
           <div className="card">
             <div className="product-imgs">
               <div className="img-display">
-                <div >
-                  <img src={src} alt="product" className="img-showcase"/>
+                <div>
+                  <img src={src} alt="product" className="img-showcase" />
                 </div>
               </div>
               <div className="img-select">
@@ -78,7 +78,11 @@ const ProductPage = ({ addItem }) => {
                   className="img-item"
                 >
                   <span data-id="1">
-                    <img src={product?.image1} alt="more product images"  className="img1"/>
+                    <img
+                      src={product?.image1}
+                      alt="more product images"
+                      className="img1"
+                    />
                   </span>
                 </div>
                 <div
@@ -88,7 +92,11 @@ const ProductPage = ({ addItem }) => {
                   className="img-item"
                 >
                   <span data-id="2">
-                    <img src={product?.image2} alt="more product images" className="img1"/>
+                    <img
+                      src={product?.image2}
+                      alt="more product images"
+                      className="img1"
+                    />
                   </span>
                 </div>
                 <div
@@ -98,7 +106,11 @@ const ProductPage = ({ addItem }) => {
                   className="img-item"
                 >
                   <span data-id="3">
-                    <img src={product?.image3} alt="more product images" className="img1" />
+                    <img
+                      src={product?.image3}
+                      alt="more product images"
+                      className="img1"
+                    />
                   </span>
                 </div>
                 <div
@@ -108,7 +120,11 @@ const ProductPage = ({ addItem }) => {
                   className="img-item"
                 >
                   <span data-id="4">
-                    <img src={product?.image4} alt="more product images" className="img1"/>
+                    <img
+                      src={product?.image4}
+                      alt="more product images"
+                      className="img1"
+                    />
                   </span>
                 </div>
               </div>
@@ -199,10 +215,16 @@ const ProductPage = ({ addItem }) => {
           </div>
         </div>
         <div className="bottom-menu">
-          <ProductMenu/>
+          <ProductMenu
+            name={product?.name}
+            description={product?.description}
+          />
         </div>
         <div className="product-accordian">
-          <ProductAccordion />
+          <ProductAccordion
+            name={product?.name}
+            description={product?.description}
+          />
         </div>
       </div>
     )
