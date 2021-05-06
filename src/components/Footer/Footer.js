@@ -111,47 +111,54 @@ export const Footer = (props) => {
             <div className="footer-col">
               <h4>follow us</h4>
               <div className="social-links">
-                <a href="#">
+                <a href="https://www.facebook.com/lofty9716180374/">
                   <FontAwesomeIcon
                     icon={faFacebook}
                     size="1x"
                     className="hov-icon"
                   />
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/loftydreams18">
                   <FontAwesomeIcon
                     icon={faInstagram}
                     size="1x"
                     className="hov-icon"
                   />
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/sumit-ojha-064172160">
                   <FontAwesomeIcon
                     icon={faLinkedin}
                     size="1x"
                     className="hov-icon"
                   />
                 </a>
-                <a href="#">
+                <a href="https://twitter.com/sumitoj80401927">
                   <FontAwesomeIcon
                     icon={faTwitter}
                     size="1x"
                     className="hov-icon"
                   />
                 </a>
-                <a href="#">
+                <a href="mailto:loftydreams18@gmail.com">
                   <FontAwesomeIcon
                     icon={faGoogle}
                     size="1x"
                     className="hov-icon"
                   />
                 </a>
-                <a href="#">
+                <a href="https://in.pinterest.com/loftydreams18/">
                   <FontAwesomeIcon
                     icon={faPinterest}
                     size="1x"
                     className="hov-icon"
                   />
+                </a>
+                <a href="https://www.youtube.com/channel/UCWnQE20f8xJTeXGIfjeAdYg">
+                <FontAwesomeIcon
+                icon={faYoutube}
+                size="1x"
+                className="hov-icon"
+              />
                 </a>
               </div>
             </div>

@@ -41,45 +41,45 @@ const Navbar1 = () => {
             <span> Contact </span>
           </div>
           <div className="social-icons">
-            <a href="" className="youtube social">
+            <a href="https://www.youtube.com/channel/UCWnQE20f8xJTeXGIfjeAdYg" className="youtube social">
               <FontAwesomeIcon
                 icon={faYoutube}
                 size="1x"
                 className="hov-icon"
               />
             </a>
-            <a href="" className="youtube social">
+            <a href="https://www.facebook.com/lofty9716180374/" className="youtube social">
               <FontAwesomeIcon
                 icon={faFacebook}
                 size="1x"
                 className="hov-icon"
               />
             </a>{" "}
-            <a href="" className="youtube social">
+            <a href="https://twitter.com/sumitoj80401927" className="youtube social">
               <FontAwesomeIcon
                 icon={faTwitter}
                 size="1x"
                 className="hov-icon"
               />
             </a>{" "}
-            <a href="" className="youtube social">
+            <a href="https://www.instagram.com/loftydreams18" className="youtube social">
               <FontAwesomeIcon
                 icon={faInstagram}
                 size="1x"
                 className="hov-icon"
               />
             </a>{" "}
-            <a href="" className="youtube social">
+            <a href="https://www.linkedin.com/in/sumit-ojha-064172160" className="youtube social">
               <FontAwesomeIcon
                 icon={faLinkedin}
                 size="1x"
                 className="hov-icon"
               />
             </a>{" "}
-            <a href="" className="youtube social">
+            <a href="mailto:loftydreams18@gmail.com" className="youtube social">
               <FontAwesomeIcon icon={faGoogle} size="1x" className="hov-icon" />
             </a>{" "}
-            <a href="" className="youtube social">
+            <a href="https://in.pinterest.com/loftydreams18/" className="youtube social">
               <FontAwesomeIcon
                 icon={faPinterest}
                 size="1x"
