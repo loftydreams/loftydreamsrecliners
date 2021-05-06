@@ -1,6 +1,19 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./footer.css";
+import { HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi";
+import { BiPhone } from "react-icons/bi";
+import { Button } from "@material-ui/core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faYoutube,
+  faFacebook,
+  faTwitter,
+  faInstagram,
+  faLinkedin,
+  faGoogle,
+  faPinterest,
+} from "@fortawesome/free-brands-svg-icons";
 
 export const Footer = (props) => {
   return (
@@ -19,9 +32,11 @@ export const Footer = (props) => {
               </p>
 
               <ul>
-              
-            <li> <a href="/about"> About</a> </li>
-                
+                <li>
+                  {" "}
+                  <a href="/about"> About</a>{" "}
+                </li>
+
                 <li>
                   <a href="#">Contact</a>
                 </li>
@@ -46,7 +61,9 @@ export const Footer = (props) => {
                   <a href="/terms-and-condition">Terms and Condition</a>
                 </li>
                 <li>
-                  <a href="/payment-security-policy">Payment and Security Policy</a>
+                  <a href="/payment-security-policy">
+                    Payment and Security Policy
+                  </a>
                 </li>
                 <li>
                   <a href="#">Shipping and Delivery Policy</a>
@@ -95,22 +112,46 @@ export const Footer = (props) => {
               <h4>follow us</h4>
               <div className="social-links">
                 <a href="#">
-                  <img src="Images/icons8-facebook-480.jpg" alt="facebook" />
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    size="1x"
+                    className="hov-icon"
+                  />
                 </a>
                 <a href="#">
-                  <img src="Images/icons8-instagram-512.jpg" alt="instagram" />
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    size="1x"
+                    className="hov-icon"
+                  />
                 </a>
                 <a href="#">
-                  <img src="Images/icons8-linkedin-512.jpg" alt="linkedin" />
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    size="1x"
+                    className="hov-icon"
+                  />
                 </a>
                 <a href="#">
-                  <img src="Images/icons8-twitter-400.jpg" alt="twitter" />{" "}
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    size="1x"
+                    className="hov-icon"
+                  />
                 </a>
                 <a href="#">
-                  <img src="Images/icons8-gmail-512.jpg" alt="gmail" />
+                  <FontAwesomeIcon
+                    icon={faGoogle}
+                    size="1x"
+                    className="hov-icon"
+                  />
                 </a>
                 <a href="#">
-                  <img src="Images/icons8-pinterest-512.jpg" alt="pinterest" />
+                  <FontAwesomeIcon
+                    icon={faPinterest}
+                    size="1x"
+                    className="hov-icon"
+                  />
                 </a>
               </div>
             </div>
