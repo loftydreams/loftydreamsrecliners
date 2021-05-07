@@ -22,36 +22,17 @@ const Navbar1 = () => {
       <div className="navbar1-body">
         <div className="topbar-left">
           <div className="amazon-btn">
-<<<<<<< HEAD
-            <Button variant="contained" className="amazon">
-              <a  className="buyfromamazon" href="https://www.amazon.in/s?me=A1YF33ZDTB7JEG&marketplaceID=A21TJRUUN4KGV " target="_blank">
-=======
-            <Button variant="contained" className="amazon" href>
->>>>>>> c57eaaae48b23e8a221541a3be90c47035668b26
+            <Button variant="contained" className="amazon" color="secondary" href="https://www.amazon.in/s?me=A1YF33ZDTB7JEG&marketplaceID=A21TJRUUN4KGV" target="_blank" >
+         
               Buy from amazon.in
             </Button>
           </div>
 
           <div className="topbar-icons">
-<<<<<<< HEAD
             <a  className="social-icons" href="https://www.google.com/maps?q=Block+k-2/6+lane+no-1,+near+Amrita+Public+School,+Sangam+Vihar,+New+Delhi,+Delhi+110080 " target="_blank"><HiOutlineLocationMarker className="icon" /></a>
             <a  className="social-icons"  href="tel:+91 9899027251" target="_blank" >  <BiPhone  className="icon" /></a>
             <a className="social-icons"  href="mailto:loftydreams18@gmail.com" target="_blank"><HiOutlineMail className="icon" /></a>
             
-=======
-            <a
-              className="social-icons"
-              href="https://www.google.com/maps?q=Block+k-2/6+lane+no-1,+near+Amrita+Public+School,+Sangam+Vihar,+New+Delhi,+Delhi+110080"
-            >
-              <HiOutlineLocationMarker className="icon" />
-            </a>
-            <a className="social-icons" href="tel:+91 9899027251">
-              <BiPhone className="icon" />
-            </a>
-            <a className="social-icons" href="mailto:loftydreams18@gmail.com">
-              <HiOutlineMail className="icon" />
-            </a>
->>>>>>> c57eaaae48b23e8a221541a3be90c47035668b26
           </div>
         </div>
         <div className="topbar-right">
@@ -66,70 +47,35 @@ const Navbar1 = () => {
             </Link>
           </div>
           <div className="social-icons">
-<<<<<<< HEAD
             <a href="https://www.youtube.com/channel/UCWnQE20f8xJTeXGIfjeAdYg" target="_blank" className="youtube social">
-=======
-            <a
-              href="https://www.youtube.com/channel/UCWnQE20f8xJTeXGIfjeAdYg"
-              className="youtube social"
-            >
->>>>>>> c57eaaae48b23e8a221541a3be90c47035668b26
               <FontAwesomeIcon
                 icon={faYoutube}
                 size="1x"
                 className="hov-icon"
               />
             </a>
-<<<<<<< HEAD
             <a href="https://www.facebook.com/lofty9716180374/" target="_blank" className="youtube social">
-=======
-            <a
-              href="https://www.facebook.com/lofty9716180374/"
-              className="youtube social"
-            >
->>>>>>> c57eaaae48b23e8a221541a3be90c47035668b26
               <FontAwesomeIcon
                 icon={faFacebook}
                 size="1x"
                 className="hov-icon"
               />
             </a>{" "}
-<<<<<<< HEAD
             <a href="https://twitter.com/sumitoj80401927" target="_blank" className="youtube social">
-=======
-            <a
-              href="https://twitter.com/sumitoj80401927"
-              className="youtube social"
-            >
->>>>>>> c57eaaae48b23e8a221541a3be90c47035668b26
               <FontAwesomeIcon
                 icon={faTwitter}
                 size="1x"
                 className="hov-icon"
               />
             </a>{" "}
-<<<<<<< HEAD
             <a href="https://www.instagram.com/loftydreams18" target="_blank"  className="youtube social">
-=======
-            <a
-              href="https://www.instagram.com/loftydreams18"
-              className="youtube social"
-            >
->>>>>>> c57eaaae48b23e8a221541a3be90c47035668b26
               <FontAwesomeIcon
                 icon={faInstagram}
                 size="1x"
                 className="hov-icon"
               />
             </a>{" "}
-<<<<<<< HEAD
             <a href="https://www.linkedin.com/in/sumit-ojha-064172160" target="_blank" className="youtube social">
-=======
-            <a
-              href="https://www.linkedin.com/in/sumit-ojha-064172160"
-              className="youtube social"
-            >
->>>>>>> c57eaaae48b23e8a221541a3be90c47035668b26
               <FontAwesomeIcon
                 icon={faLinkedin}
                 size="1x"
@@ -139,14 +85,7 @@ const Navbar1 = () => {
             <a href="mailto:loftydreams18@gmail.com" target="_blank" className="youtube social">
               <FontAwesomeIcon icon={faGoogle} size="1x" className="hov-icon" />
             </a>{" "}
-<<<<<<< HEAD
             <a href="https://in.pinterest.com/loftydreams18/" target="_blank" className="youtube social">
-=======
-            <a
-              href="https://in.pinterest.com/loftydreams18/"
-              className="youtube social"
-            >
->>>>>>> c57eaaae48b23e8a221541a3be90c47035668b26
               <FontAwesomeIcon
                 icon={faPinterest}
                 size="1x"
