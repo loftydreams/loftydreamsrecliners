@@ -31,10 +31,10 @@ const Feedback = () => {
   const [value, setValue] = React.useState(2);
   const [hover, setHover] = React.useState(-1);
   const [feedbackData, setFeedback] = React.useState("");
-  const [rating, setRating] = React.useState(3);
-  const [name,setName] = React.useState("Enter Name");
-  const [email,setEmail] = React.useState('Enter Email');
-  const [contact,setContact] = React.useState('Enter Contact');
+  const [rating, setRating] = React.useState();
+  const [name,setName] = React.useState("");
+  const [email,setEmail] = React.useState('');
+  const [contact,setContact] = React.useState('');
   const classes = useStyles();
   
   const handleSubmit = (e) => {
