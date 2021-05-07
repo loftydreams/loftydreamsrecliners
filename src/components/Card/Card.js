@@ -11,7 +11,7 @@ function Card({ id, src, name, category, price, discount, rating, addItem }) {
   const history = useHistory();
   const [added, setAdded] = useState(false);
 
-  const sp= price - (price * discount) / 100;
+  const sp = price - (price * discount) / 100;
 
   const item = {
     id: id,
@@ -35,7 +35,11 @@ function Card({ id, src, name, category, price, discount, rating, addItem }) {
   return (
     <>
       <div className="card-body">
-        <div className="card1-top">
+        <div
+          className="card1-top"
+          style={{ cursor: "pointer" }}
+          onClick={handleClick}
+        >
           <img alt="person-pic" src={src} />
         </div>
 
@@ -43,7 +47,7 @@ function Card({ id, src, name, category, price, discount, rating, addItem }) {
           <span className="top-heading">{category}</span>
           <h5 className="product-name">{name}</h5>
           <span className="h5-position">
-            <del className="price-cut"> ₹{price} </del> ₹{sp.toFixed(2) }
+            <del className="price-cut"> ₹{price} </del> ₹{sp.toFixed(2)}
             <span> {ratedStars(rating)} </span>
           </span>
           {added ? (

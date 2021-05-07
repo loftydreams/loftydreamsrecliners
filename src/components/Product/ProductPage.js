@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 import { connect } from "react-redux";
 import { useDocumentDataOnce } from "react-firebase-hooks/firestore";
 import { useParams } from "react-router-dom";
@@ -6,6 +7,8 @@ import { useParams } from "react-router-dom";
 import { addItem } from "../../redux/cart/cart.actions";
 import { firestore } from "../../firebase";
 
+import ProductMenu from "./ProductMenu";
+import ProductAccordion from "./ProductAccordian";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faYoutube,
@@ -16,14 +19,14 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import "./ProductPage.css";
-import ProductMenu from "./ProductMenu";
-import ProductAccordion from "./ProductAccordian";
 
 const ProductPage = ({ addItem }) => {
   const { productId } = useParams();
+  const history = useHistory();
   const [product, loading] = useDocumentDataOnce(
     productId && firestore.doc(`products/${productId}`)
   );
+  const [added, setAdded] = useState(false);
   const [src, setSrc] = useState(product?.image1);
 
   const slide = (url) => {
@@ -51,6 +54,7 @@ const ProductPage = ({ addItem }) => {
     };
 
     addItem(item);
+    setAdded(true);
   };
 
   useEffect(() => {
@@ -168,9 +172,19 @@ const ProductPage = ({ addItem }) => {
                 <button type="button" className="btn">
                   Buy <i className="fas fa-shopping-cart"></i>
                 </button>
-                <button type="button" className="btn" onClick={handleClick}>
-                  Add to Cart
-                </button>
+                {added ? (
+                  <button
+                    type="button"
+                    className="btn"
+                    onClick={() => history.push("/checkout")}
+                  >
+                    Checkout
+                  </button>
+                ) : (
+                  <button type="button" className="btn" onClick={handleClick}>
+                    Add to Cart
+                  </button>
+                )}
               </div>
 
               <div className="social-links">
