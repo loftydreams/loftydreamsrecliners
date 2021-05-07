@@ -22,11 +22,8 @@ const Navbar1 = () => {
       <div className="navbar1-body">
         <div className="topbar-left">
           <div className="amazon-btn">
-            <Button variant="contained" className="amazon">
-              <a  className="buyfromamazon" href="https://www.amazon.in/s?me=A1YF33ZDTB7JEG&marketplaceID=A21TJRUUN4KGV " target="_blank">
+            <Button variant="contained" className="amazon" href>
               Buy from amazon.in
-              </a>
-             
             </Button>
           </div>
 
@@ -43,7 +40,10 @@ const Navbar1 = () => {
               <span> About</span>{" "}
             </Link>
             <span> Contact </span>
-        <Link to ="/feedback"  > <span> Feedback </span>  </Link> 
+            <Link to="/feedback">
+              {" "}
+              <span> Feedback </span>{" "}
+            </Link>
           </div>
           <div className="social-icons">
             <a href="https://www.youtube.com/channel/UCWnQE20f8xJTeXGIfjeAdYg" target="_blank" className="youtube social">
