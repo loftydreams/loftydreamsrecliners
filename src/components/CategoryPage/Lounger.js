@@ -1,108 +1,98 @@
-import React from 'react'
-import "./LivingRoom.css";
-import Typography from '@material-ui/core/Typography';
-import Breadcrumbs from '@material-ui/core/Breadcrumbs';
-import Link from '@material-ui/core/Link';
-import Card from '../Card/Card';
-
+import { connect } from "react-redux";
+import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
+import Typography from "@material-ui/core/Typography";
+import Breadcrumbs from "@material-ui/core/Breadcrumbs";
+import Link from "@material-ui/core/Link";
 import { Button } from "@material-ui/core";
 
+import { firestore } from "../../firebase";
+import { addItem } from "../../redux/cart/cart.actions";
 
+import "./LivingRoom.css";
 
-function handleClick(event) {
-    event.preventDefault();
-    console.info('You clicked a breadcrumb.');
-  }
-export default function Lounger() {
+const Lounger = ({ addItem }) => {
+  const [products, loading] = useCollectionDataOnce(
+    firestore.collection("products"),
+    { idField: "id" }
+  );
 
-    return (
-        <div className="single-seater">
-            <Breadcrumbs aria-label="breadcrumb" style={{margin: "20px"}}>
-  <Link color="inherit" href="/" onClick={handleClick}>
-   HOME
-  </Link>
-  <Link color="inherit" href="/getting-started/installation/" onClick={handleClick}>
-    RECLINERS
-  </Link>
-  <Typography color="textPrimary">LOUNGER SOFA RECLINERS </Typography>
-</Breadcrumbs>
-<br></br>
-            <h2> LOUNGER SOFA RECLINERS</h2>
-          
-            <div className="top-cat-page">
-              <p className="single-seater-content">Lofty Dreams Recliners offer you a modern collection of lounger sofa designed by passionate skilled workers under various ranges. For your home, you can select a recliner lounger that is available on any of the sides whether it is in the left or right configurations.
-<p/>
-              <h4> Choose the right Recliner Lounger Sofa for Living Room </h4> 
-              <p className="sigle-seater-content"></p>
+  const filteredProducts = products?.filter((product) => {
+    return product.category
+      ?.toLowerCase()
+      .includes("LOUNGER SOFA RECLINER".toLowerCase());
+  });
 
-              Choosing the recliner lounger right plays an important role in the enjoyment of your living room. When you come to purchasing the best recliner lounger for your home décor, Comfort and Quality should be the only priority rather than price sensitiveness. Have a look at our wide range of lounger chairs with plenty of space.
+  return (
+    <div className="single-seater">
+      <Breadcrumbs aria-label="breadcrumb" style={{ margin: "20px" }}>
+        <Link color="inherit" href="/">
+          HOME
+        </Link>
+        <Link color="inherit" href="/getting-started/installation/">
+          RECLINERS
+        </Link>
+        <Typography color="textPrimary">LOUNGER SOFA RECLINERS </Typography>
+      </Breadcrumbs>
+      <br></br>
+      <h2> LOUNGER SOFA RECLINERS</h2>
+      <div className="top-cat-page">
+        <p className="single-seater-content">
+          Home Theater Recliners chair is a luxurious chair generally used in
+          Multiplex, PVR Theater, concert, Hotel, and many more where they
+          needed the new level of comfort. They take 5 times more than the
+          normal charge for this chair. This chair comes only in the motorized
+          mechanism. This chair also known as PVR Recliner Chairs as generally
+          installed in most of the PVR Theater.
+          <p className="sigle-seater-content"></p>
+          Note:- Customization just in the following manners: Dimension, Style,
+          Quality of Upholstery (leatherette, fabric, faux leather), Upholstery
+          shading, Upholstery type (Leatherette, Suede Fabric, Molfino Fabric),
+          Mechanism type (manual or electric), Wood, Foam type.
+        </p>
+      </div>
+      <div className="bottom-cat-page">
+        <div className="living-room-1">
+          {!loading &&
+            filteredProducts?.map((data) => {
+              const { id, image1, price, discount, name, category } = data;
 
-Note:- Any changes or customization is possible only in the following ways: Dimension/Size, Style, Upholstery color, Mechanism type (manual or electric), Upholstery varieties (Leatherette, Molfino Fabric, Suede Fabric).
+              const sp = price - (price * discount) / 100;
 
--12%
-Recliner
+              const item = {
+                id: id,
+                name: name,
+                price: sp,
+                imageUrl: image1,
+              };
 
-
-
-
-</p>
-            </div>
-            <div className="bottom-cat-page">
-                <div className="living-room-1">
-                  <div className="new-card-wrapper">
-                    <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/08/Aerio-5-Seater-L-Shape-Recliner-Sofa-Tan-In-Suede-Fabric-by-Lofty-Dreams-Recliners-1-247x296.jpg" alt="" />
-                    <span> LOUNGER SOFA RECLINER</span>
-                    <h5> Aerio 5 Seater L Shape Recliner Sofa (Tan) </h5>
-                    <del> 225000</del> <span style={{fontSize:"14px"}}> 165000</span> <br></br>
-                    <Button variant="contained" color ="primary" size="small" > Add to Basket </Button>
-                    
-                  </div>
-
-                  <div className="new-card-wrapper">
-                    <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/08/Aerio-5-Seater-L-Shape-Recliner-Sofa-Tan-In-Suede-Fabric-by-Lofty-Dreams-Recliners-1-247x296.jpg" alt="" />
-                    <span> LOUNGER SOFA RECLINER</span>
-                    <h5> Aerio 5 Seater L Shape Recliner Sofa (Tan) </h5>
-                    <del> 225000</del> <span style={{fontSize:"14px"}}> 165000</span> <br></br>
-                    <Button variant="contained" color ="primary" size="small" > Add to Basket </Button>
-                    
-                  </div>
-                  <div className="new-card-wrapper">
-                    <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/08/Aerio-5-Seater-L-Shape-Recliner-Sofa-Tan-In-Suede-Fabric-by-Lofty-Dreams-Recliners-1-247x296.jpg" alt="" />
-                    <span> LOUNGER SOFA RECLINER</span>
-                    <h5> Aerio 5 Seater L Shape Recliner Sofa (Tan) </h5>
-                    <del> 225000</del> <span style={{fontSize:"14px"}}> 165000</span> <br></br>
-                    <Button variant="contained" color ="primary" size="small" > Add to Basket </Button>
-                    
-                  </div>
-                  <div className="new-card-wrapper">
-                    <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/08/Aerio-5-Seater-L-Shape-Recliner-Sofa-Tan-In-Suede-Fabric-by-Lofty-Dreams-Recliners-1-247x296.jpg" alt="" />
-                    <span> LOUNGER SOFA RECLINER</span>
-                    <h5> Aerio 5 Seater L Shape Recliner Sofa (Tan) </h5>
-                    <del> 225000</del> <span style={{fontSize:"14px"}}> 165000</span> <br></br>
-                    <Button variant="contained" color ="primary" size="small" > Add to Basket </Button>
-                    
-                  </div>
-                  <div className="new-card-wrapper">
-                    <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/08/Aerio-5-Seater-L-Shape-Recliner-Sofa-Tan-In-Suede-Fabric-by-Lofty-Dreams-Recliners-1-247x296.jpg" alt="" />
-                    <span> LOUNGER SOFA RECLINER</span>
-                    <h5> Aerio 5 Seater L Shape Recliner Sofa (Tan) </h5>
-                    <del> 225000</del> <span style={{fontSize:"14px"}}> 165000</span> <br></br>
-                    <Button variant="contained" color ="primary" size="small" > Add to Basket </Button>
-                    
-                  </div>
-                  <div className="new-card-wrapper">
-                    <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/08/Aerio-5-Seater-L-Shape-Recliner-Sofa-Tan-In-Suede-Fabric-by-Lofty-Dreams-Recliners-1-247x296.jpg" alt="" />
-                    <span> LOUNGER SOFA RECLINER</span>
-                    <h5> Aerio 5 Seater L Shape Recliner Sofa (Tan) </h5>
-                    <del> 225000</del> <span style={{fontSize:"14px"}}> 165000</span> <br></br>
-                    <Button variant="contained" color ="primary" size="small" > Add to Basket </Button>
-                    
-                  </div>
-
-            </div>
-           
-           
-            </div>
+              return (
+                <div className="new-card-wrapper" key={id}>
+                  <img src={image1} alt="Product img" />
+                  <span>{category}</span>
+                  <h5>{name} </h5> <del>₹{price}</del>
+                  <span style={{ fontSize: "14px" }}>
+                    ₹{sp.toFixed(2)}
+                  </span>{" "}
+                  <br></br>
+                  <Button
+                    variant="contained"
+                    color="primary"
+                    size="small"
+                    onClick={() => addItem(item)}
+                  >
+                    Add to Basket
+                  </Button>
+                </div>
+              );
+            })}
         </div>
-    )
-}
+      </div>
+    </div>
+  );
+};
+
+const mapDispatchToProps = (dispatch) => ({
+  addItem: (item) => dispatch(addItem(item)),
+});
+
+export default connect(null, mapDispatchToProps)(Lounger);
