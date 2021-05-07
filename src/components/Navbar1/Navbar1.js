@@ -22,19 +22,24 @@ const Navbar1 = () => {
       <div className="navbar1-body">
         <div className="topbar-left">
           <div className="amazon-btn">
-            <Button variant="contained" className="amazon">
-              <a  className="buyfromamazon" href=" Buy from amazon.in">
+            <Button variant="contained" className="amazon" href>
               Buy from amazon.in
-              </a>
-             
             </Button>
           </div>
 
           <div className="topbar-icons">
-            <a  className="social-icons" href="https://www.google.com/maps?q=Block+k-2/6+lane+no-1,+near+Amrita+Public+School,+Sangam+Vihar,+New+Delhi,+Delhi+110080"><HiOutlineLocationMarker className="icon" /></a>
-            <a  className="social-icons"  href="tel:+91 9899027251" >  <BiPhone  className="icon" /></a>
-            <a className="social-icons"  href="mailto:loftydreams18@gmail.com" ><HiOutlineMail className="icon" /></a>
-            
+            <a
+              className="social-icons"
+              href="https://www.google.com/maps?q=Block+k-2/6+lane+no-1,+near+Amrita+Public+School,+Sangam+Vihar,+New+Delhi,+Delhi+110080"
+            >
+              <HiOutlineLocationMarker className="icon" />
+            </a>
+            <a className="social-icons" href="tel:+91 9899027251">
+              <BiPhone className="icon" />
+            </a>
+            <a className="social-icons" href="mailto:loftydreams18@gmail.com">
+              <HiOutlineMail className="icon" />
+            </a>
           </div>
         </div>
         <div className="topbar-right">
@@ -43,38 +48,56 @@ const Navbar1 = () => {
               <span> About</span>{" "}
             </Link>
             <span> Contact </span>
-        <Link to ="/feedback"  > <span> Feedback </span>  </Link> 
+            <Link to="/feedback">
+              {" "}
+              <span> Feedback </span>{" "}
+            </Link>
           </div>
           <div className="social-icons">
-            <a href="https://www.youtube.com/channel/UCWnQE20f8xJTeXGIfjeAdYg" className="youtube social">
+            <a
+              href="https://www.youtube.com/channel/UCWnQE20f8xJTeXGIfjeAdYg"
+              className="youtube social"
+            >
               <FontAwesomeIcon
                 icon={faYoutube}
                 size="1x"
                 className="hov-icon"
               />
             </a>
-            <a href="https://www.facebook.com/lofty9716180374/" className="youtube social">
+            <a
+              href="https://www.facebook.com/lofty9716180374/"
+              className="youtube social"
+            >
               <FontAwesomeIcon
                 icon={faFacebook}
                 size="1x"
                 className="hov-icon"
               />
             </a>{" "}
-            <a href="https://twitter.com/sumitoj80401927" className="youtube social">
+            <a
+              href="https://twitter.com/sumitoj80401927"
+              className="youtube social"
+            >
               <FontAwesomeIcon
                 icon={faTwitter}
                 size="1x"
                 className="hov-icon"
               />
             </a>{" "}
-            <a href="https://www.instagram.com/loftydreams18" className="youtube social">
+            <a
+              href="https://www.instagram.com/loftydreams18"
+              className="youtube social"
+            >
               <FontAwesomeIcon
                 icon={faInstagram}
                 size="1x"
                 className="hov-icon"
               />
             </a>{" "}
-            <a href="https://www.linkedin.com/in/sumit-ojha-064172160" className="youtube social">
+            <a
+              href="https://www.linkedin.com/in/sumit-ojha-064172160"
+              className="youtube social"
+            >
               <FontAwesomeIcon
                 icon={faLinkedin}
                 size="1x"
@@ -84,7 +107,10 @@ const Navbar1 = () => {
             <a href="mailto:loftydreams18@gmail.com" className="youtube social">
               <FontAwesomeIcon icon={faGoogle} size="1x" className="hov-icon" />
             </a>{" "}
-            <a href="https://in.pinterest.com/loftydreams18/" className="youtube social">
+            <a
+              href="https://in.pinterest.com/loftydreams18/"
+              className="youtube social"
+            >
               <FontAwesomeIcon
                 icon={faPinterest}
                 size="1x"
