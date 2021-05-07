@@ -3,10 +3,10 @@ import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
 import Typography from "@material-ui/core/Typography";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import Link from "@material-ui/core/Link";
-import { Button } from "@material-ui/core";
 
 import { firestore } from "../../firebase";
 import { addItem } from "../../redux/cart/cart.actions";
+import Card from "./Card";
 
 import "./LivingRoom.css";
 
@@ -67,23 +67,17 @@ const LivingRoom = ({ addItem }) => {
               };
 
               return (
-                <div className="new-card-wrapper" key={id}>
-                  <img src={image1} alt="Product img" />
-                  <span>{category}</span>
-                  <h5>{name} </h5> <del>₹{price}</del>
-                  <span style={{ fontSize: "14px" }}>
-                    ₹{sp.toFixed(2)}
-                  </span>{" "}
-                  <br></br>
-                  <Button
-                    variant="contained"
-                    color="primary"
-                    size="small"
-                    onClick={() => addItem(item)}
-                  >
-                    Add to Basket
-                  </Button>
-                </div>
+                <Card
+                  key={id}
+                  id={id}
+                  image1={image1}
+                  price={price}
+                  name={name}
+                  category={category}
+                  item={item}
+                  sp={sp}
+                  addItem={addItem}
+                />
               );
             })}
         </div>
