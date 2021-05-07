@@ -1,13 +1,12 @@
-import { useState } from "react";
+import React from "react";
 import { Form, Button } from "react-bootstrap";
+import "./Feedback.css";
 import { makeStyles } from "@material-ui/core/styles";
 import Rating from "@material-ui/lab/Rating";
 import Box from "@material-ui/core/Box";
 
-import { firestore } from "../../firebase";
-
-import "./Feedback.css";
-
+import firebase from "firebase/app";
+import "firebase/firestore";
 const labels = {
   0.5: "Useless",
   1: "Useless+",
@@ -28,70 +27,67 @@ const useStyles = makeStyles({
     alignItems: "center",
   },
 });
-
 const Feedback = () => {
+  const [value, setValue] = React.useState(2);
+  const [hover, setHover] = React.useState(-1);
+  const [feedbackData, setFeedback] = React.useState("");
+  const [rating, setRating] = React.useState(3);
+  const [name,setName] = React.useState("Enter Name");
+  const [email,setEmail] = React.useState('Enter Email');
+  const [contact,setContact] = React.useState('Enter Contact');
   const classes = useStyles();
-  const [value, setValue] = useState(4);
-  const [hover, setHover] = useState(-1);
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [feedback, setFeedback] = useState("");
-
+  
   const handleSubmit = (e) => {
+ 
+    
     e.preventDefault();
-    if (name && phone && email && feedback && value) {
-      firestore
-        .collection("FeedBackFromUser")
-        .add({
-          name,
-          contact: phone,
-          email,
-          feedback,
-          rating: value,
-        })
-        .then((data) => {
-          console.log(data);
-          setValue(4);
-          setName("");
-          setPhone("");
-          setEmail("");
-          setFeedback("");
-        });
-    }
-  };
+     firebase
+       .firestore()
+       .collection("FeedBackFromUser")
+       .add({
+         feedback: feedbackData,
+         rating: rating,
+         name:name,
+         email:email,
+         contact:contact,
+       })
+       .then(() => {
+         
+         window.history.go(0);
+       })
+       .catch((error) => {
+         alert(error.message);
+       });
+
+  }
 
   return (
     <div className="feedback-wrapper">
       <h2>Feedback Form </h2>
 
-      <Form onSubmit={handleSubmit}>
+      <Form onSubmit ={handleSubmit}>
         <Form.Group controlId="formBasicEmail">
-          <Form.Control
-            type="name"
-            placeholder="Name"
-            required
-            value={name}
-            onChange={(e) => setName(e.target.value)}
+          <Form.Control type="name" placeholder="Name" 
+           value={name}
+           onChange={(e) => {
+             setName(e.target.value);
+           }}
+          
           />
         </Form.Group>
-        <Form.Group controlId="formBasicEmail">
-          <Form.Control
-            type="phone"
-            placeholder="Contact"
-            required
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-          />
+        <Form.Group controlId="formBasicEmail" >
+          <Form.Control type="phone" placeholder="Contact" 
+            value={contact}
+            onChange={(e) => {
+              setContact(e.target.value);
+            }}/>
         </Form.Group>
         <Form.Group controlId="formBasicEmail">
-          <Form.Control
-            type="email"
-            placeholder="Enter email"
-            required
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
+          <Form.Control type="email" placeholder="Enter email" 
+           value={email}
+           onChange={(e) => {
+             setEmail(e.target.value);
+           }}/>
           <Form.Text className="text-muted">
             We'll never share your email with anyone else.
           </Form.Text>
@@ -100,9 +96,9 @@ const Feedback = () => {
         <div className={classes.root}>
           <Rating
             name="hover-feedback"
-            required
             value={value}
             precision={0.5}
+            value={rating}
             onChange={(event, newValue) => {
               setValue(newValue);
             }}
@@ -117,11 +113,12 @@ const Feedback = () => {
         <Form.Group controlId="exampleForm.ControlTextarea1">
           <Form.Control
             as="textarea"
-            required
             rows={5}
             placeholder="Your Valuable Feedback"
-            value={feedback}
-            onChange={(e) => setFeedback(e.target.value)}
+            value={feedbackData}
+            onChange={(e) => {
+              setFeedback(e.target.value);
+            }}
           />
         </Form.Group>
         <Button variant="primary" type="submit">
