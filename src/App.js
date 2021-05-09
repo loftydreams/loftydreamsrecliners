@@ -28,11 +28,8 @@ import SearchResults from "./components/search-products/search-results";
 
 import "./App.css";
 import Feedback from "./components/Navbar1/Feedback";
-
 import { Testimonial } from "./components/Testimonial/Testimonial";
-
 import Contactus from "./components/Contactus/Contactus";
-
 
 function App() {
   return (
