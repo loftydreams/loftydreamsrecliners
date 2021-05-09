@@ -28,6 +28,7 @@ import SearchResults from "./components/search-products/search-results";
 
 import "./App.css";
 import Feedback from "./components/Navbar1/Feedback";
+import { Testimonial } from "./components/Testimonial/Testimonial";
 
 function App() {
   return (
@@ -103,6 +104,9 @@ function App() {
         </Route>
         <Route path="/feedback">
           <Feedback />
+        </Route>
+        <Route path="/testimonial">
+          <Testimonial />
         </Route>
         <Route path="*">
           <h1>Error 404: Page not found</h1>

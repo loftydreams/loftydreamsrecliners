@@ -44,7 +44,7 @@ export const Footer = (props) => {
                   <a href="#">Blog</a>
                 </li>
                 <li>
-                  <a href="#">Testimonial</a>
+             <a href="/testimonial">Testimonial</a>
                 </li>
               </ul>
             </div>
@@ -110,57 +110,53 @@ export const Footer = (props) => {
             </div>
             <div className="footer-col">
               <h4>follow us</h4>
-              <div className="social-links icons-color">
-                <a href="https://www.facebook.com/lofty9716180374/">
-                  <FontAwesomeIcon
-                    icon={faFacebook}
-                    size="1x"
-                    className="hov-icon"
-                  />
-                </a>
-                <a href="https://www.instagram.com/loftydreams18">
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    size="1x"
-                    className="hov-icon"
-                  />
-                </a>
-                <a href="https://www.linkedin.com/in/sumit-ojha-064172160">
-                  <FontAwesomeIcon
-                    icon={faLinkedin}
-                    size="1x"
-                    className="hov-icon"
-                  />
-                </a>
-                <a href="https://twitter.com/sumitoj80401927">
-                  <FontAwesomeIcon
-                    icon={faTwitter}
-                    size="1x"
-                    className="hov-icon"
-                  />
-                </a>
-                <a href="mailto:loftydreams18@gmail.com">
-                  <FontAwesomeIcon
-                    icon={faGoogle}
-                    size="1x"
-                    className="hov-icon"
-                  />
-                </a>
-                <a href="https://in.pinterest.com/loftydreams18/">
-                  <FontAwesomeIcon
-                    icon={faPinterest}
-                    size="1x"
-                    className="hov-icon"
-                  />
-                </a>
-                <a href="https://www.youtube.com/channel/UCWnQE20f8xJTeXGIfjeAdYg">
-                <FontAwesomeIcon
+              <div className="social-icons">
+            <a href="https://www.youtube.com/channel/UCWnQE20f8xJTeXGIfjeAdYg" target="_blank" className="youtube social">
+              <FontAwesomeIcon
                 icon={faYoutube}
                 size="1x"
                 className="hov-icon"
               />
-                </a>
-              </div>
+            </a>
+            <a href="https://www.facebook.com/lofty9716180374/" target="_blank" className="youtube social">
+              <FontAwesomeIcon
+                icon={faFacebook}
+                size="1x"
+                className="hov-icon"
+              />
+            </a>{" "}
+            <a href="https://twitter.com/sumitoj80401927" target="_blank" className="youtube social">
+              <FontAwesomeIcon
+                icon={faTwitter}
+                size="1x"
+                className="hov-icon"
+              />
+            </a>{" "}
+            <a href="https://www.instagram.com/loftydreams18" target="_blank"  className="youtube social">
+              <FontAwesomeIcon
+                icon={faInstagram}
+                size="1x"
+                className="hov-icon"
+              />
+            </a>{" "}
+            <a href="https://www.linkedin.com/in/sumit-ojha-064172160" target="_blank" className="youtube social">
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                size="1x"
+                className="hov-icon"
+              />
+            </a>{" "}
+            <a href="mailto:loftydreams18@gmail.com" target="_blank" className="youtube social">
+              <FontAwesomeIcon icon={faGoogle} size="1x" className="hov-icon" />
+            </a>{" "}
+            <a href="https://in.pinterest.com/loftydreams18/" target="_blank" className="youtube social">
+              <FontAwesomeIcon
+                icon={faPinterest}
+                size="1x"
+                className="hov-icon"
+              />
+            </a>
+          </div>
             </div>
           </div>
         </div>
