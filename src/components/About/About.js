@@ -1,8 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./About.css";
-
+import { firestore } from "../../firebase";
+import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
 export default function AboutUs() {
+  const [image, loading] = useCollectionDataOnce(
+    firestore.collection("aboutusImage"),
+    { idField: "id" }
+  );
+
+
+
+
+ 
   return (
     <div>
       <div className="aboutus__main">
@@ -84,13 +94,20 @@ export default function AboutUs() {
         </div>
 
         <div className="aboutus__right">
-            <ul>
+         
+         <ul className="aboutus__right_ul">
          <a href="#about"  >    <li>About Us</li>  </a>
          <a href="#vision"  >        <li>Our Vision</li> </a>
          <a href="#whoweare"  >         <li>Who We Are</li> </a>
          <a href="#whatwedo"  >         <li>What We Do</li> </a>
          <a href="#product"  >         <li>Our Products</li> </a>
             </ul>
+         
+       
+            <div className="aboutusimage">
+             
+            <img src="Images/aboutusL.jpg" alt="aboutUs"></img>
+            </div>
         </div>
       </div>
     </div>
