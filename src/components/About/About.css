@@ -3,7 +3,7 @@
    
 
     font-family: "Mr Eaves XL Modern", sans-serif;
-    justify-content: space-between;
+    justify-content:center;
 
 
 }
@@ -19,7 +19,7 @@
 }
 
 .aboutus__right{
-    max-width: 15%;
+    max-width: 32%;
 }
 .aboutus_left_first{
     display: flex;
@@ -118,18 +118,26 @@
     }
     .aboutus__left{
         border: none;
+        
     }
     
     .aboutus__right{
-        border: 2px solid black;
-        visibility: hidden;
+       
         overflow: hidden;
+        max-width: 100%;
         
+    }
+    .aboutus__right_ul{
+        visibility: hidden;
     }
     
     .aboutus_left_second{
         display: flex;
         flex-direction: column;
+    }
+    .aboutusimage img{
+        width: 100%;
+       
     }
 
 }
@@ -145,7 +153,7 @@
     }
     .aboutus__left{
        padding: 0 64px;
-       flex: 0.95;
+       flex: 0.80;
     }
     
     .aboutus__right{
