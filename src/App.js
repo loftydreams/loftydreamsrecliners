@@ -28,6 +28,7 @@ import SearchResults from "./components/search-products/search-results";
 
 import "./App.css";
 import Feedback from "./components/Navbar1/Feedback";
+import Contactus from "./components/Contactus/Contactus";
 
 function App() {
   return (
@@ -58,6 +59,9 @@ function App() {
         </Route>
         <Route path="/about">
           <AboutUs />
+        </Route>
+        <Route path="/contactus">
+          <Contactus/>
         </Route>
         <Route path="/privacy-policy">
           <PrivacyPolicy />
