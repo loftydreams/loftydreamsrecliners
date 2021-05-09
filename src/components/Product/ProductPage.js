@@ -1,8 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, Fragment } from "react";
 import { useHistory } from "react-router-dom";
 import { connect } from "react-redux";
 import { useDocumentDataOnce } from "react-firebase-hooks/firestore";
 import { useParams } from "react-router-dom";
+import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+import IconButton from "@material-ui/core/IconButton";
+import ZoomInIcon from "@material-ui/icons/ZoomIn";
+import ZoomOutIcon from "@material-ui/icons/ZoomOut";
+import CloseIcon from "@material-ui/icons/Close";
 
 import { addItem } from "../../redux/cart/cart.actions";
 import { firestore } from "../../firebase";
@@ -70,67 +75,92 @@ const ProductPage = ({ addItem }) => {
           <div className="card">
             <div className="product-imgs">
               <div className="img-display">
-                <div>
-                  <img src={src} alt="product" className="img-showcase" />
-                </div>
+                <TransformWrapper>
+                  {({ zoomIn, zoomOut, resetTransform }) => (
+                    <Fragment>
+                      <div>
+                        <IconButton color="primary" onClick={zoomIn}>
+                          <ZoomInIcon />
+                        </IconButton>
+                        <IconButton color="primary" onClick={zoomOut}>
+                          <ZoomOutIcon />
+                        </IconButton>
+                        <IconButton color="secondary" onClick={resetTransform}>
+                          <CloseIcon />
+                        </IconButton>
+                      </div>
+                      <TransformComponent>
+                        <img src={src} alt="product" className="img-showcase" />
+                      </TransformComponent>
+                    </Fragment>
+                  )}
+                </TransformWrapper>
               </div>
               <div className="img-select">
-                <div
-                  onClick={() => {
-                    slide(product?.image1);
-                  }}
-                  className="img-item"
-                >
-                  <span data-id="1">
-                    <img
-                      src={product?.image1}
-                      alt="more product images"
-                      className="img1"
-                    />
-                  </span>
-                </div>
-                <div
-                  onClick={() => {
-                    slide(product?.image2);
-                  }}
-                  className="img-item"
-                >
-                  <span data-id="2">
-                    <img
-                      src={product?.image2}
-                      alt="more product images"
-                      className="img1"
-                    />
-                  </span>
-                </div>
-                <div
-                  onClick={() => {
-                    slide(product?.image3);
-                  }}
-                  className="img-item"
-                >
-                  <span data-id="3">
-                    <img
-                      src={product?.image3}
-                      alt="more product images"
-                      className="img1"
-                    />
-                  </span>
-                </div>
-                <div
-                  onClick={() => {
-                    slide(product?.image4);
-                  }}
-                  className="img-item"
-                >
-                  <span data-id="4">
-                    <img
-                      src={product?.image4}
-                      alt="more product images"
-                      className="img1"
-                    />
-                  </span>
-                </div>
+                {product?.image1 && (
+                  <div
+                    onClick={() => {
+                      slide(product?.image1);
+                    }}
+                    className="img-item"
+                  >
+                    <span data-id="1">
+                      <img
+                        src={product?.image1}
+                        alt="more product images"
+                        className="img1"
+                      />
+                    </span>
+                  </div>
+                )}
+                {product?.image2 && (
+                  <div
+                    onClick={() => {
+                      slide(product?.image2);
+                    }}
+                    className="img-item"
+                  >
+                    <span data-id="2">
+                      <img
+                        src={product?.image2}
+                        alt="more product images"
+                        className="img1"
+                      />
+                    </span>
+                  </div>
+                )}
+                {product?.image3 && (
+                  <div
+                    onClick={() => {
+                      slide(product?.image3);
+                    }}
+                    className="img-item"
+                  >
+                    <span data-id="3">
+                      <img
+                        src={product?.image3}
+                        alt="more product images"
+                        className="img1"
+                      />
+                    </span>
+                  </div>
+                )}
+                {product?.image4 && (
+                  <div
+                    onClick={() => {
+                      slide(product?.image4);
+                    }}
+                    className="img-item"
+                  >
+                    <span data-id="4">
+                      <img
+                        src={product?.image4}
+                        alt="more product images"
+                        className="img1"
+                      />
+                    </span>
+                  </div>
+                )}
               </div>
             </div>
 
@@ -189,41 +219,31 @@ const ProductPage = ({ addItem }) => {
 
               <div className="social-links">
                 <p>Share At: </p>
-                <a href="#">
-                  <FontAwesomeIcon
-                    icon={faYoutube}
-                    size="1x"
-                    className="hov-icon"
-                  />
-                </a>
-                <a href="#">
-                  <FontAwesomeIcon
-                    icon={faFacebook}
-                    size="1x"
-                    className="hov-icon"
-                  />
-                </a>
-                <a href="#">
-                  <FontAwesomeIcon
-                    icon={faTwitter}
-                    size="1x"
-                    className="hov-icon"
-                  />
-                </a>
-                <a href="#">
-                  <FontAwesomeIcon
-                    icon={faInstagram}
-                    size="1x"
-                    className="hov-icon"
-                  />
-                </a>
-                <a href="#">
-                  <FontAwesomeIcon
-                    icon={faLinkedin}
-                    size="1x"
-                    className="hov-icon"
-                  />
-                </a>
+                <FontAwesomeIcon
+                  icon={faYoutube}
+                  size="1x"
+                  className="hov-icon"
+                />
+                <FontAwesomeIcon
+                  icon={faFacebook}
+                  size="1x"
+                  className="hov-icon"
+                />
+                <FontAwesomeIcon
+                  icon={faTwitter}
+                  size="1x"
+                  className="hov-icon"
+                />
+                <FontAwesomeIcon
+                  icon={faInstagram}
+                  size="1x"
+                  className="hov-icon"
+                />
+                <FontAwesomeIcon
+                  icon={faLinkedin}
+                  size="1x"
+                  className="hov-icon"
+                />
               </div>
             </div>
           </div>
