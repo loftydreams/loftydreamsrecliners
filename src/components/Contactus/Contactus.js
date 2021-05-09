@@ -36,7 +36,7 @@ export default function Contactus() {
           </div>
         </div>
       </div>
-      <div>
+      <div className="contact-form">
           <Contactusform></Contactusform>
       </div>
       <div>
