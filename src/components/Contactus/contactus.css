@@ -1,0 +1,221 @@
+
+
+@media screen and (min-width:600px) {
+    .aboutus__top{
+        display: flex;
+        flex-direction: column;
+        
+        margin: 80px;
+    
+    }
+    
+    .aboutustop__first img{
+    
+        width: 100%;
+        height: 400px;
+        
+        object-fit: fill;
+    
+    }
+    .aboutustop__second{
+        display: flex;
+        justify-content: center;
+         font-family: "Lato", sans-serif;
+         background-color: rgb(244,244,244);
+        
+    }
+    
+    .top-first{
+    
+        
+        text-align: center;
+        background-color: rgb(255,255,255);
+        z-index: 1;
+        margin-top: -23px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+    }
+    
+    .top-first img{
+        width: 80px;
+        height: 80px;
+        margin: 6px auto;
+    }
+    
+    .top-second{
+    
+        margin-left: 30px;
+        text-align: center;
+        background-color:rgb(255,255,255);
+        z-index: 1;
+        margin-top: -23px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        
+        
+    }
+    .top-second  h1{
+        margin-bottom: .5rem;
+        font-weight: 100;
+         line-height: 2.2;
+         font-size: 17px !important;
+          color: black;
+
+    }
+    .top-first  h1{
+        margin-bottom: .5rem;
+        font-weight: 100;
+         line-height: 2.2;
+         font-size: 17px !important;
+          color: black;
+
+
+    }
+    .top-second  p{
+        font-size: 12px;
+        color: #595857;
+        padding: 6%;
+        font-weight: normal;
+        line-height: 1.5;
+        
+
+    }
+    .top-first  p{
+        font-size: 12px;
+        color: #595857;
+        padding: 6%;
+        font-weight: normal;
+        line-height: 1.5;
+        
+
+    }
+    
+    .top-second img{
+        width: 80px;
+        height: 80px;
+        margin: 1px auto;
+    }
+    .contact-btn{
+        
+        display: block;
+        margin: 50px auto;
+        padding: 4px;
+         color: #fff;
+         background-color:#d26e4b;
+         font-weight: 600;
+         border: 1px solid white;
+    }
+
+    
+}
+
+@media screen and (min-width:1010px){
+    .aboutus__top{
+        margin: 10px 200px;
+    }
+}
+
+@media  screen and  (max-width:600px){
+
+    .aboutus__top{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    
+    }
+    
+    .aboutustop__first img{
+    
+        width: 100%;
+        height: 205px;
+        
+        object-fit: cover;
+    
+    }
+    .aboutustop__second{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+         font-family: "Lato", sans-serif;
+         background-color: rgb(244,244,244);
+        
+    }
+    
+    .top-first{
+    
+        
+        text-align: center;
+        background-color: rgb(255,255,255);
+        border: 1px solid #8080802e;
+        
+        
+        
+    }
+    
+    .top-first img{
+        width: 80px;
+        height: 80px;
+        margin: 6px auto;
+    }
+    
+    .top-second{
+    
+        
+        text-align: center;
+        background-color:rgb(255,255,255);
+       border: 1px solid #8080802e;
+        
+        
+    }
+    .top-second  h1{
+        margin-bottom: .5rem;
+        font-weight: 100;
+         line-height: 2.2;
+         font-size: 17px !important;
+          color: black;
+
+    }
+    .top-first  h1{
+        margin-bottom: .5rem;
+        font-weight: 100;
+         line-height: 2.2;
+         font-size: 17px !important;
+          color: black;
+
+
+    }
+    .top-second  p{
+        font-size: 12px;
+        color: #595857;
+        padding: 6%;
+        font-weight: normal;
+        line-height: 1.5;
+        
+
+    }
+    .top-first  p{
+        font-size: 12px;
+        color: #595857;
+        padding: 6%;
+        font-weight: normal;
+        line-height: 1.5;
+        
+
+    }
+    
+    .top-second img{
+        width: 80px;
+        height: 80px;
+        margin: 1px auto;
+    }
+    .contact-btn{
+        
+        display: block;
+        margin: 50px auto;
+        padding: 4px;
+         color: #fff;
+         background-color:#d26e4b;
+         font-weight: 600;
+         border: 1px solid white;
+    }
+    
+}
