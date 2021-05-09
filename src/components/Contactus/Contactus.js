@@ -40,7 +40,7 @@ export default function Contactus() {
           <Contactusform></Contactusform>
       </div>
       <div>
-          <SimpleMap></SimpleMap>
+          
       </div>
     </div>
   );
