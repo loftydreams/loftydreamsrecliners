@@ -1,17 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import "./About.css";
 import { firestore } from "../../firebase";
 import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
+
+import "./About.css";
+
 export default function AboutUs() {
   const [image, loading] = useCollectionDataOnce(
-    firestore.collection("aboutusImage"),{ idField: "id" }
+    firestore.collection("aboutusImage"),
+    { idField: "id" }
   );
 
-
-
-
- 
   return (
     <div>
       <div className="aboutus__main">
@@ -71,7 +69,10 @@ export default function AboutUs() {
           <div className="aboutus_left_second">
             <div className="our_product_left">
               <h4 id="product">Our Products</h4>
-              <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/07/Single-Seater-Recliner-in-Black-Color-by-Lofty-Dreams-Recliners.jpg"  alt ="AvoutusRectiliner"/>
+              <img
+                src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/07/Single-Seater-Recliner-in-Black-Color-by-Lofty-Dreams-Recliners.jpg"
+                alt="AvoutusRectiliner"
+              />
             </div>
             <div className="our_product_right">
               <h4>Deals In all types of Recliner Chairs</h4>
@@ -80,7 +81,7 @@ export default function AboutUs() {
                 sofa for Home, Office, Home Theater Room, Multiplex, PVR, and
                 Cinema.{" "}
               </p>
-              <h4 >Our categories of the product are:</h4>
+              <h4>Our categories of the product are:</h4>
               <ul>
                 <li>Single Seater Recliner Chair</li>
                 <li>Home Theater Recliner Chair</li>
@@ -93,20 +94,27 @@ export default function AboutUs() {
         </div>
 
         <div className="aboutus__right">
-         
-         <ul className="aboutus__right_ul">
-         <a href="#about"  >    <li>About Us</li>  </a>
-         <a href="#vision"  >        <li>Our Vision</li> </a>
-         <a href="#whoweare"  >         <li>Who We Are</li> </a>
-         <a href="#whatwedo"  >         <li>What We Do</li> </a>
-         <a href="#product"  >         <li>Our Products</li> </a>
-            </ul>
-         
-       
-            <div className="aboutusimage">
-             
-            <img src="Images/aboutusL.jpg" alt="aboutUs"></img>
-            </div>
+          <ul className="aboutus__right_ul">
+            <a href="#about">
+              <li>About Us</li>
+            </a>
+            <a href="#vision">
+              <li>Our Vision</li>
+            </a>
+            <a href="#whoweare">
+              <li>Who We Are</li>
+            </a>
+            <a href="#whatwedo">
+              <li>What We Do</li>
+            </a>
+            <a href="#product">
+              <li>Our Products</li>
+            </a>
+          </ul>
+
+          <div className="aboutusimage">
+            {!loading && <img src={image[0]?.image} alt="aboutUs" />}
+          </div>
         </div>
       </div>
     </div>

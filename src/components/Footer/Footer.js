@@ -38,7 +38,7 @@ export const Footer = (props) => {
                 </li>
 
                 <li>
-                  <a href="#">Contact</a>
+                  <a href="/contactus">Contact</a>
                 </li>
                 <li>
                   <a href="#">Blog</a>
