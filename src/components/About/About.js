@@ -5,8 +5,7 @@ import { firestore } from "../../firebase";
 import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
 export default function AboutUs() {
   const [image, loading] = useCollectionDataOnce(
-    firestore.collection("aboutusImage"),
-    { idField: "id" }
+    firestore.collection("aboutusImage"),{ idField: "id" }
   );
 
 
