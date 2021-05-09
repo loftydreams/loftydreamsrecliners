@@ -110,7 +110,7 @@ export const Footer = (props) => {
             </div>
             <div className="footer-col">
               <h4>follow us</h4>
-              <div className="social-links">
+              <div className="social-links icons-color">
                 <a href="https://www.facebook.com/lofty9716180374/">
                   <FontAwesomeIcon
                     icon={faFacebook}
