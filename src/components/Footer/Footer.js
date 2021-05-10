@@ -14,6 +14,7 @@ import {
   faGoogle,
   faPinterest,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 export const Footer = (props) => {
   return (
@@ -34,17 +35,17 @@ export const Footer = (props) => {
               <ul>
                 <li>
                   {" "}
-                  <a href="/about"> About</a>{" "}
+                  <Link to="/about"> About</Link>{" "}
                 </li>
 
                 <li>
-                  <a href="/contactus">Contact</a>
+                  <Link to="/contactus">Contact</Link>
                 </li>
                 <li>
-                  <a href="/#">Blog</a>
+                  <Link to="/#">Blog</Link>
                 </li>
                 <li>
-             <a href="/testimonial">Testimonial</a>
+             <Link to="/testimonial">Testimonial</Link>
                 </li>
               </ul>
             </div>
@@ -52,27 +53,27 @@ export const Footer = (props) => {
               <h4 className="footer_p">Need help?</h4>
               <ul className="ul need-help-ul">
                 <li>
-                  <a href="/#">FAQ</a>
+                  <Link to="/#">FAQ</Link>
                 </li>
                 <li>
-                  <a href="/privacy-policy">Privacy Policy</a>
+                  <Link to="/privacy-policy">Privacy Policy</Link>
                 </li>
                 <li>
-                  <a href="/terms-and-condition">Terms and Condition</a>
+                  <Link to="/terms-and-condition">Terms and Condition</Link>
                 </li>
                 <li>
-                  <a href="/payment-security-policy">
+                  <Link to="/payment-security-policy"> 
                     Payment and Security Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/shipping-policy">Shipping and Delivery Policy</a>
+                  <Link to="/shipping-policy">Shipping and Delivery Policy</Link>
                 </li>
                 <li>
-                  <a href="/my-account">My Account</a>
+                  <Link  to="/my-account">My Account</Link>
                 </li>
                 <li>
-                  <a href="/track-order">Track Your order</a>
+                  <Link to="/track-order">Track Your order</Link>
                 </li>
               </ul>
             </div>
