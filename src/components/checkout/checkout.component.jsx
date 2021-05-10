@@ -26,7 +26,7 @@ const CheckoutPage = ({ cartItems, total }) => {
 
   return (
     <>
-    <img src="https://damroindia.com/media/bsimages/Main_Banner_1_1_.jpg" className="ad-banner"/> 
+    <img src="https://damroindia.com/media/bsimages/Main_Banner_1_1_.jpg" alt=""className="ad-banner"/> 
     <div className={classes.root}>
       
       <Breadcrumbs separator=">" aria-label="breadcrumb">
