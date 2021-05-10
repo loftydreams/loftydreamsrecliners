@@ -252,3 +252,28 @@ img {
     display: block;
   }
 }
+
+.relatedh2{
+  text-align: left;
+  padding-left: 40px;
+  padding-top: 20px;
+
+
+}
+.qualityPromise {
+  
+  list-style:disc !important;
+  
+}
+.termsheading{
+  text-align: left !important;
+   font-size: 15px;
+}
+
+.terms ul li{
+  font-size: 14px;
+  
+}
+.terms ul{
+  margin-left: 30px;
+}
