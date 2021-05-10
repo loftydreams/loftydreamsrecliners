@@ -175,28 +175,10 @@ img {
 .purchase-info .btn:hover {
   opacity: 0.9;
 }
+
 .social-links {
   display: flex;
   align-items: center;
-}
-.social-links a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  color: #000;
-  border: 1px solid #000;
-  margin: 0 0.2rem;
-  border-radius: 50%;
-
-  font-size: 0.8rem;
-  transition: all 0.5s ease;
-}
-.social-links a:hover {
-  background: #000;
-  border-color: transparent;
-  color: #fff;
 }
 
 @media screen and (min-width: 992px) {
@@ -253,27 +235,22 @@ img {
   }
 }
 
-.relatedh2{
+.relatedh2 {
   text-align: left;
   padding-left: 40px;
   padding-top: 20px;
-
-
 }
 .qualityPromise {
-  
-  list-style:disc !important;
-  
+  list-style: disc !important;
 }
-.termsheading{
+.termsheading {
   text-align: left !important;
-   font-size: 15px;
+  font-size: 15px;
 }
 
-.terms ul li{
+.terms ul li {
   font-size: 14px;
-  
 }
-.terms ul{
+.terms ul {
   margin-left: 30px;
 }

@@ -71,15 +71,18 @@ export default function SwipeableTemporaryDrawer() {
     >
       <List>
         {[
-          "Single Seater Recliners",
-          "Living Room Recliners",
-          "Home Theater Recliners",
-          "Lounger Sofa",
-          "Riser Recliner",
-          "Recliner Chair & Sofa"
-        ].map((text, index) => (
-          <ListItem button key={text}>
-            <ListItemText primary={text} />
+          { text: "Single Seater Recliners", link: "/single-seater" },
+          { text: "Living Room Recliners", link: "/living-room" },
+          { text: "Home Theater Recliners", link: "/home-theater" },
+          { text: "Lounger Sofa", link: "/lounger" },
+          { text: "Riser Recliner", link: "/riser" },
+        ].map((item) => (
+          <ListItem
+            button
+            key={item.text}
+            onClick={() => history.push(item.link)}
+          >
+            <ListItemText primary={item.text} />
           </ListItem>
         ))}
       </List>
