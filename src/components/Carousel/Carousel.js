@@ -12,7 +12,7 @@ const CarouselContainer = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h2 style={{color:"black"}}  > <strong> HUGE SALE UPTO 35% OFF  </strong> </h2>
+          <h2 style={{color:"black"}}  > <strong>  </strong> </h2>
           <h4 style={{color:"black"}}> </h4>
         </Carousel.Caption>
       </Carousel.Item>
@@ -23,7 +23,7 @@ const CarouselContainer = () => {
           alt="Third slide"
         />
         <Carousel.Caption>
-        <h3 style={{color:"black"}}>   <strong> FOR YOUR CUSTOM NEEDS  </strong>   </h3>
+        <h3 style={{color:"black"}}>   <strong>   </strong>   </h3>
           <h4 style={{color:"black"}}>                   </h4>
         </Carousel.Caption>
       </Carousel.Item>
@@ -35,8 +35,8 @@ const CarouselContainer = () => {
         />
         <Carousel.Caption>
           
-          <h2 style={{color:"black"}}>    <strong> HAND CRAFTED RECLINER SOFA </strong>   </h2>
-          <h4 style={{color:"black"}}> Now customize your recliner as per your requirement directly from Recliner Manufacturers </h4>
+          <h2 style={{color:"black"}}>    <strong>  </strong>   </h2>
+          <h4 style={{color:"black"}}> </h4>
         </Carousel.Caption>
       </Carousel.Item>
       
