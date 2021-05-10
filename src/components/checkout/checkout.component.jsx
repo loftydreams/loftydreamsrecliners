@@ -25,7 +25,10 @@ const CheckoutPage = ({ cartItems, total }) => {
   const classes = useStyles();
 
   return (
+    <>
+    <img src="https://damroindia.com/media/bsimages/Main_Banner_1_1_.jpg" className="ad-banner"/> 
     <div className={classes.root}>
+      
       <Breadcrumbs separator=">" aria-label="breadcrumb">
         <Link color="inherit" href="/" aria-current="page">
           Shopping Cart
@@ -60,6 +63,7 @@ const CheckoutPage = ({ cartItems, total }) => {
         <CheckoutTotal total={total} />
       </div>
     </div>
+    </>
   );
 };
 
