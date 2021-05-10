@@ -1,7 +1,7 @@
 import React from "react";
 import "./contactus.css";
 import  Contactusform from "./Contactusform"
-import SimpleMap from "./SimpleMap";
+
 export default function Contactus() {
   return (
     <div>
@@ -16,7 +16,7 @@ export default function Contactus() {
         </div>
         <div className="aboutustop__second">
           <div className="top-first">
-            <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/05/contact-page-for-flatsome-wordpress-theme-pointed-icon-phone-400x400.png"></img>
+            <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/05/contact-page-for-flatsome-wordpress-theme-pointed-icon-phone-400x400.png" alt=""></img>
             <h1> Talk to sales </h1>
             <p>
               {" "}
@@ -26,7 +26,7 @@ export default function Contactus() {
             <button className="contact-btn">09310484130</button>
           </div>
           <div className="top-second">
-            <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/05/contact-page-for-flatsome-wordpress-theme-pointed-icon-chat-400x400.png"></img>
+            <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/05/contact-page-for-flatsome-wordpress-theme-pointed-icon-chat-400x400.png" alt=""></img>
             <h1> Contact support</h1>
             <p>
               {" "}
