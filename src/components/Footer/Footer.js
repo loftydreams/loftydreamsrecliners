@@ -1,9 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import "./footer.css";
-import { HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi";
-import { BiPhone } from "react-icons/bi";
-import { Button } from "@material-ui/core";
+
+
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faYoutube,
@@ -41,7 +41,7 @@ export const Footer = (props) => {
                   <a href="/contactus">Contact</a>
                 </li>
                 <li>
-                  <a href="#">Blog</a>
+                  <a href="/#">Blog</a>
                 </li>
                 <li>
              <a href="/testimonial">Testimonial</a>
@@ -52,7 +52,7 @@ export const Footer = (props) => {
               <h4 className="footer_p">Need help?</h4>
               <ul className="ul need-help-ul">
                 <li>
-                  <a href="#">FAQ</a>
+                  <a href="/#">FAQ</a>
                 </li>
                 <li>
                   <a href="/privacy-policy">Privacy Policy</a>
@@ -111,45 +111,45 @@ export const Footer = (props) => {
             <div className="footer-col">
               <h4>follow us</h4>
               <div className="social-icons">
-            <a href="https://www.youtube.com/channel/UCWnQE20f8xJTeXGIfjeAdYg" target="_blank" className="youtube social">
+            <a href="https://www.youtube.com/channel/UCWnQE20f8xJTeXGIfjeAdYg" target="_blank" className="youtube social" rel="noreferrer">
               <FontAwesomeIcon
                 icon={faYoutube}
                 size="1x"
                 className="hov-icon"
               />
             </a>
-            <a href="https://www.facebook.com/lofty9716180374/" target="_blank" className="youtube social">
+            <a href="https://www.facebook.com/lofty9716180374/" target="_blank" className="youtube social" rel="noreferrer">
               <FontAwesomeIcon
                 icon={faFacebook}
                 size="1x"
                 className="hov-icon"
               />
             </a>{" "}
-            <a href="https://twitter.com/sumitoj80401927" target="_blank" className="youtube social">
+            <a href="https://twitter.com/sumitoj80401927" target="_blank" className="youtube social" rel="noreferrer">
               <FontAwesomeIcon
                 icon={faTwitter}
                 size="1x"
                 className="hov-icon"
               />
             </a>{" "}
-            <a href="https://www.instagram.com/loftydreams18" target="_blank"  className="youtube social">
+            <a href="https://www.instagram.com/loftydreams18" target="_blank"  className="youtube social" rel="noreferrer">
               <FontAwesomeIcon
                 icon={faInstagram}
                 size="1x"
                 className="hov-icon"
               />
             </a>{" "}
-            <a href="https://www.linkedin.com/in/sumit-ojha-064172160" target="_blank" className="youtube social">
+            <a href="https://www.linkedin.com/in/sumit-ojha-064172160" target="_blank" className="youtube social" rel="noreferrer">
               <FontAwesomeIcon
                 icon={faLinkedin}
                 size="1x"
                 className="hov-icon"
               />
             </a>{" "}
-            <a href="mailto:loftydreams18@gmail.com" target="_blank" className="youtube social">
+            <a href="mailto:loftydreams18@gmail.com" target="_blank" className="youtube social" rel="noreferrer">
               <FontAwesomeIcon icon={faGoogle} size="1x" className="hov-icon" />
             </a>{" "}
-            <a href="https://in.pinterest.com/loftydreams18/" target="_blank" className="youtube social">
+            <a href="https://in.pinterest.com/loftydreams18/" target="_blank" className="youtube social" rel="noreferrer">
               <FontAwesomeIcon
                 icon={faPinterest}
                 size="1x"

@@ -167,7 +167,7 @@ const ProductPage = ({ addItem }) => {
 
             <div className="product-content">
               <h2 className="product-title">{product?.name}</h2>
-              <a href="#" className="product-link">
+              <a href="/" className="product-link">
                 visit store
               </a>
               <div className="product-rating">
