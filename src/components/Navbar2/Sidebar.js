@@ -22,7 +22,7 @@ import { auth, signInWithGoogle } from "../../firebase";
 
 const useStyles = makeStyles({
   list: {
-    width: 210,
+    width: 240,
   },
   fullList: {
     width: "auto",
