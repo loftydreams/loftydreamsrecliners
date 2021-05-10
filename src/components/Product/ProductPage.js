@@ -15,6 +15,7 @@ import { firestore } from "../../firebase";
 import ProductMenu from "./ProductMenu";
 import ProductAccordion from "./ProductAccordian";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CardCollection from "../Card/CardCollection"
 import {
   faYoutube,
   faFacebook,
@@ -260,7 +261,10 @@ const ProductPage = ({ addItem }) => {
             description={product?.description}
           />
         </div>
+        <h2 className="relatedh2">RELATED PRODUCTS</h2>
+        <CardCollection></CardCollection>
       </div>
+
     )
   );
 };
