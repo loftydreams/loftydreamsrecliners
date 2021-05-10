@@ -40,7 +40,7 @@ const Navbar1 = () => {
             <Link to="/about">
               <span> About</span>{" "}
             </Link>
-            <span> Contact </span>
+          <Link to="/contactus"> <span> Contact </span> </Link> 
             <Link to="/feedback">
               {" "}
               <span> Feedback </span>{" "}

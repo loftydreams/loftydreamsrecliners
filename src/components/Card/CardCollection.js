@@ -36,7 +36,7 @@ function CardCollection({ heading, topSelling, topDiscount }) {
           autoplay={true}
           responsiveClass={true}
           nav={true}
-          dots={true}
+        
           autoplayHoverPause={true}
           autoplayTimeout={3000}
           responsive={{
