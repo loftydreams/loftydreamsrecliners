@@ -66,7 +66,7 @@ export const Footer = (props) => {
                   </a>
                 </li>
                 <li>
-                  <a href="#">Shipping and Delivery Policy</a>
+                  <a href="/shipping-policy">Shipping and Delivery Policy</a>
                 </li>
                 <li>
                   <a href="/my-account">My Account</a>

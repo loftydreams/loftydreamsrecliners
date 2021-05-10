@@ -25,11 +25,11 @@ import Riser from "./components/CategoryPage/Riser";
 import Electric from "./components/CategoryPage/Electric";
 import Manual from "./components/CategoryPage/Manual";
 import SearchResults from "./components/search-products/search-results";
-
 import "./App.css";
 import Feedback from "./components/Navbar1/Feedback";
 import { Testimonial } from "./components/Testimonial/Testimonial";
 import Contactus from "./components/Contactus/Contactus";
+import { ShippingPolicy } from "./components/ShippingPolicy/ShippingPolicy";
 
 function App() {
   return (
@@ -111,6 +111,9 @@ function App() {
         </Route>
         <Route path="/testimonial">
           <Testimonial />
+        </Route>
+        <Route path="/shipping-policy">
+          <ShippingPolicy />
         </Route>
         
         <Route path="*">
