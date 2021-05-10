@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import { useDocumentDataOnce } from "react-firebase-hooks/firestore";
 import { useParams } from "react-router-dom";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
+import Button from "@material-ui/core/Button";
 import IconButton from "@material-ui/core/IconButton";
 import ZoomInIcon from "@material-ui/icons/ZoomIn";
 import ZoomOutIcon from "@material-ui/icons/ZoomOut";
@@ -13,16 +14,9 @@ import { addItem } from "../../redux/cart/cart.actions";
 import { firestore } from "../../firebase";
 
 import ProductMenu from "./ProductMenu";
+import ProductShare from "./ProductShare";
 import ProductAccordion from "./ProductAccordian";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import CardCollection from "../Card/CardCollection"
-import {
-  faYoutube,
-  faFacebook,
-  faTwitter,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import RelatedProducts from "./RelatedProducts";
 
 import "./ProductPage.css";
 
@@ -40,8 +34,6 @@ const ProductPage = ({ addItem }) => {
   };
 
   const sp = product?.price - (product?.price * product?.discount) / 100;
-
-  console.log(product);
 
   const ratedStars = (rating) => {
     let stars = "";
@@ -167,9 +159,9 @@ const ProductPage = ({ addItem }) => {
 
             <div className="product-content">
               <h2 className="product-title">{product?.name}</h2>
-              <a href="#" className="product-link">
+              <Button variant="contained" color="primary" size="small">
                 visit store
-              </a>
+              </Button>
               <div className="product-rating">
                 {ratedStars(product?.rating)}
                 <span>{product?.rating}</span>
@@ -219,32 +211,8 @@ const ProductPage = ({ addItem }) => {
               </div>
 
               <div className="social-links">
-                <p>Share At: </p>
-                <FontAwesomeIcon
-                  icon={faYoutube}
-                  size="1x"
-                  className="hov-icon"
-                />
-                <FontAwesomeIcon
-                  icon={faFacebook}
-                  size="1x"
-                  className="hov-icon"
-                />
-                <FontAwesomeIcon
-                  icon={faTwitter}
-                  size="1x"
-                  className="hov-icon"
-                />
-                <FontAwesomeIcon
-                  icon={faInstagram}
-                  size="1x"
-                  className="hov-icon"
-                />
-                <FontAwesomeIcon
-                  icon={faLinkedin}
-                  size="1x"
-                  className="hov-icon"
-                />
+                <span>Share At: </span>
+                <ProductShare name={product?.name} />
               </div>
             </div>
           </div>
@@ -261,10 +229,8 @@ const ProductPage = ({ addItem }) => {
             description={product?.description}
           />
         </div>
-        <h2 className="relatedh2">RELATED PRODUCTS</h2>
-        <CardCollection></CardCollection>
+        <RelatedProducts category={product?.category} />
       </div>
-
     )
   );
 };
