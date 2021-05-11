@@ -98,7 +98,28 @@ export default function ProductMenu({ name, description }) {
         )}
       </TabPanel>
       <TabPanel value={value} index={1}>
-        Item Two
+         <ul className="makeStyles-list-10 accordianitems">
+          <li>
+            All Upholstery snag effectively and can be harmed by sharp-edged
+            knife, toys, jewelry, clasps, and pets. Snags, when they do happen,
+            ought to be cut utilizing scissors. By no means should you endeavor
+            to pull it out.
+          </li>
+          <li>
+            Exposure of Direct Sunlight over a long period of time results in
+            the lightning of color of upholstery(light in color) and
+            additionally may reduce the life span of upholstery. When arranging
+            your room, orchestrate your furniture so it is shielded from
+            sunlight.
+          </li>
+          <li>
+            Clean your upholstery once per week with a delicate brush or vacuum
+            cleaner as collected soil or dirt will quicken wear and dull the
+            colors.
+          </li>
+          <li> Carefully abstain from using bleach when washing your upholstery.</li>
+          <li>To prevent leatherette from cracking or peeling, Vinyl conditioner or leather conditioner needs to be applied to the Leatherette every 3 to 4 months for a long product life.</li>
+        </ul>
       </TabPanel>
       <TabPanel value={value} index={2} className="terms">
         <h6 className="termsheading">

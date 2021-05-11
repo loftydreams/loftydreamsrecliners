@@ -164,17 +164,17 @@ const ProductPage = ({ addItem }) => {
               </Button>
               <div className="product-rating">
                 {ratedStars(product?.rating)}
-                <span>{product?.rating}</span>
+                
               </div>
 
               <div className="product-price">
                 <p className="last-price">
-                  Old Price: <span>{product?.price}</span>
+                  Old Price: <span>₹{product?.price}</span>
                 </p>
                 <p className="new-price">
                   New Price:{" "}
                   <span>
-                    {sp} ({product?.discount}%)
+                    ₹{sp} ({product?.discount}%) 
                   </span>
                 </p>
               </div>
