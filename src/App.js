@@ -2,6 +2,7 @@ import { Switch, Route } from "react-router-dom";
 import Navbar1 from "./components/Navbar1/Navbar1";
 import Navbar2 from "./components/Navbar2/Navbar2";
 import Navbar3 from "./components/Navbar3/Navbar3";
+import ChatContainer from "./components/chat-bot/chat-icon";
 import { Footer } from "./components/Footer/Footer";
 import { Review } from "./components/Review/Review";
 import Contact from "./components/contact/Contact";
@@ -25,11 +26,12 @@ import Riser from "./components/CategoryPage/Riser";
 import Electric from "./components/CategoryPage/Electric";
 import Manual from "./components/CategoryPage/Manual";
 import SearchResults from "./components/search-products/search-results";
-import "./App.css";
 import Feedback from "./components/Navbar1/Feedback";
 import { Testimonial } from "./components/Testimonial/Testimonial";
 import Contactus from "./components/Contactus/Contactus";
 import { ShippingPolicy } from "./components/ShippingPolicy/ShippingPolicy";
+
+import "./App.css";
 
 function App() {
   return (
@@ -37,6 +39,7 @@ function App() {
       <Navbar1 />
       <Navbar2 />
       <Navbar3 />
+      <ChatContainer />
       <Switch>
         <Route path="/" exact>
           <CarouselContainer />
@@ -62,7 +65,7 @@ function App() {
           <AboutUs />
         </Route>
         <Route path="/contactus">
-          <Contactus/>
+          <Contactus />
         </Route>
         <Route path="/privacy-policy">
           <PrivacyPolicy />
@@ -115,7 +118,7 @@ function App() {
         <Route path="/shipping-policy">
           <ShippingPolicy />
         </Route>
-        
+
         <Route path="*">
           <h1>Error 404: Page not found</h1>
         </Route>
