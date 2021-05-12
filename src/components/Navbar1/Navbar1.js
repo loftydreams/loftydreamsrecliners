@@ -22,9 +22,9 @@ const Navbar1 = () => {
       <div className="navbar1-body">
         <div className="topbar-left">
           <div className="amazon-btn">
-            <Button variant="contained" className="amazon" color="secondary" href="https://www.amazon.in/s?me=A1YF33ZDTB7JEG&marketplaceID=A21TJRUUN4KGV" target="_blank" style={{fontSize : 12}} rel="noreferrer">
+            <Button variant="contained" className="amazon" href="https://www.amazon.in/s?me=A1YF33ZDTB7JEG&marketplaceID=A21TJRUUN4KGV" target="_blank" style={{fontSize : 12}} rel="noreferrer">
          
-              Buy from amazon.in
+              buy from amazon.in
             </Button>
           </div>
 

@@ -6,18 +6,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
   background-color: white;
+  
 }
 .navbar3-body span {
-  margin-right: 20px;
-  margin-left: 10px;
+  margin-right: 11px;
+  margin-left: 14px;
   font-size: 16px;
   color: rgb(73, 72, 72);
   font-family: "Barlow Semi Condensed", sans-serif;
+  padding-left: 20px;
+
 }
 .navbar3-body span:hover {
-  border-bottom: 2px solid rgb(180, 211, 80);
+
   cursor: pointer;
 }
 .hr-bottom {
@@ -49,7 +51,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .navbar3-body {
     display: none;
   }
