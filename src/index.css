@@ -8,4 +8,7 @@
   
 
 }
-
+body
+{
+  background-image: url("bgimage.png");
+}
