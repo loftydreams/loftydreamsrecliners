@@ -28,8 +28,9 @@ ul{
 	margin-left: 0px;
 }
 .footer{
-	background-color: #446084;
+	background-image: url("footer.png");
     padding: 70px 0;
+
 	
 }
 .footer-col{
