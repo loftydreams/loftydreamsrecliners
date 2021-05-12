@@ -30,6 +30,7 @@ import Feedback from "./components/Navbar1/Feedback";
 import { Testimonial } from "./components/Testimonial/Testimonial";
 import Contactus from "./components/Contactus/Contactus";
 import { ShippingPolicy } from "./components/ShippingPolicy/ShippingPolicy";
+import { Navbar4 } from "./components/Navbar4/Navbar4";
 
 import "./App.css";
 
@@ -40,6 +41,7 @@ function App() {
       <Navbar2 />
       <Navbar3 />
       <ChatContainer />
+      <Navbar4></Navbar4>
       <Switch>
         <Route path="/" exact>
           <CarouselContainer />

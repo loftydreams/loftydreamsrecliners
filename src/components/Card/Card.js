@@ -47,7 +47,7 @@ function Card({ id, src, name, category, price, discount, rating, addItem }) {
           <span className="top-heading">{category}</span>
           <h5 className="product-name">{name}</h5>
           <span className="h5-position">
-            <del className="price-cut"> ₹{price} </del> ₹{sp.toFixed(2)}
+            <del className="price-cut"> ₹{price} </del>  <strong> ₹{sp.toFixed(2)} </strong>
             <span> {ratedStars(rating)} </span>
           </span>
           {added ? (
