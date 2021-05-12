@@ -30,6 +30,7 @@ import Feedback from "./components/Navbar1/Feedback";
 import { Testimonial } from "./components/Testimonial/Testimonial";
 import Contactus from "./components/Contactus/Contactus";
 import { ShippingPolicy } from "./components/ShippingPolicy/ShippingPolicy";
+import { Navbar4 } from "./components/Navbar4/Navbar4";
 
 function App() {
   return (
@@ -37,6 +38,7 @@ function App() {
       <Navbar1 />
       <Navbar2 />
       <Navbar3 />
+      <Navbar4></Navbar4>
       <Switch>
         <Route path="/" exact>
           <CarouselContainer />
