@@ -174,7 +174,7 @@ const ProductPage = ({ addItem }) => {
                 <p className="new-price">
                   New Price:{" "}
                   <span>
-                    ₹{sp} ({product?.discount}%) 
+                    ₹{sp.toFixed(2)} ({product?.discount}%) 
                   </span>
                 </p>
               </div>
