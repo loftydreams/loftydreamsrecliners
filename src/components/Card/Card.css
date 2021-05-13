@@ -2,7 +2,7 @@
     background-color: white;
     border-radius: 10px;
     width: 240px;
-    height: 400px;
+    height: 410px;
     margin: 7px;
     position: relative;
  
@@ -93,7 +93,7 @@ border-radius: 15px;
 {
   .card-body{
     width:184px;
-    height: 320px;
+    height: 330px;
   }
   
   .card-body img
