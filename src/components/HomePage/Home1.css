@@ -30,6 +30,7 @@ width: 30%;
     font-size: 22px;
     border-bottom: 1px solid black;
     margin-bottom: 25px;
+    font-weight: 800;
 }
 
 .home1-p
@@ -39,6 +40,7 @@ width: 30%;
     text-align: center;
     padding: 34px;
     text-align: left;
+    font-weight: 600;
 }
 @media (max-width:768px)
 {
