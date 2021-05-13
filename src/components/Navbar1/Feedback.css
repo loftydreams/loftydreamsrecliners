@@ -8,6 +8,8 @@
 }
 .feedback-wrapper h2{
     margin-bottom: 3%;
+    font-family: "Mr Eaves XL Modern", sans-serif;
+    font-weight: 400;
 }
 
 @media (max-width: 600px) {

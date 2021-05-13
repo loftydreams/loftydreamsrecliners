@@ -3,11 +3,14 @@
     width: 100%;
     padding-left: 10%;
     padding-right: 10%;
+    margin-top: 20px;
 }
 .shipping-policy h3
 {
     text-align: center;
     margin-bottom: 10px;
+    font-family: "Mr Eaves XL Modern", sans-serif;
+    color: #E57200;
 }
 .shipping-policy ul ,p
 {
