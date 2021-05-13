@@ -28,8 +28,9 @@ ul{
 	margin-left: 0px;
 }
 .footer{
-	background-color: #446084;
+	background-image: url("footer.png");
     padding: 70px 0;
+
 	
 }
 .footer-col{
@@ -63,6 +64,8 @@ ul{
 	text-align: left;
 	display: block;
 	transition: all 0.3s ease;
+	font-family: "Mr Eaves XL Modern", sans-serif;
+	
 }
 .footer-col ul li a:hover{
 	color:white;

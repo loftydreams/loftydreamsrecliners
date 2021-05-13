@@ -76,6 +76,7 @@ export default function SwipeableTemporaryDrawer() {
           { text: "Home Theater Recliners", link: "/home-theater" },
           { text: "Lounger Sofa", link: "/lounger" },
           { text: "Riser Recliner", link: "/riser" },
+          {text: "Feedback" , link:"/feedback"}
         ].map((item) => (
           <ListItem
             button

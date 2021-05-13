@@ -30,6 +30,8 @@ width: 30%;
     font-size: 22px;
     border-bottom: 1px solid black;
     margin-bottom: 25px;
+    font-weight: 500;
+    font-family: "Mr Eaves XL Modern", sans-serif;
 }
 
 .home1-p
@@ -39,8 +41,10 @@ width: 30%;
     text-align: center;
     padding: 34px;
     text-align: left;
+    font-weight: 400;
+
 }
-@media (max-width:768px)
+@media (max-width:815px)
 {
    .home1-body
    {
