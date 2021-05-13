@@ -67,7 +67,7 @@ function Card({ id, src, name, category, price, discount, rating, addItem }) {
               }}
               variant="contained"
               color="primary"
-              size="small"
+              size="large"
               className="add-to-cart-btn"
             >
               Add to Cart
