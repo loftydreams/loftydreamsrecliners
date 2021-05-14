@@ -15,7 +15,6 @@ import { Home2 } from "./components/HomePage/Home2";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
 import ProductPage from "./components/Product/ProductPage";
 import TrackOurOrder from "./components/TrackOrder/TrackOurOrder";
-import MyAccount from "./components/MyAccount/MyAccount";
 import TermsAndCondition from "./components/TermsAndCondition/TermsAndCondition";
 import PaymentPolicy from "./components/Payment Policy/PaymentPolicy";
 import { SingleSeater } from "./components/CategoryPage/SingleSeater";
@@ -77,9 +76,6 @@ function App() {
         </Route>
         <Route path="/payment-security-policy">
           <PaymentPolicy />
-        </Route>
-        <Route path="/my-account">
-          <MyAccount />
         </Route>
         <Route path="/track-order">
           <TrackOurOrder />
