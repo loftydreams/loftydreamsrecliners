@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar1.css";
 
 import { HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi";
-import { BiPhone } from "react-icons/bi";
+import { BiPhone , BiHome} from "react-icons/bi";
 import { Button } from "@material-ui/core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -32,11 +32,15 @@ const Navbar1 = () => {
             <a  className="social-icons" href="https://www.google.com/maps?q=Block+k-2/6+lane+no-1,+near+Amrita+Public+School,+Sangam+Vihar,+New+Delhi,+Delhi+110080 " target="_blank" rel="noreferrer"><HiOutlineLocationMarker className="icon" /></a>
             <a  className="social-icons"  href="tel:+91 9899027251" target="_blank" rel="noreferrer">  <BiPhone  className="icon" /></a>
             <a className="social-icons"  href="mailto:loftydreams18@gmail.com" target="_blank" rel="noreferrer"><HiOutlineMail className="icon" /></a>
-            
+            <Link to="/"><BiHome className="icon" /> </Link>
           </div>
         </div>
         <div className="topbar-right">
           <div className="topbar-span">
+          <Link to="/">
+              {" "}
+              <span> Home </span>{" "}
+            </Link>
             <Link to="/about">
               <span> About</span>{" "}
             </Link>
