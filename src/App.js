@@ -2,6 +2,7 @@ import { Switch, Route } from "react-router-dom";
 import Navbar1 from "./components/Navbar1/Navbar1";
 import Navbar2 from "./components/Navbar2/Navbar2";
 import Navbar3 from "./components/Navbar3/Navbar3";
+import ChatContainer from "./components/chat-bot/chat-icon";
 import { Footer } from "./components/Footer/Footer";
 import { Review } from "./components/Review/Review";
 import Contact from "./components/contact/Contact";
@@ -14,7 +15,6 @@ import { Home2 } from "./components/HomePage/Home2";
 import PrivacyPolicy from "./components/PrivacyPolicy/PrivacyPolicy";
 import ProductPage from "./components/Product/ProductPage";
 import TrackOurOrder from "./components/TrackOrder/TrackOurOrder";
-import MyAccount from "./components/MyAccount/MyAccount";
 import TermsAndCondition from "./components/TermsAndCondition/TermsAndCondition";
 import PaymentPolicy from "./components/Payment Policy/PaymentPolicy";
 import { SingleSeater } from "./components/CategoryPage/SingleSeater";
@@ -25,12 +25,13 @@ import Riser from "./components/CategoryPage/Riser";
 import Electric from "./components/CategoryPage/Electric";
 import Manual from "./components/CategoryPage/Manual";
 import SearchResults from "./components/search-products/search-results";
-import "./App.css";
 import Feedback from "./components/Navbar1/Feedback";
 import { Testimonial } from "./components/Testimonial/Testimonial";
 import Contactus from "./components/Contactus/Contactus";
 import { ShippingPolicy } from "./components/ShippingPolicy/ShippingPolicy";
 import { Navbar4 } from "./components/Navbar4/Navbar4";
+
+import "./App.css";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
       <Navbar1 />
       <Navbar2 />
       <Navbar3 />
+      <ChatContainer />
       <Navbar4></Navbar4>
       <Switch>
         <Route path="/" exact>
@@ -64,7 +66,7 @@ function App() {
           <AboutUs />
         </Route>
         <Route path="/contactus">
-          <Contactus/>
+          <Contactus />
         </Route>
         <Route path="/privacy-policy">
           <PrivacyPolicy />
@@ -74,9 +76,6 @@ function App() {
         </Route>
         <Route path="/payment-security-policy">
           <PaymentPolicy />
-        </Route>
-        <Route path="/my-account">
-          <MyAccount />
         </Route>
         <Route path="/track-order">
           <TrackOurOrder />
@@ -117,7 +116,7 @@ function App() {
         <Route path="/shipping-policy">
           <ShippingPolicy />
         </Route>
-        
+
         <Route path="*">
           <h1>Error 404: Page not found</h1>
         </Route>

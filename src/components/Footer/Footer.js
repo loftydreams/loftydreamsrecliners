@@ -2,8 +2,6 @@ import React from "react";
 
 import "./footer.css";
 
-
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faYoutube,
@@ -45,7 +43,7 @@ export const Footer = (props) => {
                   <Link to="/#">Blog</Link>
                 </li>
                 <li>
-             <Link to="/testimonial">Testimonial</Link>
+                  <Link to="/testimonial">Testimonial</Link>
                 </li>
               </ul>
             </div>
@@ -62,15 +60,14 @@ export const Footer = (props) => {
                   <Link to="/terms-and-condition">Terms and Condition</Link>
                 </li>
                 <li>
-                  <Link to="/payment-security-policy"> 
+                  <Link to="/payment-security-policy">
                     Payment and Security Policy
                   </Link>
                 </li>
                 <li>
-                  <Link to="/shipping-policy">Shipping and Delivery Policy</Link>
-                </li>
-                <li>
-                  <Link  to="/my-account">My Account</Link>
+                  <Link to="/shipping-policy">
+                    Shipping and Delivery Policy
+                  </Link>
                 </li>
                 <li>
                   <Link to="/track-order">Track Your order</Link>
@@ -112,52 +109,91 @@ export const Footer = (props) => {
             <div className="footer-col">
               <h4>follow us</h4>
               <div className="social-icons">
-            <a href="https://www.youtube.com/channel/UCWnQE20f8xJTeXGIfjeAdYg" target="_blank" className="youtube social" rel="noreferrer">
-              <FontAwesomeIcon
-                icon={faYoutube}
-                size="1x"
-                className="hov-icon"
-              />
-            </a>
-            <a href="https://www.facebook.com/lofty9716180374/" target="_blank" className="youtube social" rel="noreferrer">
-              <FontAwesomeIcon
-                icon={faFacebook}
-                size="1x"
-                className="hov-icon"
-              />
-            </a>{" "}
-            <a href="https://twitter.com/sumitoj80401927" target="_blank" className="youtube social" rel="noreferrer">
-              <FontAwesomeIcon
-                icon={faTwitter}
-                size="1x"
-                className="hov-icon"
-              />
-            </a>{" "}
-            <a href="https://www.instagram.com/loftydreams18" target="_blank"  className="youtube social" rel="noreferrer">
-              <FontAwesomeIcon
-                icon={faInstagram}
-                size="1x"
-                className="hov-icon"
-              />
-            </a>{" "}
-            <a href="https://www.linkedin.com/in/sumit-ojha-064172160" target="_blank" className="youtube social" rel="noreferrer">
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                size="1x"
-                className="hov-icon"
-              />
-            </a>{" "}
-            <a href="mailto:loftydreams18@gmail.com" target="_blank" className="youtube social" rel="noreferrer">
-              <FontAwesomeIcon icon={faGoogle} size="1x" className="hov-icon" />
-            </a>{" "}
-            <a href="https://in.pinterest.com/loftydreams18/" target="_blank" className="youtube social" rel="noreferrer">
-              <FontAwesomeIcon
-                icon={faPinterest}
-                size="1x"
-                className="hov-icon"
-              />
-            </a>
-          </div>
+                <a
+                  href="https://www.youtube.com/channel/UCWnQE20f8xJTeXGIfjeAdYg"
+                  target="_blank"
+                  className="youtube social"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faYoutube}
+                    size="1x"
+                    className="hov-icon"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/lofty9716180374/"
+                  target="_blank"
+                  className="youtube social"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    size="1x"
+                    className="hov-icon"
+                  />
+                </a>{" "}
+                <a
+                  href="https://twitter.com/sumitoj80401927"
+                  target="_blank"
+                  className="youtube social"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    size="1x"
+                    className="hov-icon"
+                  />
+                </a>{" "}
+                <a
+                  href="https://www.instagram.com/loftydreams18"
+                  target="_blank"
+                  className="youtube social"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    size="1x"
+                    className="hov-icon"
+                  />
+                </a>{" "}
+                <a
+                  href="https://www.linkedin.com/in/sumit-ojha-064172160"
+                  target="_blank"
+                  className="youtube social"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    size="1x"
+                    className="hov-icon"
+                  />
+                </a>{" "}
+                <a
+                  href="mailto:loftydreams18@gmail.com"
+                  target="_blank"
+                  className="youtube social"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faGoogle}
+                    size="1x"
+                    className="hov-icon"
+                  />
+                </a>{" "}
+                <a
+                  href="https://in.pinterest.com/loftydreams18/"
+                  target="_blank"
+                  className="youtube social"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faPinterest}
+                    size="1x"
+                    className="hov-icon"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
