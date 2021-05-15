@@ -34,6 +34,7 @@ import { Navbar4 } from "./components/Navbar4/Navbar4";
 import "./App.css";
 import Checkout from "./components/checkout/Checkout";
 
+
 function App() {
   return (
     <div className="App">
