@@ -108,7 +108,7 @@ export const Footer = (props) => {
             </div>
             <div className="footer-col">
               <h4>follow us</h4>
-              <div className="social-icons">
+              <div className="social-icons-footer">
                 <a
                   href="https://www.youtube.com/channel/UCWnQE20f8xJTeXGIfjeAdYg"
                   target="_blank"
@@ -118,19 +118,19 @@ export const Footer = (props) => {
                   <FontAwesomeIcon
                     icon={faYoutube}
                     size="1x"
-                    className="hov-icon"
+                    className="youtube"
                   />
                 </a>
                 <a
                   href="https://www.facebook.com/lofty9716180374/"
                   target="_blank"
-                  className="youtube social"
+                  className=" social"
                   rel="noreferrer"
                 >
                   <FontAwesomeIcon
                     icon={faFacebook}
                     size="1x"
-                    className="hov-icon"
+                    className="facebook"
                   />
                 </a>{" "}
                 <a
@@ -142,7 +142,7 @@ export const Footer = (props) => {
                   <FontAwesomeIcon
                     icon={faTwitter}
                     size="1x"
-                    className="hov-icon"
+                    className="twitter"
                   />
                 </a>{" "}
                 <a
@@ -154,7 +154,7 @@ export const Footer = (props) => {
                   <FontAwesomeIcon
                     icon={faInstagram}
                     size="1x"
-                    className="hov-icon"
+                    className="instagram"
                   />
                 </a>{" "}
                 <a
@@ -166,7 +166,7 @@ export const Footer = (props) => {
                   <FontAwesomeIcon
                     icon={faLinkedin}
                     size="1x"
-                    className="hov-icon"
+                    className="linkedin"
                   />
                 </a>{" "}
                 <a
@@ -178,7 +178,7 @@ export const Footer = (props) => {
                   <FontAwesomeIcon
                     icon={faGoogle}
                     size="1x"
-                    className="hov-icon"
+                    className="google"
                   />
                 </a>{" "}
                 <a
@@ -190,7 +190,7 @@ export const Footer = (props) => {
                   <FontAwesomeIcon
                     icon={faPinterest}
                     size="1x"
-                    className="hov-icon"
+                    className="pinterest"
                   />
                 </a>
               </div>
