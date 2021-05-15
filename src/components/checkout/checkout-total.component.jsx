@@ -32,7 +32,7 @@ const CheckoutTotal = ({ total }) => {
       <CardActions>
         <Button
           className={classes.content}
-          color="secondary"
+          color="primary"
           variant="contained"
         >
           Proceed to Checkout
