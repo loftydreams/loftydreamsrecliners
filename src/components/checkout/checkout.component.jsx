@@ -2,14 +2,6 @@ import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { useStyles } from "./checkout.styles";
 
-import Table from "@material-ui/core/Table";
-import TableBody from "@material-ui/core/TableBody";
-import TableCell from "@material-ui/core/TableCell";
-import TableContainer from "@material-ui/core/TableContainer";
-import TableHead from "@material-ui/core/TableHead";
-import TableRow from "@material-ui/core/TableRow";
-import Paper from "@material-ui/core/Paper";
-
 import CheckoutItem from "../checkout-item/checkout-item.component";
 import CheckoutTotal from "./checkout-total.component";
 
@@ -26,43 +18,30 @@ const CheckoutPage = ({ cartItems, total }) => {
 
   return (
     <>
-    <img src="https://damroindia.com/media/bsimages/Main_Banner_1_1_.jpg" alt=""className="ad-banner"/> 
-    <div className={classes.root}>
-      
-      <Breadcrumbs separator=">" aria-label="breadcrumb">
-        <Link color="inherit" href="/" aria-current="page">
-          Shopping Cart
-        </Link>
-        <Link color="inherit" href="/getting-started/installation/">
-          Payment Details
-        </Link>
-        <Link color="inherit" href="/components/breadcrumbs/">
-          Order Complete
-        </Link>
-      </Breadcrumbs>
-      <TableContainer component={Paper}>
-        <Table className={classes.table} aria-label="simple table">
-          <TableHead>
-            <TableRow>
-              <TableCell>Product</TableCell>
-              <TableCell align="right">Name</TableCell>
-              <TableCell align="right">Price</TableCell>
-              <TableCell align="right">Quantity</TableCell>
-              <TableCell align="right">Subtotal</TableCell>
-              <TableCell align="right">Remove</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {cartItems.map((cartItem) => (
-              <CheckoutItem key={cartItem.id} cartItem={cartItem} />
-            ))}
-          </TableBody>
-        </Table>
-      </TableContainer>
-      <div className={classes.checkoutTotal}>
-        <CheckoutTotal total={total} />
+      <img
+        src="https://damroindia.com/media/bsimages/Main_Banner_1_1_.jpg"
+        alt=""
+        className="ad-banner"
+      />
+      <div className={classes.root}>
+        <Breadcrumbs separator=">" aria-label="breadcrumb">
+          <Link color="inherit" href="/" aria-current="page">
+            Shopping Cart
+          </Link>
+          <Link color="inherit" href="/getting-started/installation/">
+            Payment Details
+          </Link>
+          <Link color="inherit" href="/components/breadcrumbs/">
+            Order Complete
+          </Link>
+        </Breadcrumbs>
+        {cartItems.map((cartItem) => (
+          <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+        ))}
+        <div className={classes.checkoutTotal}>
+          <CheckoutTotal total={total} />
+        </div>
       </div>
-    </div>
     </>
   );
 };
