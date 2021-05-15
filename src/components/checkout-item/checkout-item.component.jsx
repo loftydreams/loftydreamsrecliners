@@ -1,9 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
-import { useStyles } from "./checkout-item.styles";
 
-import TableRow from "@material-ui/core/TableRow";
-import TableCell from "@material-ui/core/TableCell";
+import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 
 import {
   clearItemFromCart,
@@ -11,33 +9,40 @@ import {
   removeItem,
 } from "../../redux/cart/cart.actions";
 
+import "./checkout-item.styles.css";
+
 const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
-  const classes = useStyles();
   const { name, imageUrl, quantity, price } = cartItem;
 
   return (
-    <>
-      <TableRow>
-        <TableCell component="th" scope="row">
-          <img src={imageUrl} alt="item" className={classes.productImg} />
-        </TableCell>
-        <TableCell align="right">{name}</TableCell>
-        <TableCell align="right">₹{price}</TableCell>
-        <TableCell align="right">
-          <span className={classes.quantity}>
-            <div onClick={() => removeItem(cartItem)}>&#10094;</div>
-            <span>{quantity}</span>
-            <div onClick={() => addItem(cartItem)}>&#10095;</div>
-          </span>
-        </TableCell>
-        <TableCell align="right">₹{price * quantity}</TableCell>
-        <TableCell align="right">
-          <span className={classes.remove} onClick={() => clearItem(cartItem)}>
-            &#10005;
-          </span>
-        </TableCell>
-      </TableRow>
-    </>
+    <div className="checkout-wrapper">
+      <div className="checkout-image">
+        <img src={imageUrl} alt="product img" />
+      </div>
+
+      <div className="checkout-description">
+        <h7>{name}</h7>
+        <br />
+        <span onClick={() => clearItem(cartItem)} className="remove-item">Remove Item</span>
+        <br />
+        <div className="quantity-checkout">
+        <AiOutlineMinusCircle
+          className="qt-icon"
+          onClick={() => removeItem(cartItem)}
+        />
+        <span className="quantity-text">      {quantity} </span>
+        <AiOutlinePlusCircle
+          className="qt-icon"
+          onClick={() => addItem(cartItem)}
+        />
+      </div>
+      </div>
+
+      <div className="checkout-price">
+      Price: <span className="subtotal">  ₹{price}</span> <br></br>
+        Sub-total: <span className="subtotal"> ₹{price * quantity}</span>
+      </div>
+    </div>
   );
 };
 

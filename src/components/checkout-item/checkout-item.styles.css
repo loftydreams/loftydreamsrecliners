@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
 
 .checkout{
   margin-top: 10px;
@@ -9,71 +9,73 @@
 .checkout-heading
 {
     font-family: 'Source Sans Pro', sans-serif;
-    text-align: left;
+  text-align: center;
     margin-top: 10px;
     margin-bottom:2%;
     font-size: 27px;
-   
+
 }
 
 .checkout-wrapper
 {
   width: 100%;
-  margin-top:10px;
-  display: flex;
+  margin-top:20px;
+ display: flex;
 justify-content: center;
 flex-wrap: wrap;
-align-items: center;
 
-}
-.left-checkout
-{
-    display: flex;
-    border-top: 1px solid;
-    border-bottom: 1px solid;
-    padding-top: 3%;
-    padding-bottom: 3%;
-    width: 100%;
-    height: fit-content;
-    flex: 0.8;
+border-top: 1px solid rgb(156, 156, 156);
+border-bottom: 1px solid rgb(156, 156, 156);
+height: fit-content;
+
 
 }
 .checkout-image
 {
-  
-    height: 150px;
+   
+    height: 200px;
     width: 150px;
+    padding-top: 10px;
 
 }
 .checkout-image img
 {
     object-fit: contain;
-    padding: 4px;
+    padding: 5px;
+    height: 150px;
 }
 .checkout-description
 {
     width: 260px;
     margin-left: 20px;
-    
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
 }
 .checkout-description h7
 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400 ;
     font-size: 18px;
+    padding-top: 10px;
 }
 .checkout-description span
 {
     font-family: 'Source Sans Pro', sans-serif;
-    margin-right: 16px;
+  
     cursor: pointer;
     color: grey;
+   
 }
 
 .qt-icon
 {
     font-size: 25px;
     cursor: pointer;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 .qt-icon:hover
 {
@@ -83,23 +85,38 @@ align-items: center;
 {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
+  
 }
 .checkout-price
 {
     padding-left: 5%;
+    padding-top: 10px;
 }
  .right-checkout
  {
-  
+
      margin-left: 60px;
     width: 300px;
-  
+
  }
  .right-checkout h7
  {
     font-family: 'Source Sans Pro', sans-serif;
     margin-bottom: 0px;
 
+ }
+ .quantity-text
+ {
+  
+  border: 2px solid rgb(172, 169, 169);
+  margin-right: 0px;
+  padding: 2px;
+  
+
+ }
+ .quantity-checkout
+ {
+   width: 100%;
  }
 
  @media (max-width:600px)
@@ -113,7 +130,7 @@ align-items: center;
      {
          margin-left: 0px;
          margin-right: 10px;
-         
+
      }
      .left-checkout
      {
@@ -125,26 +142,32 @@ align-items: center;
      {
          height: 100px;
          width: 100px;
-       
+        padding-top: 0px;
          justify-self: center;
      }
      .subtotal
      {
-         margin-left: 20px;
+         margin-left: 0px;
          color: black;
-    
+        
+
      }
      .checkout-price
      {
 
         flex: 1;
-    
+
         text-align: center;
         padding-left: 0;
      }
-     
+
      .checkout-heading
      {
          margin-bottom: 10%;
      }
- }
+     .checkout-image img
+     {
+       height: 110px;
+       
+     }
+ } 
