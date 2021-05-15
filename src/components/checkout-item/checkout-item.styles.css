@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap");
+
+.checkout-heading {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 2%;
+  font-size: 27px;
+}
+
+.checkout-image {
+  height: 150px;
+  width: 150px;
+}
+
+.checkout-image img {
+  object-fit: contain;
+  padding: 4px;
+}
+
+.checkout-description {
+  width: 260px;
+  margin-left: 20px;
+}
+
+.checkout-description h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.checkout-description span {
+  font-family: "Source Sans Pro", sans-serif;
+  margin-right: 16px;
+  cursor: pointer;
+  color: grey;
+}
+
+.qt-icon {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.qt-icon:hover {
+  transform: scale(1.2);
+}
+
+.checkout-price span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+}
+
+.checkout-price {
+  padding-left: 5%;
+}
+
+@media (max-width: 600px) {
+  .checkout-image {
+    height: 100px;
+    width: 100px;
+
+    justify-self: center;
+  }
+  .subtotal {
+    margin-left: 20px;
+    color: black;
+  }
+  .checkout-price {
+    flex: 1;
+
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .checkout-heading {
+    margin-bottom: 10%;
+  }
+}
