@@ -97,8 +97,29 @@ export default function ProductMenu({ name, description }) {
           </div>
         )}
       </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
+      <TabPanel value={value} index={1} className="terms">
+        <ul className="makeStyles-list-10 qualityPromise">
+          <li>
+            All Upholstery snag effectively and can be harmed by sharp-edged
+            knife, toys, jewelry, clasps, and pets. Snags, when they do happen,
+            ought to be cut utilizing scissors. By no means should you endeavor
+            to pull it out.
+          </li>
+          <li>
+            Exposure of Direct Sunlight over a long period of time results in
+            the lightning of color of upholstery(light in color) and
+            additionally may reduce the life span of upholstery. When arranging
+            your room, orchestrate your furniture so it is shielded from
+            sunlight.
+          </li>
+          <li>
+            Clean your upholstery once per week with a delicate brush or vacuum
+            cleaner as collected soil or dirt will quicken wear and dull the
+            colors.
+          </li>
+          <li> Carefully abstain from using bleach when washing your upholstery.</li>
+          <li>To prevent leatherette from cracking or peeling, Vinyl conditioner or leather conditioner needs to be applied to the Leatherette every 3 to 4 months for a long product life.</li>
+        </ul>
       </TabPanel>
       <TabPanel value={value} index={2} className="terms">
         <h6 className="termsheading">
@@ -192,27 +213,38 @@ export default function ProductMenu({ name, description }) {
             This delivery time is not pertinent for some particular pin codes.
           </li>
         </ul>
-        <h6 className="termsheading">Is the delivery would be at my doorstep?</h6>
+        <h6 className="termsheading">
+          Is the delivery would be at my doorstep?
+        </h6>
         <ul className="makeStyles-list-10 qualityPromise">
           <li>
-          Doorstep delivery is possible on our every listed product all over India. only in the case. The product would be delivered on the ground floor if the delivery would be above the ground then the facility of lift must exist otherwise delivery boy deliver your product at ground floor.
+            Doorstep delivery is possible on our every listed product all over
+            India. only in the case. The product would be delivered on the
+            ground floor if the delivery would be above the ground then the
+            facility of lift must exist otherwise delivery boy deliver your
+            product at ground floor.
           </li>
         </ul>
-        <h6 className="termsheading">Is my purchase amount inclusive of all taxes?</h6>
+        <h6 className="termsheading">
+          Is my purchase amount inclusive of all taxes?
+        </h6>
         <ul className="makeStyles-list-10 qualityPromise">
           <li>
-          Yes, Mentioned Prices on all the products are inclusive of all the taxes including delivery charges.
+            Yes, Mentioned Prices on all the products are inclusive of all the
+            taxes including delivery charges.
           </li>
         </ul>
-        <h6 className="termsheading">Do I need to submit any documents for receiving my delivery?</h6>
+        <h6 className="termsheading">
+          Do I need to submit any documents for receiving my delivery?
+        </h6>
         <ul className="makeStyles-list-10 qualityPromise">
           <li>
-          Yes, You need to submit your ID proof (Adhar Card, Driving Licence, Voter Card, etc.).
+            Yes, You need to submit your ID proof (Adhar Card, Driving Licence,
+            Voter Card, etc.).
           </li>
         </ul>
-        
       </TabPanel>
-     
+
       <TabPanel value={value} index={3} className="terms">
         <h6 className="termsheading">
           For any inquiries or explanations regarding with the product, do not
@@ -263,7 +295,6 @@ export default function ProductMenu({ name, description }) {
             items for 10 days, after this timetable, Lofty Dreams will be
             allowed to charge or cancel the order.
           </li>
-
         </ul>
         <h6 className="termsheading">Damages:</h6>
         <ul className="makeStyles-list-10 qualityPromise">
