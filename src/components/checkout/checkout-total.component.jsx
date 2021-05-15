@@ -23,10 +23,10 @@ const CheckoutTotal = ({ total }) => {
           Cart Details
         </Typography>
         <Typography className={classes.text} variant="body2" component="p">
-          <span>Total</span> <span>₹{total}</span>
+          <span>Total</span> <span>₹{total.toFixed(2)}</span>
         </Typography>
         <Typography className={classes.text} variant="body2" component="p">
-          <span>Subtotal</span> <span>₹{total}</span>
+          <span>Subtotal</span> <span>₹{total.toFixed(2)}</span>
         </Typography>
       </CardContent>
       <CardActions>
