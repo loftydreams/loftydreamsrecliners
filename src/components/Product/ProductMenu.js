@@ -97,8 +97,8 @@ export default function ProductMenu({ name, description }) {
           </div>
         )}
       </TabPanel>
-      <TabPanel value={value} index={1} className="terms">
-        <ul className="makeStyles-list-10 qualityPromise">
+      <TabPanel value={value} index={1}>
+         <ul className="makeStyles-list-10 accordianitems">
           <li>
             All Upholstery snag effectively and can be harmed by sharp-edged
             knife, toys, jewelry, clasps, and pets. Snags, when they do happen,

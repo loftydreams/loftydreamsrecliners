@@ -28,8 +28,9 @@ ul{
 	margin-left: 0px;
 }
 .footer{
-	background-color: #446084;
+	background-image: url("footer.png");
     padding: 70px 0;
+
 	
 }
 .footer-col{
@@ -63,6 +64,8 @@ ul{
 	text-align: left;
 	display: block;
 	transition: all 0.3s ease;
+	font-family: "Mr Eaves XL Modern", sans-serif;
+	
 }
 .footer-col ul li a:hover{
 	color:white;
@@ -115,7 +118,7 @@ ul{
  
 
 /*responsive*/
-@media(max-width: 767px){
+@media(max-width: 768px){
   .footer-col{
     width: 50%;
     margin-bottom: 30px;
@@ -146,4 +149,43 @@ ul{
 {
 	font-size: 12px !important;
 	color: white;
+	text-align: center;
+}
+
+
+.social-icons-footer a
+{
+   color : rgb(119, 199, 252);
+   font-size: 21px;
+   margin: 3px;
+}
+.social-icons-footer  a:hover
+{
+	transform: scale(1.4);
+}
+
+
+.youtube
+{
+	color: red;
+}
+.facebook
+{
+color: rgb(57, 159, 255);
+}
+.instagram
+{
+	color: white;
+}
+.linkedin
+{
+	color: rgb(73, 158, 255);
+}
+.google 
+{
+	color: white;
+}
+.pinterest
+{
+	color: rgb(255, 0, 85);
 }

@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const CarouselContainer = () => {
   return (
-    <Carousel fade pause={false} controls={false}>
+    <Carousel pause={false} controls={false}>
       <Carousel.Item interval={4000}>
         <img
           className="d-block w-100"
@@ -12,8 +12,8 @@ const CarouselContainer = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h2 style={{color:"black"}}  > <strong>  </strong> </h2>
+          <h4 style={{color:"black"}}> </h4>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={4000}>
@@ -23,10 +23,23 @@ const CarouselContainer = () => {
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <h3 style={{color:"black"}}>   <strong>   </strong>   </h3>
+          <h4 style={{color:"black"}}>                   </h4>
         </Carousel.Caption>
       </Carousel.Item>
+      <Carousel.Item interval={4000}>
+        <img
+          className="d-block w-100"
+          src="https://images.all-free-download.com/images/graphicthumb/fashion_sofa_hd_picture_167714.jpg"
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          
+          <h2 style={{color:"black"}}>    <strong>  </strong>   </h2>
+          <h4 style={{color:"black"}}> </h4>
+        </Carousel.Caption>
+      </Carousel.Item>
+      
     </Carousel>
   );
 };

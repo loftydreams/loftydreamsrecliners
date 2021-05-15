@@ -1,34 +1,26 @@
 import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
-
 import { firestore } from "../../firebase";
-import Card from "./Card";
 
+import Card from "../Card/Card";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.min.css";
 import "owl.carousel/dist/assets/owl.theme.default.min.css";
-import "./CardCollection.css";
 
-function CardCollection({ heading, topSelling, topDiscount }) {
+const RelatedProducts = ({ category }) => {
   const [products, loading] = useCollectionDataOnce(
-    firestore.collection("products"),
+    firestore.collection("products").orderBy("rating", "desc"),
     { idField: "id" }
   );
 
-  const topSellingProducts = products?.filter((product) => product.topSelling);
-
-  const topDiscountProducts = products?.filter(
-    (product) => product.topDiscount
-  );
-
-  const renderProducts = topSelling ? topSellingProducts : topDiscountProducts;
+  const filteredProducts = products?.filter((product) => {
+    return product.category?.toLowerCase().includes(category.toLowerCase());
+  });
 
   return (
-    !loading && (
-      <div className="card-collection">
-        <div className="card-collection-heading">
-          <h2 className="card-collection-h2"> {heading}</h2>
-          <hr className="card-collection-hr"></hr>
-        </div>
+    !loading &&
+    category && (
+      <div style={{ margin: "0 10px" }}>
+        <h2 className="relatedh2">RELATED PRODUCTS</h2>
         <OwlCarousel
           className="owl-theme -"
           loop
@@ -36,7 +28,7 @@ function CardCollection({ heading, topSelling, topDiscount }) {
           autoplay={true}
           responsiveClass={true}
           nav={true}
-        
+          dots={true}
           autoplayHoverPause={true}
           autoplayTimeout={3000}
           responsive={{
@@ -66,7 +58,7 @@ function CardCollection({ heading, topSelling, topDiscount }) {
             },
           }}
         >
-          {renderProducts?.map((data) => {
+          {filteredProducts?.map((data) => {
             const {
               id,
               image1,
@@ -95,5 +87,6 @@ function CardCollection({ heading, topSelling, topDiscount }) {
       </div>
     )
   );
-}
-export default CardCollection;
+};
+
+export default RelatedProducts;

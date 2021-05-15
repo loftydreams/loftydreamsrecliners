@@ -47,8 +47,8 @@ function Card({ id, src, name, category, price, discount, rating, addItem }) {
           <span className="top-heading">{category}</span>
           <h5 className="product-name">{name}</h5>
           <span className="h5-position">
-            <del className="price-cut"> ₹{price} </del> ₹{sp.toFixed(2)}
-            <span> {ratedStars(rating)} </span>
+            <del className="price-cut"> ₹{price} </del>  <strong> ₹{sp.toFixed(2)} </strong>
+            <span className="rating-star"> {ratedStars(rating)} </span>
           </span>
           {added ? (
             <Button
@@ -67,7 +67,7 @@ function Card({ id, src, name, category, price, discount, rating, addItem }) {
               }}
               variant="contained"
               color="primary"
-              size="small"
+              size="large"
               className="add-to-cart-btn"
             >
               Add to Cart

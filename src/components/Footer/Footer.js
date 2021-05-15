@@ -1,9 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+
 import "./footer.css";
-import { HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi";
-import { BiPhone } from "react-icons/bi";
-import { Button } from "@material-ui/core";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faYoutube,
@@ -14,6 +12,7 @@ import {
   faGoogle,
   faPinterest,
 } from "@fortawesome/free-brands-svg-icons";
+import { Link } from "react-router-dom";
 
 export const Footer = (props) => {
   return (
@@ -34,17 +33,17 @@ export const Footer = (props) => {
               <ul>
                 <li>
                   {" "}
-                  <a href="/about"> About</a>{" "}
+                  <Link to="/about"> About</Link>{" "}
                 </li>
 
                 <li>
-                  <a href="/contactus">Contact</a>
+                  <Link to="/contactus">Contact</Link>
                 </li>
                 <li>
-                  <a href="#">Blog</a>
+                  <Link to="/#">Blog</Link>
                 </li>
                 <li>
-             <a href="/testimonial">Testimonial</a>
+                  <Link to="/testimonial">Testimonial</Link>
                 </li>
               </ul>
             </div>
@@ -52,27 +51,26 @@ export const Footer = (props) => {
               <h4 className="footer_p">Need help?</h4>
               <ul className="ul need-help-ul">
                 <li>
-                  <a href="#">FAQ</a>
+                  <Link to="/#">FAQ</Link>
                 </li>
                 <li>
-                  <a href="/privacy-policy">Privacy Policy</a>
+                  <Link to="/privacy-policy">Privacy Policy</Link>
                 </li>
                 <li>
-                  <a href="/terms-and-condition">Terms and Condition</a>
+                  <Link to="/terms-and-condition">Terms and Condition</Link>
                 </li>
                 <li>
-                  <a href="/payment-security-policy">
+                  <Link to="/payment-security-policy">
                     Payment and Security Policy
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="#">Shipping and Delivery Policy</a>
+                  <Link to="/shipping-policy">
+                    Shipping and Delivery Policy
+                  </Link>
                 </li>
                 <li>
-                  <a href="/my-account">My Account</a>
-                </li>
-                <li>
-                  <a href="/track-order">Track Your order</a>
+                  <Link to="/track-order">Track Your order</Link>
                 </li>
               </ul>
             </div>
@@ -110,53 +108,92 @@ export const Footer = (props) => {
             </div>
             <div className="footer-col">
               <h4>follow us</h4>
-              <div className="social-icons">
-            <a href="https://www.youtube.com/channel/UCWnQE20f8xJTeXGIfjeAdYg" target="_blank" className="youtube social">
-              <FontAwesomeIcon
-                icon={faYoutube}
-                size="1x"
-                className="hov-icon"
-              />
-            </a>
-            <a href="https://www.facebook.com/lofty9716180374/" target="_blank" className="youtube social">
-              <FontAwesomeIcon
-                icon={faFacebook}
-                size="1x"
-                className="hov-icon"
-              />
-            </a>{" "}
-            <a href="https://twitter.com/sumitoj80401927" target="_blank" className="youtube social">
-              <FontAwesomeIcon
-                icon={faTwitter}
-                size="1x"
-                className="hov-icon"
-              />
-            </a>{" "}
-            <a href="https://www.instagram.com/loftydreams18" target="_blank"  className="youtube social">
-              <FontAwesomeIcon
-                icon={faInstagram}
-                size="1x"
-                className="hov-icon"
-              />
-            </a>{" "}
-            <a href="https://www.linkedin.com/in/sumit-ojha-064172160" target="_blank" className="youtube social">
-              <FontAwesomeIcon
-                icon={faLinkedin}
-                size="1x"
-                className="hov-icon"
-              />
-            </a>{" "}
-            <a href="mailto:loftydreams18@gmail.com" target="_blank" className="youtube social">
-              <FontAwesomeIcon icon={faGoogle} size="1x" className="hov-icon" />
-            </a>{" "}
-            <a href="https://in.pinterest.com/loftydreams18/" target="_blank" className="youtube social">
-              <FontAwesomeIcon
-                icon={faPinterest}
-                size="1x"
-                className="hov-icon"
-              />
-            </a>
-          </div>
+              <div className="social-icons-footer">
+                <a
+                  href="https://www.youtube.com/channel/UCWnQE20f8xJTeXGIfjeAdYg"
+                  target="_blank"
+                  className="youtube social"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faYoutube}
+                    size="1x"
+                    className="youtube"
+                  />
+                </a>
+                <a
+                  href="https://www.facebook.com/lofty9716180374/"
+                  target="_blank"
+                  className=" social"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faFacebook}
+                    size="1x"
+                    className="facebook"
+                  />
+                </a>{" "}
+                <a
+                  href="https://twitter.com/sumitoj80401927"
+                  target="_blank"
+                  className="youtube social"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faTwitter}
+                    size="1x"
+                    className="twitter"
+                  />
+                </a>{" "}
+                <a
+                  href="https://www.instagram.com/loftydreams18"
+                  target="_blank"
+                  className="youtube social"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    size="1x"
+                    className="instagram"
+                  />
+                </a>{" "}
+                <a
+                  href="https://www.linkedin.com/in/sumit-ojha-064172160"
+                  target="_blank"
+                  className="youtube social"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faLinkedin}
+                    size="1x"
+                    className="linkedin"
+                  />
+                </a>{" "}
+                <a
+                  href="mailto:loftydreams18@gmail.com"
+                  target="_blank"
+                  className="youtube social"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faGoogle}
+                    size="1x"
+                    className="google"
+                  />
+                </a>{" "}
+                <a
+                  href="https://in.pinterest.com/loftydreams18/"
+                  target="_blank"
+                  className="youtube social"
+                  rel="noreferrer"
+                >
+                  <FontAwesomeIcon
+                    icon={faPinterest}
+                    size="1x"
+                    className="pinterest"
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>

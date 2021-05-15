@@ -1,0 +1,62 @@
+.shipping-policy
+{
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 20px;
+}
+.shipping-policy h3
+{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: "Mr Eaves XL Modern", sans-serif;
+    color: #E57200;
+}
+.shipping-policy ul ,p
+{
+    list-style: disc;
+    margin-left: 10px;
+    font-size: 13px;
+
+}
+.shipping-policy ol
+{
+    margin-left: 10px;
+    font-size: 13px;
+}
+.shipping-h6
+{
+    color: rgb(199, 135, 17);
+    font-weight: 600;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+.shipping-policy span
+{
+    font-size: 13px;
+  
+}
+
+.shipping-policy li{
+    margin-bottom: 10px;
+}
+.shipping-policy h7
+{
+    font-weight: 700;
+    font-size: 14px;
+}
+
+@media (max-width : 600px) {
+    .shipping-policy
+    {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    
+    .shipping-policy h3
+    {
+        font-size: 20px;
+        font-weight: 1000;
+        text-align: center;
+    }
+}

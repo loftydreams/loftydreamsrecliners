@@ -28,9 +28,7 @@ const Lounger = ({ addItem }) => {
         <Link color="inherit" href="/">
           HOME
         </Link>
-        <Link color="inherit" href="/getting-started/installation/">
-          RECLINERS
-        </Link>
+    
         <Typography color="textPrimary">LOUNGER SOFA RECLINERS </Typography>
       </Breadcrumbs>
       <br></br>

@@ -2,7 +2,7 @@
     background-color: white;
     border-radius: 10px;
     width: 240px;
-    height: 400px;
+    height: 410px;
     margin: 7px;
     position: relative;
  
@@ -53,9 +53,11 @@ border-radius: 15px;
   }
   .product-name 
   {
-      color: rgb(50, 70, 109);
+      color: rgb(0, 0, 0);
       font-size: 14px;
       margin-bottom: 0px;
+      font-weight: 1000;
+      font-family: "Mr Eaves XL Modern", sans-serif;
   }
   .top-heading
   {
@@ -82,11 +84,16 @@ border-radius: 15px;
   cursor: pointer;
 
 }
+.rating-star
+{
+  font-size: 11px;
+  color: orange;
+}
 @media(max-width:600px) 
 {
   .card-body{
     width:184px;
-    height: 320px;
+    height: 330px;
   }
   
   .card-body img

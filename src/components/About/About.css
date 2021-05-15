@@ -27,7 +27,7 @@
 }
 
 .aboutus_left_first h4{
-    border-bottom: 2px sol;
+ 
     font-size: 17px;
     color: #ED7745;
     font-weight: bold;
@@ -165,7 +165,7 @@
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     .aboutus__right ul li{
-        border-bottom: 1px solid orange;
+       
         margin-right: 23px;
         font-size: 14px;
         padding-top: 5px;

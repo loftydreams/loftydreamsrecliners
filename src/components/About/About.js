@@ -94,23 +94,7 @@ export default function AboutUs() {
         </div>
 
         <div className="aboutus__right">
-          <ul className="aboutus__right_ul">
-            <a href="#about">
-              <li>About Us</li>
-            </a>
-            <a href="#vision">
-              <li>Our Vision</li>
-            </a>
-            <a href="#whoweare">
-              <li>Who We Are</li>
-            </a>
-            <a href="#whatwedo">
-              <li>What We Do</li>
-            </a>
-            <a href="#product">
-              <li>Our Products</li>
-            </a>
-          </ul>
+         
 
           <div className="aboutusimage">
             {!loading && <img src={image[0]?.image} alt="aboutUs" />}
