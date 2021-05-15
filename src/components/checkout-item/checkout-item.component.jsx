@@ -39,8 +39,8 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
       </div>
 
       <div className="checkout-price">
-      Price: <span className="subtotal">  ₹{price}</span> <br></br>
-        Sub-total: <span className="subtotal"> ₹{price * quantity}</span>
+      Price: <span className="subtotal">  ₹{price.toFixed(2)}</span> <br></br>
+        Sub-total: <span className="subtotal"> ₹{(price * quantity).toFixed(2)}</span>
       </div>
     </div>
   );

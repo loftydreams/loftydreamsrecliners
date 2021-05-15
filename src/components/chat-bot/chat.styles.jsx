@@ -10,12 +10,13 @@ export const useStyles = makeStyles({
   card: {
     backgroundColor: "white",
     height: "400px",
-    width: "280px",
-    border: "1px solid black",
+    width: "290px",
+    border: "1px solid white",
     position: "absolute",
     zIndex: "1000",
     bottom: "60px",
     right: "5px",
+    color: "white"
   },
   header: {
     width: "100%",
@@ -34,6 +35,7 @@ export const useStyles = makeStyles({
     display: "flex",
     flexDirection: "column",
     height: "300px",
-    overflowY: "auto",
+    overflowY: "scroll",
+    color:"black"
   },
 });
