@@ -11,7 +11,7 @@ export const useStyles = makeStyles({
     backgroundColor: "white",
     height: "400px",
     width: "290px",
-    border: "1px solid white",
+    border: "1px solid black",
     position: "absolute",
     zIndex: "1000",
     bottom: "60px",
