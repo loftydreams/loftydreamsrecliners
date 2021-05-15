@@ -23,10 +23,10 @@ img {
   object-fit: contain;
 }
 .img1 {
-  height: 100px;
+  height: 70px;
   width: 100%;
-  margin-left: 5px;
-  object-fit: cover;
+  margin-left: 0px;
+  object-fit: contain;
 }
 .img-display {
   overflow: hidden;
@@ -34,7 +34,7 @@ img {
 .img-showcase {
   display: flex;
   width: 100%;
-  transition: all 0.5s ease;
+  transition: all 1s ease;
   height: 400px;
 }
 .img-showcase img {
@@ -46,10 +46,13 @@ img {
 
 .img-item {
   margin: 0.3rem;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 80px;
   object-fit: cover;
   margin-bottom: 30px;
+  border: 3px solid rgb(216, 216, 216);
+  border-radius: 10px;
+
 }
 .img-item:nth-child(1),
 .img-item:nth-child(2),
@@ -162,12 +165,20 @@ img {
 .purchase-info input,
 .purchase-info .btn {
   border: 1.5px solid #ddd;
-  border-radius: 25px;
+  border-radius: 0px;
   text-align: center;
   padding: 0.45rem 0.8rem;
   outline: 0;
-  margin-right: 0.2rem;
+  margin-right: 0rem;
   margin-bottom: 0;
+  width: 200px;
+  font-weight: 1000;
+}
+.purchase-info .btn:hover
+{
+
+  transform: scale(1.1);
+  transition: all 0.5s ease;
 }
 .purchase-info input {
   width: 60px;
@@ -177,10 +188,10 @@ img {
   color: #fff;
 }
 .purchase-info .btn:first-of-type {
-  background: #256eff;
+  background: #8aaef7;
 }
 .purchase-info .btn:last-of-type {
-  background: #f64749;
+  background: #ff6701;
 }
 .purchase-info .btn:hover {
   opacity: 0.9;
