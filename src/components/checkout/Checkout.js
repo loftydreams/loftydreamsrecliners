@@ -37,7 +37,7 @@ const Checkout = () => {
                           <span className=""> View  Item </span>
                         <br>
                         </br>
-                        Qt : <AiOutlineMinusCircle className="qt-icon"/> 1 <AiOutlinePlusCircle className="qt-icon"/>
+                        <AiOutlineMinusCircle className="qt-icon"/> 1 <AiOutlinePlusCircle className="qt-icon"/>
 
                      
 
