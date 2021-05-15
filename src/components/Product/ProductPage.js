@@ -159,7 +159,7 @@ const ProductPage = ({ addItem }) => {
 
             <div className="product-content">
               <h2 className="product-title">{product?.name}</h2>
-              <Button variant="contained" color="primary" size="small">
+              <Button variant="contained" color="" size="small">
                 visit store
               </Button>
               <div className="product-rating">
@@ -192,9 +192,7 @@ const ProductPage = ({ addItem }) => {
               </div>
 
               <div className="purchase-info">
-                <button type="button" className="btn">
-                  Buy <i className="fas fa-shopping-cart"></i>
-                </button>
+                
                 {added ? (
                   <button
                     type="button"

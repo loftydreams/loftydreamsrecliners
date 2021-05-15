@@ -90,7 +90,7 @@ text-align: left;
     
 }
 .new-card-wrapper img{
-    object-fit: cover;
+    object-fit: contain;
     width: 233px;
     height: 200px;
     

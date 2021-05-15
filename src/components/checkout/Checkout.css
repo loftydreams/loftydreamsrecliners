@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap');
+
+.checkout{
+  margin-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 5%;
+}
+.checkout-heading
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom:2%;
+    font-size: 27px;
+   
+}
+
+.checkout-wrapper
+{
+  width: 100%;
+  margin-top:10px;
+  display: flex;
+justify-content: center;
+flex-wrap: wrap;
+align-items: center;
+
+}
+.left-checkout
+{
+    display: flex;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width: 100%;
+    height: fit-content;
+    flex: 0.8;
+
+}
+.checkout-image
+{
+    border: 1px solid black;
+    height: 150px;
+    width: 150px;
+
+}
+.checkout-image img
+{
+    object-fit: contain;
+    padding: 4px;
+}
+.checkout-description
+{
+    width: 260px;
+    margin-left: 20px;
+    
+}
+.checkout-description h7
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400 ;
+    font-size: 18px;
+}
+.checkout-description span
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-right: 16px;
+    cursor: pointer;
+    color: grey;
+}
+
+.qt-icon
+{
+    font-size: 25px;
+    cursor: pointer;
+}
+.qt-icon:hover
+{
+    transform: scale(1.2);
+}
+.checkout-price span
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+.checkout-price
+{
+    padding-left: 5%;
+}
+ .right-checkout
+ {
+  
+     margin-left: 60px;
+    width: 300px;
+  
+ }
+ .right-checkout h7
+ {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 0px;
+
+ }
+
+ @media (max-width:600px)
+ {
+     .checkout
+     {
+         padding-left: 4px;
+         padding-right: 4px;
+     }
+     .right-checkout
+     {
+         margin-left: 0px;
+         margin-right: 10px;
+         
+     }
+     .left-checkout
+     {
+         height: fit-content;
+         flex-wrap: wrap;
+         flex: 1;
+     }
+     .checkout-image
+     {
+         height: 100px;
+         width: 100px;
+       
+         justify-self: center;
+     }
+     .subtotal
+     {
+         margin-left: 20px;
+         color: black;
+    
+     }
+     .checkout-price
+     {
+
+        flex: 1;
+    
+        text-align: center;
+        padding-left: 0;
+     }
+     
+     .checkout-heading
+     {
+         margin-bottom: 10%;
+     }
+ }

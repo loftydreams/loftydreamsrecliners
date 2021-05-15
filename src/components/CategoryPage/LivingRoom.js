@@ -28,9 +28,7 @@ const LivingRoom = ({ addItem }) => {
         <Link color="inherit" href="/">
           HOME
         </Link>
-        <Link color="inherit" href="/getting-started/installation/">
-          RECLINERS
-        </Link>
+     
         <Typography color="textPrimary">LIVING ROOM RECLINERS </Typography>
       </Breadcrumbs>
       <br></br>
