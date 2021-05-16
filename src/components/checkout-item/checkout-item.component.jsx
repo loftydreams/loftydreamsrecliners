@@ -14,6 +14,12 @@ import "./checkout-item.styles.css";
 const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
   const { name, imageUrl, quantity, price } = cartItem;
 
+  const formattedPrice = (price) =>
+    new Intl.NumberFormat("en-IN", {
+      style: "currency",
+      currency: "INR",
+    }).format(price);
+
   return (
     <div className="checkout-item">
       <div className="checkout-image">
@@ -39,8 +45,10 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
         </div>
 
         <div className="checkout-price">
-          <span className="subtotal"> Price: ₹{price}</span>
-          <span className="subtotal"> Sub total: ₹{price * quantity}</span>
+          <span className="subtotal"> Price: {formattedPrice(price)}</span>
+          <span className="subtotal">
+            Sub total: {formattedPrice(price * quantity)}
+          </span>
         </div>
       </div>
     </div>
