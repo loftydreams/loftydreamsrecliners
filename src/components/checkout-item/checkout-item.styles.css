@@ -1,43 +1,69 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap");
 
+.checkout-item {
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin: 10px;
+}
+
 .checkout-heading {
   font-family: "Source Sans Pro", sans-serif;
   text-align: left;
   margin-top: 10px;
   margin-bottom: 2%;
-  font-size: 27px;
+  font-size: 20px;
 }
 
 .checkout-image {
   height: 150px;
   width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .checkout-image img {
-  object-fit: contain;
-  padding: 4px;
+  width: 100%;
 }
 
 .checkout-description {
-  width: 260px;
+  width: 100%;
   margin-left: 20px;
 }
 
-.checkout-description h6 {
-  font-family: "Source Sans Pro", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
+.checkout-mid {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.checkout-description span {
+.checkout-mid span {
   font-family: "Source Sans Pro", sans-serif;
   margin-right: 16px;
   cursor: pointer;
   color: grey;
 }
 
+.checkout-mid span:hover {
+  color: black;
+}
+
+.checkout-quantity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.checkout-quantity span {
+  margin: 0 10px;
+  padding: 0;
+}
+
 .qt-icon {
-  font-size: 25px;
+  font-size: 20px;
   cursor: pointer;
 }
 
@@ -45,34 +71,34 @@
   transform: scale(1.2);
 }
 
-.checkout-price span {
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 18px;
+.checkout-price {
+  display: flex;
+  flex-direction: column;
 }
 
-.checkout-price {
-  padding-left: 5%;
+.checkout-price span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
 }
 
 @media (max-width: 600px) {
-  .checkout-image {
-    height: 100px;
-    width: 100px;
-
-    justify-self: center;
-  }
-  .subtotal {
-    margin-left: 20px;
-    color: black;
-  }
-  .checkout-price {
-    flex: 1;
-
-    text-align: center;
-    padding-left: 0;
+  .checkout-item {
+    margin: 3px;
   }
 
   .checkout-heading {
-    margin-bottom: 10%;
+    font-size: 15px;
+  }
+
+  .checkout-price span {
+    font-size: 13px;
+  }
+
+  .checkout-mid span {
+    font-size: 13px;
+  }
+
+  .checkout-quantity span {
+    margin: 0 3px;
   }
 }

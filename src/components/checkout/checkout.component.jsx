@@ -35,9 +35,11 @@ const CheckoutPage = ({ cartItems, total }) => {
             Order Complete
           </Link>
         </Breadcrumbs>
-        {cartItems.map((cartItem) => (
-          <CheckoutItem key={cartItem.id} cartItem={cartItem} />
-        ))}
+        <div className={classes.grid}>
+          {cartItems.map((cartItem) => (
+            <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+          ))}
+        </div>
         <div className={classes.checkoutTotal}>
           <CheckoutTotal total={total} />
         </div>

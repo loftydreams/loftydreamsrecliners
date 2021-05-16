@@ -15,30 +15,33 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
   const { name, imageUrl, quantity, price } = cartItem;
 
   return (
-    <div>
+    <div className="checkout-item">
       <div className="checkout-image">
         <img src={imageUrl} alt="product img" />
       </div>
 
       <div className="checkout-description">
-        <h6>{name}</h6>
-        <br />
-        <span onClick={() => clearItem(cartItem)}>Remove Item</span>
-        <br />
-        <AiOutlineMinusCircle
-          className="qt-icon"
-          onClick={() => removeItem(cartItem)}
-        />
-        {quantity}
-        <AiOutlinePlusCircle
-          className="qt-icon"
-          onClick={() => addItem(cartItem)}
-        />
-      </div>
+        <h6 className="checkout-heading">{name}</h6>
 
-      <div className="checkout-price">
-        <span className="subtotal"> Price: ₹{price}</span>
-        <span className="subtotal"> Sub total: ₹{price * quantity}</span>
+        <div className="checkout-mid">
+          <div className="checkout-quantity">
+            <AiOutlineMinusCircle
+              className="qt-icon"
+              onClick={() => removeItem(cartItem)}
+            />
+            <span>{quantity}</span>
+            <AiOutlinePlusCircle
+              className="qt-icon"
+              onClick={() => addItem(cartItem)}
+            />
+          </div>
+          <span onClick={() => clearItem(cartItem)}>Remove Item</span>
+        </div>
+
+        <div className="checkout-price">
+          <span className="subtotal"> Price: ₹{price}</span>
+          <span className="subtotal"> Sub total: ₹{price * quantity}</span>
+        </div>
       </div>
     </div>
   );
