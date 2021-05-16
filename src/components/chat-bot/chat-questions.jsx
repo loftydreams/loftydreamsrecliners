@@ -30,6 +30,12 @@ const useStyles = makeStyles({
   },
 });
 
+let audio = new Audio("/preview.mp3")
+
+  const start = () => {
+    audio.play()
+  }
+
 const ChatQuestion = ({ handleClick }) => {
   const classes = useStyles();
 
@@ -38,7 +44,7 @@ const ChatQuestion = ({ handleClick }) => {
       <Avatar>
         <PersonIcon />
       </Avatar>
-      <div className={classes.container}>
+      <div onClick={start} className={classes.container}>
         {chatQuestions.length &&
           chatQuestions.map((question) => (
             <div
