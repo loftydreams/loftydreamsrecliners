@@ -70,7 +70,7 @@ img {
   text-transform: capitalize;
   font-weight: 700;
   position: relative;
-  color: #12263a;
+  color: #141f2b;
   margin: 1rem 0;
 }
 .product-title::after {
@@ -78,7 +78,7 @@ img {
   position: absolute;
   left: 0px;
   bottom: 0;
-  height: 2px;
+  height: 1px;
   width: 100%;
   background: #12263a;
   text-align: center;
@@ -191,7 +191,7 @@ img {
   background: #8aaef7;
 }
 .purchase-info .btn:last-of-type {
-  background: #ff6701;
+  background: #2b92bb;
 }
 .purchase-info .btn:hover {
   opacity: 0.9;
