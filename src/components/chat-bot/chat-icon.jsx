@@ -13,7 +13,7 @@ const ChatContainer = () => {
   return (
     <div className={classes.icon}>
       {open && <ChatBox />}
-      <Fab size="medium" onClick={() => setOpen(!open)}>
+      <Fab size="medium" onClick={() => setOpen(!open)} >
         {open ? <CloseIcon /> : <ChatIcon />}
       </Fab>
     </div>
