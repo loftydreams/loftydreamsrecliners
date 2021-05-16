@@ -21,14 +21,13 @@ export const useStyles = makeStyles({
   },
   grid: {
     display: "grid",
-    gridTemplateColumns: "1fr 1fr",
+    gridTemplateColumns: "1fr",
     gap: "20px",
     marginBottom: "20px",
   },
   "@media (max-width: 900px)": {
     grid: {
       display: "grid",
-      gridTemplateColumns: "1fr",
       gap: "15px",
     },
   },
