@@ -12,6 +12,12 @@ import { useStyles } from "./checkout.styles";
 const CheckoutTotal = ({ total }) => {
   const classes = useStyles();
 
+  const formattedPrice = (price) =>
+    new Intl.NumberFormat("en-IN", {
+      style: "currency",
+      currency: "INR",
+    }).format(price);
+
   return (
     <Card className={classes.card}>
       <CardContent>
@@ -23,18 +29,14 @@ const CheckoutTotal = ({ total }) => {
           Cart Details
         </Typography>
         <Typography className={classes.text} variant="body2" component="p">
-          <span>Total</span> <span>₹{total.toFixed(2)}</span>
+          <span>Total</span> <span>{formattedPrice(total)}</span>
         </Typography>
         <Typography className={classes.text} variant="body2" component="p">
-          <span>Subtotal</span> <span>₹{total.toFixed(2)}</span>
+          <span>Subtotal</span> <span>{formattedPrice(total)}</span>
         </Typography>
       </CardContent>
       <CardActions>
-        <Button
-          className={classes.content}
-          color="primary"
-          variant="contained"
-        >
+        <Button className={classes.content} color="primary" variant="contained">
           Proceed to Checkout
         </Button>
       </CardActions>

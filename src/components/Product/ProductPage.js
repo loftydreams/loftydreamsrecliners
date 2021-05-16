@@ -55,6 +55,12 @@ const ProductPage = ({ addItem }) => {
     setAdded(true);
   };
 
+  const formattedPrice = (price) =>
+    new Intl.NumberFormat("en-IN", {
+      style: "currency",
+      currency: "INR",
+    }).format(price);
+
   useEffect(() => {
     if (product) {
       setSrc(product?.image1);
@@ -164,17 +170,16 @@ const ProductPage = ({ addItem }) => {
               </Button>
               <div className="product-rating">
                 {ratedStars(product?.rating)}
-                
               </div>
 
               <div className="product-price">
                 <p className="last-price">
-                  Old Price: <span>₹{product?.price}</span>
+                  Old Price: <span>{formattedPrice(product?.price)}</span>
                 </p>
                 <p className="new-price">
-                  New Price:{" "}
+                  New Price:
                   <span>
-                    ₹{sp.toFixed(2)} ({product?.discount}%) 
+                    {formattedPrice(sp)} ({product?.discount}%)
                   </span>
                 </p>
               </div>
@@ -192,7 +197,6 @@ const ProductPage = ({ addItem }) => {
               </div>
 
               <div className="purchase-info">
-                
                 {added ? (
                   <button
                     type="button"

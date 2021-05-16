@@ -6,6 +6,12 @@ const Card = ({ id, image1, price, name, category, item, sp, addItem }) => {
   const history = useHistory();
   const [added, setAdded] = useState(false);
 
+  const formattedPrice = (price) =>
+    new Intl.NumberFormat("en-IN", {
+      style: "currency",
+      currency: "INR",
+    }).format(price);
+
   return (
     <div className="new-card-wrapper">
       <div
@@ -16,8 +22,8 @@ const Card = ({ id, image1, price, name, category, item, sp, addItem }) => {
         <span>{category}</span>
         <h5>{name}</h5>
       </div>
-      <del>₹{price}</del>
-      <span style={{ fontSize: "14px" }}>₹{sp.toFixed(2)}</span>
+      <del>{formattedPrice(price)}</del>
+      <span style={{ fontSize: "14px" }}>{formattedPrice(sp)}</span>
       <br />
       {added ? (
         <Button
