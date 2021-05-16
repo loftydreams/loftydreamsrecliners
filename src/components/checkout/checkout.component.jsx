@@ -23,7 +23,7 @@ const CheckoutPage = ({ cartItems, total }) => {
         alt=""
         className="ad-banner"
       />
-      <div className="checkout">
+      <div className={classes.root}>
         <Breadcrumbs separator=">" aria-label="breadcrumb">
           <Link color="inherit" href="/" aria-current="page">
             Shopping Cart
@@ -35,10 +35,11 @@ const CheckoutPage = ({ cartItems, total }) => {
             Order Complete
           </Link>
         </Breadcrumbs>
-        <h4 className="checkout-heading"> YOUR SHOPPING CART</h4>
-        {cartItems.map((cartItem) => (
-          <CheckoutItem key={cartItem.id} cartItem={cartItem} />
-        ))}
+        <div className={classes.grid}>
+          {cartItems.map((cartItem) => (
+            <CheckoutItem key={cartItem.id} cartItem={cartItem} />
+          ))}
+        </div>
         <div className={classes.checkoutTotal}>
           <CheckoutTotal total={total} />
         </div>

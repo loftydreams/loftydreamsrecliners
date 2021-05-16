@@ -1,173 +1,104 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap");
 
-.checkout{
+.checkout-item {
+  max-width: 600px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin: 10px;
+}
+
+.checkout-heading {
+  font-family: "Source Sans Pro", sans-serif;
+  text-align: left;
   margin-top: 10px;
-  padding-left: 10%;
-  padding-right: 10%;
-  margin-bottom: 5%;
-}
-.checkout-heading
-{
-    font-family: 'Source Sans Pro', sans-serif;
-  text-align: center;
-    margin-top: 10px;
-    margin-bottom:2%;
-    font-size: 27px;
-
+  margin-bottom: 2%;
+  font-size: 20px;
 }
 
-.checkout-wrapper
-{
+.checkout-image {
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkout-image img {
   width: 100%;
-  margin-top:20px;
- display: flex;
-justify-content: center;
-flex-wrap: wrap;
-
-border-top: 1px solid rgb(156, 156, 156);
-border-bottom: 1px solid rgb(156, 156, 156);
-height: fit-content;
-
-
-}
-.checkout-image
-{
-   
-    height: 200px;
-    width: 150px;
-    padding-top: 10px;
-
-}
-.checkout-image img
-{
-    object-fit: contain;
-    padding: 5px;
-    height: 150px;
-}
-.checkout-description
-{
-    width: 260px;
-    margin-left: 20px;
-    padding-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-
-}
-.checkout-description h7
-{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-weight: 400 ;
-    font-size: 18px;
-    padding-top: 10px;
-}
-.checkout-description span
-{
-    font-family: 'Source Sans Pro', sans-serif;
-  
-    cursor: pointer;
-    color: grey;
-   
 }
 
-.qt-icon
-{
-    font-size: 25px;
-    cursor: pointer;
-    margin-left: 3px;
-    margin-right: 3px;
+.checkout-description {
+  width: 100%;
+  margin-left: 20px;
 }
-.qt-icon:hover
-{
-    transform: scale(1.2);
+
+.checkout-mid {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.checkout-price span
-{
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 18px;
-  
+
+.checkout-mid span {
+  font-family: "Source Sans Pro", sans-serif;
+  margin-right: 16px;
+  cursor: pointer;
+  color: grey;
 }
-.checkout-price
-{
-    padding-left: 5%;
-    padding-top: 10px;
+
+.checkout-mid span:hover {
+  color: black;
 }
- .right-checkout
- {
 
-     margin-left: 60px;
-    width: 300px;
+.checkout-quantity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
- }
- .right-checkout h7
- {
-    font-family: 'Source Sans Pro', sans-serif;
-    margin-bottom: 0px;
+.checkout-quantity span {
+  margin: 0 10px;
+  padding: 0;
+}
 
- }
- .quantity-text
- {
-  
-  border: 2px solid rgb(172, 169, 169);
-  margin-right: 0px;
-  padding: 2px;
-  
+.qt-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
 
- }
- .quantity-checkout
- {
-   width: 100%;
- }
+.qt-icon:hover {
+  transform: scale(1.2);
+}
 
- @media (max-width:600px)
- {
-     .checkout
-     {
-         padding-left: 4px;
-         padding-right: 4px;
-     }
-     .right-checkout
-     {
-         margin-left: 0px;
-         margin-right: 10px;
+.checkout-price {
+  display: flex;
+  flex-direction: column;
+}
 
-     }
-     .left-checkout
-     {
-         height: fit-content;
-         flex-wrap: wrap;
-         flex: 1;
-     }
-     .checkout-image
-     {
-         height: 100px;
-         width: 100px;
-        padding-top: 0px;
-         justify-self: center;
-     }
-     .subtotal
-     {
-         margin-left: 0px;
-         color: black;
-        
+.checkout-price span {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+}
 
-     }
-     .checkout-price
-     {
+@media (max-width: 600px) {
+  .checkout-item {
+    margin: 3px;
+  }
 
-        flex: 1;
+  .checkout-heading {
+    font-size: 15px;
+  }
 
-        text-align: center;
-        padding-left: 0;
-     }
+  .checkout-price span {
+    font-size: 13px;
+  }
 
-     .checkout-heading
-     {
-         margin-bottom: 10%;
-     }
-     .checkout-image img
-     {
-       height: 110px;
-       
-     }
- } 
+  .checkout-mid span {
+    font-size: 13px;
+  }
+
+  .checkout-quantity span {
+    margin: 0 3px;
+  }
+}

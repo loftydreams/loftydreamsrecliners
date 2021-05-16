@@ -28,6 +28,12 @@ function Card({ id, src, name, category, price, discount, rating, addItem }) {
     return stars;
   };
 
+  const formattedPrice = (price) =>
+    new Intl.NumberFormat("en-IN", {
+      style: "currency",
+      currency: "INR",
+    }).format(price);
+
   const handleClick = () => {
     history.push(`/product/${id}`);
   };
@@ -47,7 +53,8 @@ function Card({ id, src, name, category, price, discount, rating, addItem }) {
           <span className="top-heading">{category}</span>
           <h5 className="product-name">{name}</h5>
           <span className="h5-position">
-            <del className="price-cut"> ₹{price} </del>  <strong> ₹{sp.toFixed(2)} </strong>
+            <del className="price-cut">{formattedPrice(price)}</del>
+            <strong>{formattedPrice(sp)}</strong>
             <span className="rating-star"> {ratedStars(rating)} </span>
           </span>
           {added ? (

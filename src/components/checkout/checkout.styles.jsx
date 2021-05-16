@@ -9,15 +9,27 @@ export const useStyles = makeStyles({
     alignItems: "center",
     justifyContent: "center",
     padding: "20px",
-  },
-  table: {
-    minWidth: 650,
-    maxWidth: 900,
+
+    "& .MuiBreadcrumbs-root": {
+      marginBottom: "20px",
+    },
   },
   checkoutTotal: {
     width: "100%",
     display: "flex",
     justifyContent: "center",
+  },
+  grid: {
+    display: "grid",
+    gridTemplateColumns: "1fr",
+    gap: "20px",
+    marginBottom: "20px",
+  },
+  "@media (max-width: 900px)": {
+    grid: {
+      display: "grid",
+      gap: "15px",
+    },
   },
   card: {
     maxWidth: 349,
