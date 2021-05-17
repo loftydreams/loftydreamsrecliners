@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { Button } from "@material-ui/core";
 
-const Card = ({ id, image1, price, name, category, item, sp, addItem }) => {
+const Card = ({ id, image1, price, name, category, item, sp, addItem , discount}) => {
   const history = useHistory();
   const [added, setAdded] = useState(false);
 
@@ -14,6 +14,9 @@ const Card = ({ id, image1, price, name, category, item, sp, addItem }) => {
 
   return (
     <div className="new-card-wrapper">
+      <div className="offer-text-cat">
+          <span>-30%</span>
+        </div>
       <div
         onClick={() => history.push(`/product/${id}`)}
         style={{ cursor: "pointer" }}
@@ -22,6 +25,7 @@ const Card = ({ id, image1, price, name, category, item, sp, addItem }) => {
         <span>{category}</span>
         <h5>{name}</h5>
       </div>
+      
       <del>{formattedPrice(price)}</del>
       <span style={{ fontSize: "14px" }}>{formattedPrice(sp)}</span>
       <br />
@@ -46,7 +50,10 @@ const Card = ({ id, image1, price, name, category, item, sp, addItem }) => {
         >
           Add to Basket
         </Button>
+
+
       )}
+      
     </div>
   );
 };
