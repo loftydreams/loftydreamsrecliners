@@ -38,7 +38,7 @@ const Card = ({ id, image1, price, name, category, item, sp, addItem }) => {
         <Button
           variant="contained"
           color="primary"
-          size="small"
+          
           onClick={() => {
             addItem(item);
             setAdded(true);
