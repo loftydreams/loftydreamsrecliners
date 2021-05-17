@@ -9,11 +9,12 @@
 }
 
 .checkout-heading {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: sans-serif;
   text-align: left;
   margin-top: 10px;
   margin-bottom: 2%;
   font-size: 20px;
+  color: rgb(95, 93, 93);
 }
 
 .checkout-image {
@@ -41,10 +42,11 @@
 }
 
 .checkout-mid span {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family:  sans-serif;
   margin-right: 16px;
   cursor: pointer;
   color: grey;
+  font-weight: 600;
 }
 
 .checkout-mid span:hover {
@@ -77,8 +79,9 @@
 }
 
 .checkout-price span {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family:  sans-serif;
   font-size: 15px;
+  font-weight: 600;
 }
 
 @media (max-width: 600px) {
