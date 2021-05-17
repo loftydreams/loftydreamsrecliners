@@ -115,7 +115,7 @@ border-radius: 15px;
   position: absolute;
   top: 0px;
 
-  background-color: rgb(224, 34, 34);
+  background-color: rgba(224, 34, 34, 0.801);
   border-radius: 0%;
  padding: 10px;
  color: white;
