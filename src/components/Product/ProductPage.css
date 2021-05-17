@@ -68,10 +68,11 @@ img {
 .product-title {
   font-size: 1.7rem;
   text-transform: capitalize;
-  font-weight: 700;
+  font-weight: 900;
   position: relative;
   color: #141f2b;
   margin: 1rem 0;
+
 }
 .product-title::after {
   content: "";
@@ -123,9 +124,9 @@ img {
 }
 .new-price span {
   color: #35363a;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 16px;
-  font-family: 'Farro', sans-serif;
+  font-family: sans-serif;
 }
 .product-detail h2 {
   text-transform: capitalize;
@@ -264,7 +265,7 @@ img {
     height: 300px;
   }
   .product-title {
-    font-size: 20px;
+    font-size: 21px;
   }
   .bottom-menu {
     display: none;
