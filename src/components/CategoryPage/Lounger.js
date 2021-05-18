@@ -28,7 +28,7 @@ const Lounger = ({ addItem }) => {
         <Link color="inherit" href="/">
           HOME
         </Link>
-    
+
         <Typography color="textPrimary">LOUNGER SOFA RECLINERS </Typography>
       </Breadcrumbs>
       <br></br>
@@ -74,6 +74,7 @@ const Lounger = ({ addItem }) => {
                   item={item}
                   sp={sp}
                   addItem={addItem}
+                  discount={discount}
                 />
               );
             })}

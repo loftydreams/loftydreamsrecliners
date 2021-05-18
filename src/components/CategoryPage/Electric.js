@@ -86,6 +86,7 @@ const Electric = ({ addItem }) => {
                   item={item}
                   sp={sp}
                   addItem={addItem}
+                  discount={discount}
                 />
               );
             })}

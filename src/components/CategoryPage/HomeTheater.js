@@ -28,7 +28,7 @@ const HomeTheater = ({ addItem }) => {
         <Link color="inherit" href="/">
           HOME
         </Link>
-        
+
         <Typography color="textPrimary">HOME THEATER RECLINERS </Typography>
       </Breadcrumbs>
       <br></br>
@@ -74,6 +74,7 @@ const HomeTheater = ({ addItem }) => {
                   item={item}
                   sp={sp}
                   addItem={addItem}
+                  discount={discount}
                 />
               );
             })}
