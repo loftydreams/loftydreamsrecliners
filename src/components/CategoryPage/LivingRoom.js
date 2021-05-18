@@ -28,7 +28,7 @@ const LivingRoom = ({ addItem }) => {
         <Link color="inherit" href="/">
           HOME
         </Link>
-     
+
         <Typography color="textPrimary">LIVING ROOM RECLINERS </Typography>
       </Breadcrumbs>
       <br></br>
@@ -75,6 +75,7 @@ const LivingRoom = ({ addItem }) => {
                   item={item}
                   sp={sp}
                   addItem={addItem}
+                  discount={discount}
                 />
               );
             })}

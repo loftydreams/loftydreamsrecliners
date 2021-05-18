@@ -29,7 +29,7 @@ const Manual = ({ addItem }) => {
           HOME
         </Link>
         <Link color="inherit" href="/single-seater">
-         SINGLE SEATER RECLINERS
+          SINGLE SEATER RECLINERS
         </Link>
 
         <Typography color="textPrimary">MANUAL RECLINERS </Typography>
@@ -85,6 +85,7 @@ const Manual = ({ addItem }) => {
                   item={item}
                   sp={sp}
                   addItem={addItem}
+                  discount={discount}
                 />
               );
             })}
