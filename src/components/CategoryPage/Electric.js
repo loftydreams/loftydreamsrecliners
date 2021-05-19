@@ -1,21 +1,18 @@
 import { connect } from "react-redux";
-import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
+import { createStructuredSelector } from "reselect";
+
+import { selectCollections } from "../../redux/shop/shop.selector";
+
 import Typography from "@material-ui/core/Typography";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import Link from "@material-ui/core/Link";
 
-import { firestore } from "../../firebase";
 import { addItem } from "../../redux/cart/cart.actions";
 import Card from "./Card";
 
 import "./LivingRoom.css";
 
-const Electric = ({ addItem }) => {
-  const [products, loading] = useCollectionDataOnce(
-    firestore.collection("products"),
-    { idField: "id" }
-  );
-
+const Electric = ({ addItem, products }) => {
   const filteredProducts = products?.filter((product) => {
     return product.category
       ?.toLowerCase()
@@ -44,7 +41,6 @@ const Electric = ({ addItem }) => {
           operates with the help of motor.
           <br></br> <br></br>{" "}
           <span style={{ fontWeight: 600 }}>
-            {" "}
             Customize your Electric Recliner With the assistance of Lofty Dreams{" "}
           </span>
           <p className="sigle-seater-content"></p>
@@ -62,7 +58,7 @@ const Electric = ({ addItem }) => {
       </div>
       <div className="bottom-cat-page">
         <div className="living-room-1">
-          {!loading &&
+          {products.length &&
             filteredProducts?.map((data) => {
               const { id, image1, price, discount, name, category } = data;
 
@@ -96,8 +92,12 @@ const Electric = ({ addItem }) => {
   );
 };
 
+const mapStateToProps = createStructuredSelector({
+  products: selectCollections,
+});
+
 const mapDispatchToProps = (dispatch) => ({
   addItem: (item) => dispatch(addItem(item)),
 });
 
-export default connect(null, mapDispatchToProps)(Electric);
+export default connect(mapStateToProps, mapDispatchToProps)(Electric);

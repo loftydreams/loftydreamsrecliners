@@ -1,21 +1,17 @@
 import { connect } from "react-redux";
-import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
+import { createStructuredSelector } from "reselect";
+
+import { selectCollections } from "../../redux/shop/shop.selector";
 import Typography from "@material-ui/core/Typography";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import Link from "@material-ui/core/Link";
 
-import { firestore } from "../../firebase";
 import { addItem } from "../../redux/cart/cart.actions";
 import Card from "./Card";
 
 import "./LivingRoom.css";
 
-const Manual = ({ addItem }) => {
-  const [products, loading] = useCollectionDataOnce(
-    firestore.collection("products"),
-    { idField: "id" }
-  );
-
+const Manual = ({ addItem, products }) => {
   const filteredProducts = products?.filter((product) => {
     return product.category
       ?.toLowerCase()
@@ -61,7 +57,7 @@ const Manual = ({ addItem }) => {
       </div>
       <div className="bottom-cat-page">
         <div className="living-room-1">
-          {!loading &&
+          {products.length &&
             filteredProducts?.map((data) => {
               const { id, image1, price, discount, name, category } = data;
 
@@ -95,8 +91,12 @@ const Manual = ({ addItem }) => {
   );
 };
 
+const mapStateToProps = createStructuredSelector({
+  products: selectCollections,
+});
+
 const mapDispatchToProps = (dispatch) => ({
   addItem: (item) => dispatch(addItem(item)),
 });
 
-export default connect(null, mapDispatchToProps)(Manual);
+export default connect(mapStateToProps, mapDispatchToProps)(Manual);
