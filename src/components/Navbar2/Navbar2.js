@@ -42,7 +42,7 @@ const Navbar2 = ({ hidden }) => {
         </div>
         <Link to="/">
           <div className="logo">
-            <img alt="Logo" src="Image/loftyLogo.jpeg" />
+            <img alt="Logo" src="Image/output-onlinepngtools.png" />
           </div>
         </Link>
         <SearchBar cname="search-bar" />
