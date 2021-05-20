@@ -44,8 +44,8 @@ border-radius: 15px;
   }
   
   .card-bottom {
-  
-    min-height: 39%;
+
+    min-height: 45%;
   
     min-width: 98%;
     max-width: 98%;
@@ -87,8 +87,8 @@ border-radius: 15px;
 .see-details-btn
 {
   margin-top: 3px;
-  font-size: 9px;
-  transform: scale(0.7);
+  font-size: 10px;
+  transform: scale(0.8);
   cursor: pointer;
 
 }
@@ -109,7 +109,7 @@ border-radius: 15px;
    height: 170px;
   }
   .card-bottom{
-    margin-top: 3px;
+    margin-top: 0px;
   }
   .add-to-cart-btn
   {
