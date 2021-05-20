@@ -34,7 +34,6 @@ export const useStyles = makeStyles({
   },
   item: {
     backgroundColor: "white",
-    border: "1px solid blue",
     height: "130px",
     width: "120px",
     margin: "0 5px",
