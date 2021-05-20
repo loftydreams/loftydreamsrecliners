@@ -5,6 +5,8 @@ import Navbar2 from "./components/Navbar2/Navbar2";
 import Navbar3 from "./components/Navbar3/Navbar3";
 import { Navbar4 } from "./components/Navbar4/Navbar4";
 import ChatContainer from "./components/chat-bot/chat-icon";
+import { Footer } from "./components/Footer/Footer";
+import "./App.css";
 
 import CarouselContainer from "./components/Carousel/Carousel";
 import Home1 from "./components/HomePage/Home1";
@@ -32,10 +34,6 @@ import Manual from "./components/CategoryPage/Manual";
 import Feedback from "./components/Navbar1/Feedback";
 import Testimonial from "./components/Testimonial/Testimonial";
 import ShippingPolicy from "./components/ShippingPolicy/ShippingPolicy";
-
-import { Footer } from "./components/Footer/Footer";
-
-import "./App.css";
 
 function App() {
   return (
