@@ -18,7 +18,7 @@ const CartItemsPreview = ({ cartItems }) => {
   return cartItems.length > 0 ? (
     <div className={classes.root}>
       <div className={classes.header}>
-        <h2>YOUR CART ITEMS</h2>
+        <h2>YOUR CART ITEMS.....</h2>
         <hr />
       </div>
       <div className={classes.content}>
