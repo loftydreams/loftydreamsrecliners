@@ -25,7 +25,7 @@ const RelatedProducts = ({ category, products }) => {
           autoplay={true}
           responsiveClass={true}
           nav={true}
-          dots={true}
+          dots={false}
           autoplayHoverPause={true}
           autoplayTimeout={3000}
           responsive={{

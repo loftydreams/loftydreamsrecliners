@@ -5,7 +5,6 @@ export const useStyles = makeStyles({
     margin: "10px 20px 30px 20px",
     display: "flex",
     flexDirection: "column",
-    backgroundColor: "white",
     borderBottom: "1px solid grey",
   
   },
