@@ -80,7 +80,7 @@ function Card({ id, src, name, category, price, discount, rating, addItem }) {
               Add to Cart
             </Button>
           )}
-          <Button
+    {/*       <Button
             variant="outlined"
             className="see-details-btn"
             size="small"
@@ -88,6 +88,7 @@ function Card({ id, src, name, category, price, discount, rating, addItem }) {
           >
             See Details.....
           </Button>
+          */}
         </div>
         <div className="offer-text">
           <span>-{discount}%</span>
