@@ -48,7 +48,7 @@ function App() {
           <CarouselContainer />
           <Home1 />
           <Home2 />
-          <CartItemsPreview />
+     
           <CardCollection
             heading={"BEST SELLING PRODUCTS"}
             topSelling
@@ -59,6 +59,7 @@ function App() {
             topSelling={false}
             topDiscount
           />
+               <CartItemsPreview />
           <Contact />
           <Review />
         </Route>

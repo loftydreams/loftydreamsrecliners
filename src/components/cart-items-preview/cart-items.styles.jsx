@@ -5,6 +5,9 @@ export const useStyles = makeStyles({
     margin: "10px 20px 30px 20px",
     display: "flex",
     flexDirection: "column",
+    backgroundColor: "white",
+    borderBottom: "1px solid grey",
+  
   },
   header: {
     marginBottom: "10px",
@@ -12,13 +15,16 @@ export const useStyles = makeStyles({
     textAlign: "center",
     "& h2": {
       width: "100%",
-      fontSize: "25px",
+      fontSize: "18px",
       fontWeight: "600",
+      fontFamily: "sans-serif",
+      textAlign:"left"
     },
     "& hr": {
       marginTop: "-10px",
       overflow: "visible",
     },
+    
   },
   content: {
     display: "flex",
@@ -46,7 +52,6 @@ export const useStyles = makeStyles({
     justifyContent: "center",
     width: "200px",
     backgroundColor: "white",
-    border: "1px solid blue",
     margin: "0 5px 0 20px",
     padding: "10px",
     "@media(max-width: 768px)": {
