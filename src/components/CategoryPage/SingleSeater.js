@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 import "./SingleSeater.css";
 
-export const SingleSeater = () => {
+const SingleSeater = () => {
   return (
     <div className="single-seater">
       <Breadcrumbs aria-label="breadcrumb" style={{ margin: "20px" }}>
@@ -57,3 +57,5 @@ export const SingleSeater = () => {
     </div>
   );
 };
+
+export default SingleSeater;
