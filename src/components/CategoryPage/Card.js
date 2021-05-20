@@ -39,7 +39,7 @@ const Card = ({
       </div>
 
       <del>{formattedPrice(price)}</del>
-      <span style={{ fontSize: "14px" }}>{formattedPrice(sp)}</span>
+      <strong style={{ fontSize: "14px" }} className="price-card">{formattedPrice(sp)}</strong>
       <br />
       {added ? (
         <Button
@@ -53,7 +53,9 @@ const Card = ({
       ) : (
         <Button
           variant="contained"
+          className="add-to-cart-btn"
           color="primary"
+          size="large"
           onClick={() => {
             addItem(item);
             setAdded(true);

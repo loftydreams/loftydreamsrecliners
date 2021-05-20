@@ -29,6 +29,7 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
         <OwlCarousel
           className="owl-theme -"
           loop
+          dots={false}
           margin={0}
           autoplay={true}
           responsiveClass={true}

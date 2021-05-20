@@ -128,14 +128,14 @@ img {
   font-weight: 600;
 }
 .last-price span {
-  color: #f64749;
+  color: grey;
   text-decoration: line-through;
 }
 .last-price {
   margin-bottom: 0px;
 }
 .new-price span {
-  color: #35363a;
+  color: red;
   font-weight: 600;
   font-size: 16px;
   font-family: sans-serif;

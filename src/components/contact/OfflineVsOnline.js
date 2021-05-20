@@ -3,7 +3,7 @@ import Faq from "react-faq-component";
 import "./oflineVsOnline.css";
 
 const data = {
-  title: "Offline vs Online Store",
+  title: "OFFLINE vs ONLINE STORE",
   rows: [
     {
       title: "Offline Store",
