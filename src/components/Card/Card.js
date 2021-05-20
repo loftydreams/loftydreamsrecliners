@@ -54,7 +54,7 @@ function Card({ id, src, name, category, price, discount, rating, addItem }) {
           <h5 className="product-name">{name}</h5>
           <span className="h5-position">
             <del className="price-cut">{formattedPrice(price)}</del>
-            <strong>{formattedPrice(sp)}</strong>
+            <strong className="price-card">{formattedPrice(sp)}</strong>
             <span className="rating-star"> {ratedStars(rating)} </span>
           </span>
           {added ? (
@@ -80,7 +80,7 @@ function Card({ id, src, name, category, price, discount, rating, addItem }) {
               Add to Cart
             </Button>
           )}
-          <Button
+    {/*       <Button
             variant="outlined"
             className="see-details-btn"
             size="small"
@@ -88,6 +88,7 @@ function Card({ id, src, name, category, price, discount, rating, addItem }) {
           >
             See Details.....
           </Button>
+          */}
         </div>
         <div className="offer-text">
           <span>-{discount}%</span>

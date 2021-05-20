@@ -10,21 +10,21 @@ import {
   selectCartTotal,
 } from "../../redux/cart/cart.selectors";
 
-import Breadcrumbs from "@material-ui/core/Breadcrumbs";
-import Link from "@material-ui/core/Link";
 
 const CheckoutPage = ({ cartItems, total }) => {
   const classes = useStyles();
 
   return (
     <>
+    
       <img
         src="https://damroindia.com/media/bsimages/Main_Banner_1_1_.jpg"
         alt=""
         className="ad-banner"
       />
+      <h2 className="checkout-heading" style={{textAlign:"center"}}> YOUR SHOPPING CART </h2>
       <div className={classes.root}>
-        <Breadcrumbs separator=">" aria-label="breadcrumb">
+        {/* <Breadcrumbs separator=">" aria-label="breadcrumb">
           <Link color="inherit" href="/" aria-current="page">
             Shopping Cart
           </Link>
@@ -34,7 +34,7 @@ const CheckoutPage = ({ cartItems, total }) => {
           <Link color="inherit" href="/components/breadcrumbs/">
             Order Complete
           </Link>
-        </Breadcrumbs>
+        </Breadcrumbs> */}
         <div className={classes.grid}>
           {cartItems.map((cartItem) => (
             <CheckoutItem key={cartItem.id} cartItem={cartItem} />

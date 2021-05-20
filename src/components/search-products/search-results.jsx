@@ -1,19 +1,16 @@
 import { useParams } from "react-router-dom";
-import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
-import Grid from "@material-ui/core/Grid";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectCollections } from "../../redux/shop/shop.selector";
 
-import { firestore } from "../../firebase";
+import Grid from "@material-ui/core/Grid";
 import Card from "../Card/Card";
 
 import { useStyles } from "./search-results.styles";
 
-const SearchResults = () => {
+const SearchResults = ({ products }) => {
   const classes = useStyles();
   const { keyword } = useParams();
-  const [products, loading] = useCollectionDataOnce(
-    firestore.collection("products"),
-    { idField: "id" }
-  );
 
   const filteredProducts = products?.filter((product) => {
     return (
@@ -23,7 +20,7 @@ const SearchResults = () => {
   });
 
   return (
-    !loading && (
+    products.length && (
       <div className={classes.root}>
         <span
           className={classes.header}
@@ -33,15 +30,8 @@ const SearchResults = () => {
         </span>
         <Grid className={classes.grid} container justify="center" spacing={5}>
           {filteredProducts?.map((data) => {
-            const {
-              id,
-              image1,
-              price,
-              discount,
-              name,
-              category,
-              rating,
-            } = data;
+            const { id, image1, price, discount, name, category, rating } =
+              data;
 
             return (
               <Grid item key={id}>
@@ -68,4 +58,8 @@ const SearchResults = () => {
   );
 };
 
-export default SearchResults;
+const mapStateToProps = createStructuredSelector({
+  products: selectCollections,
+});
+
+export default connect(mapStateToProps)(SearchResults);

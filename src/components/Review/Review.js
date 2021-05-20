@@ -1,7 +1,7 @@
 import React from "react";
 import "./review.css";
 
-export const Review = () => {
+const Review = () => {
   return (
     <div className="review__main">
       <section id="testimonials">
@@ -71,3 +71,5 @@ export const Review = () => {
     </div>
   );
 };
+
+export default Review;

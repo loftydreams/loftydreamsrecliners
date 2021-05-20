@@ -1,6 +1,8 @@
-import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 
-import { firestore } from "../../firebase";
+import { selectCollections } from "../../redux/shop/shop.selector";
+
 import Card from "./Card";
 
 import OwlCarousel from "react-owl-carousel";
@@ -8,12 +10,7 @@ import "owl.carousel/dist/assets/owl.carousel.min.css";
 import "owl.carousel/dist/assets/owl.theme.default.min.css";
 import "./CardCollection.css";
 
-function CardCollection({ heading, topSelling, topDiscount }) {
-  const [products, loading] = useCollectionDataOnce(
-    firestore.collection("products"),
-    { idField: "id" }
-  );
-
+function CardCollection({ heading, topSelling, topDiscount, products }) {
   const topSellingProducts = products?.filter((product) => product.topSelling);
 
   const topDiscountProducts = products?.filter(
@@ -23,7 +20,7 @@ function CardCollection({ heading, topSelling, topDiscount }) {
   const renderProducts = topSelling ? topSellingProducts : topDiscountProducts;
 
   return (
-    !loading && (
+    products.length && (
       <div className="card-collection">
         <div className="card-collection-heading">
           <h2 className="card-collection-h2"> {heading}</h2>
@@ -32,11 +29,11 @@ function CardCollection({ heading, topSelling, topDiscount }) {
         <OwlCarousel
           className="owl-theme -"
           loop
+          dots={false}
           margin={0}
           autoplay={true}
           responsiveClass={true}
           nav={true}
-        
           autoplayHoverPause={true}
           autoplayTimeout={3000}
           responsive={{
@@ -67,15 +64,8 @@ function CardCollection({ heading, topSelling, topDiscount }) {
           }}
         >
           {renderProducts?.map((data) => {
-            const {
-              id,
-              image1,
-              price,
-              discount,
-              name,
-              category,
-              rating,
-            } = data;
+            const { id, image1, price, discount, name, category, rating } =
+              data;
 
             return (
               <div className="item" key={id}>
@@ -96,4 +86,9 @@ function CardCollection({ heading, topSelling, topDiscount }) {
     )
   );
 }
-export default CardCollection;
+
+const mapStateToProps = createStructuredSelector({
+  products: selectCollections,
+});
+
+export default connect(mapStateToProps)(CardCollection);
