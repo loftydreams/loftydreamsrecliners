@@ -44,7 +44,7 @@ const CartItemsPreview = ({ cartItems }) => {
         </div>
         <div className={classes.info}>
           <Button
-            variant="outlined"
+            variant="contained"
             color="primary"
             href="https://www.amazon.in/s?me=A1YF33ZDTB7JEG&marketplaceID=A21TJRUUN4KGV"
             target="_blank"
@@ -53,8 +53,8 @@ const CartItemsPreview = ({ cartItems }) => {
             Visit Amazon.in
           </Button>
           <Button
-            variant="outlined"
-            color="primary"
+            variant="contained"
+            color=""
             onClick={() => history.push("/checkout")}
             className={classes.button}
           >
