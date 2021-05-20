@@ -54,7 +54,7 @@ function Card({ id, src, name, category, price, discount, rating, addItem }) {
           <h5 className="product-name">{name}</h5>
           <span className="h5-position">
             <del className="price-cut">{formattedPrice(price)}</del>
-            <strong>{formattedPrice(sp)}</strong>
+            <strong className="price-card">{formattedPrice(sp)}</strong>
             <span className="rating-star"> {ratedStars(rating)} </span>
           </span>
           {added ? (

@@ -1,23 +1,20 @@
-import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
-import { firestore } from "../../firebase";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+
+import { selectCollections } from "../../redux/shop/shop.selector";
 
 import Card from "../Card/Card";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.min.css";
 import "owl.carousel/dist/assets/owl.theme.default.min.css";
 
-const RelatedProducts = ({ category }) => {
-  const [products, loading] = useCollectionDataOnce(
-    firestore.collection("products").orderBy("rating", "desc"),
-    { idField: "id" }
-  );
-
+const RelatedProducts = ({ category, products }) => {
   const filteredProducts = products?.filter((product) => {
     return product.category?.toLowerCase().includes(category.toLowerCase());
   });
 
   return (
-    !loading &&
+    products.length &&
     category && (
       <div style={{ margin: "0 10px" }}>
         <h2 className="relatedh2">RELATED PRODUCTS</h2>
@@ -59,15 +56,8 @@ const RelatedProducts = ({ category }) => {
           }}
         >
           {filteredProducts?.map((data) => {
-            const {
-              id,
-              image1,
-              price,
-              discount,
-              name,
-              category,
-              rating,
-            } = data;
+            const { id, image1, price, discount, name, category, rating } =
+              data;
 
             return (
               <div className="item" key={id}>
@@ -89,4 +79,8 @@ const RelatedProducts = ({ category }) => {
   );
 };
 
-export default RelatedProducts;
+const mapStateToProps = createStructuredSelector({
+  products: selectCollections,
+});
+
+export default connect(mapStateToProps)(RelatedProducts);
