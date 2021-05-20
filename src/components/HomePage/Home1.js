@@ -19,7 +19,7 @@ const Home1 = () => {
       </div>
       <div className="home1-right">
         <img
-          src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/07/Recliners-Manufacturer-by-Lofty-Dreams-Recliners-Pvt.-Ltd..jpg"
+          src="https://source.unsplash.com/random/700x400/?sofa"
           alt="home1"
         />
       </div>
