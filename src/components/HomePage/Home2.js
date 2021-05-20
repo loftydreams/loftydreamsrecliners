@@ -3,7 +3,7 @@ import { Home2Card } from "./Home2Card";
 
 import "./Home2.css";
 
-export const Home2 = () => {
+const Home2 = () => {
   const history = useHistory();
 
   return (
@@ -58,3 +58,5 @@ export const Home2 = () => {
     </div>
   );
 };
+
+export default Home2;

@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home1.css";
-export const Home1 = () => {
+const Home1 = () => {
   return (
     <div className="home1-body">
       <div className="home1-left">
@@ -26,3 +26,5 @@ export const Home1 = () => {
     </div>
   );
 };
+
+export default Home1;

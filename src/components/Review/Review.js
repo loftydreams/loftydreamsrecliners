@@ -1,7 +1,7 @@
 import React from "react";
 import "./review.css";
 
-export const Review = () => {
+const Review = () => {
   return (
     <div className="review__main">
       <section id="testimonials">
@@ -14,7 +14,10 @@ export const Review = () => {
             <div className="box-top">
               <div className="profile">
                 <div className="profile-img">
-                  <img src="Images/Icons8-customer-480.png"  alt ="review-person" />
+                  <img
+                    src="Images/Icons8-customer-480.png"
+                    alt="review-person"
+                  />
                 </div>
 
                 <div className="name-user">
@@ -40,7 +43,10 @@ export const Review = () => {
             <div className="box-top">
               <div className="profile">
                 <div className="profile-img">
-                  <img src="Images/Icons8-customer-480.png"  alt="review-person" />
+                  <img
+                    src="Images/Icons8-customer-480.png"
+                    alt="review-person"
+                  />
                 </div>
 
                 <div className="name-user">
@@ -66,3 +72,5 @@ export const Review = () => {
     </div>
   );
 };
+
+export default Review;
