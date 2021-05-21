@@ -61,6 +61,9 @@ function Card({
         </div>
 
         <div className="card-bottom">
+          <span className="top-heading" style={{ color: "green" }}>
+            {stock}
+          </span>
           <span className="top-heading">{category}</span>
           <h5 className="product-name">{name}</h5>
           <span className="h5-position">
@@ -92,9 +95,11 @@ function Card({
             </Button>
           )}
         </div>
-        <div className="offer-text">
-          <span>-{discount}%</span>
-        </div>
+        {discount > 0 && (
+          <div className="offer-text">
+            <span>-{discount}%</span>
+          </div>
+        )}
       </div>
     </>
   );
