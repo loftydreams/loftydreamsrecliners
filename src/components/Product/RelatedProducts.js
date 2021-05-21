@@ -8,14 +8,16 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.min.css";
 import "owl.carousel/dist/assets/owl.theme.default.min.css";
 
-const RelatedProducts = ({ category, products }) => {
+const RelatedProducts = ({ category, products, pid }) => {
   const filteredProducts = products?.filter((product) => {
-    return product.category?.toLowerCase().includes(category.toLowerCase());
+    return (
+      product.category?.toLowerCase().includes(category.toLowerCase()) &&
+      product.id !== pid
+    );
   });
 
   return (
-    products.length &&
-    category && (
+    filteredProducts.length > 0 && (
       <div style={{ margin: "0 10px" }}>
         <h2 className="relatedh2">RELATED PRODUCTS</h2>
         <OwlCarousel

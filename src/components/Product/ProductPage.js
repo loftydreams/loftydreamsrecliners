@@ -222,7 +222,7 @@ const ProductPage = ({ addItem, product }) => {
           description={product?.description}
         />
       </div>
-      <RelatedProducts category={product?.category} />
+      <RelatedProducts category={product?.category} pid={productId} />
     </div>
   ) : null;
 };
