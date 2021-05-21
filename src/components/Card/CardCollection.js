@@ -65,8 +65,16 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
           }}
         >
           {renderProducts?.map((data) => {
-            const { id, image1, price, discount, name, category, rating } =
-              data;
+            const {
+              id,
+              image1,
+              price,
+              discount,
+              name,
+              category,
+              rating,
+              stock,
+            } = data;
 
             return (
               <div className="item" key={id}>
@@ -78,6 +86,7 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
                   price={price}
                   discount={discount}
                   rating={rating}
+                  stock={stock}
                 />
               </div>
             );

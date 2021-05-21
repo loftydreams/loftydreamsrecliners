@@ -12,7 +12,7 @@ import {
 import "./checkout-item.styles.css";
 
 const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
-  const { name, imageUrl, quantity, price } = cartItem;
+  const { name, imageUrl, quantity, price, stock } = cartItem;
 
   const formattedPrice = (price) =>
     new Intl.NumberFormat("en-IN", {
@@ -45,7 +45,8 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
         </div>
 
         <div className="checkout-price">
-          <span className="subtotal"> Price: {formattedPrice(price)}</span>
+          <span className="stock">{stock}</span>
+          <span className="subtotal">Price: {formattedPrice(price)}</span>
           <span className="subtotal">
             Sub total: {formattedPrice(price * quantity)}
           </span>

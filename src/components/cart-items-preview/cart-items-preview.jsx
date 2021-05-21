@@ -44,7 +44,7 @@ const CartItemsPreview = ({ cartItems }) => {
         </div>
         <div className={classes.info}>
           <Button
-            variant="contained"
+            variant="outlined"
             color="primary"
             href="https://www.amazon.in/s?me=A1YF33ZDTB7JEG&marketplaceID=A21TJRUUN4KGV"
             target="_blank"
