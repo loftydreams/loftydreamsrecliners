@@ -59,9 +59,7 @@ const Review = () => {
 
             <div className="client-comment">
               <p>
-
               I Purchased Manual LDRS-01 Nestro. I could not believe how nice it was. I have other recliner that I paid 2 times the price for and I feel this one is just as good. The back is tall that is important for me as I have back problem.
-
               </p>
             </div>
           </div>
