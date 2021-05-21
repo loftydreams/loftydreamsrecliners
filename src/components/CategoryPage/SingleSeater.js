@@ -8,7 +8,7 @@ const SingleSeater = () => {
   return (
     <div className="single-seater">
       <Breadcrumbs aria-label="breadcrumb" style={{ margin: "20px" }}>
-        <Link color="inherit" href="/">
+        <Link color="inherit" to="/">
           HOME
         </Link>
         <Typography color="textPrimary">SINGLE SEATER RECLINERS </Typography>
@@ -26,10 +26,9 @@ const SingleSeater = () => {
           just in the following manners: Dimension, Style, Upholstery shading,
           Quality of Upholstery (leatherette, fabric, faux leather), Upholstery
           type (Leatherette, Suede Fabric, Molfino Fabric), Mechanism type
-          (manual or electric), Wood, Foam type. <p></p>
-          More options are available to add on single-seater recliner chairs
-          like- USB ports, Swivel Tray, LED Lights, Cupholders, Touch Sensor
-          Button, and so on.
+          (manual or electric), Wood, Foam type. More options are available to
+          add on single-seater recliner chairs like- USB ports, Swivel Tray, LED
+          Lights, Cupholders, Touch Sensor Button, and so on.
         </p>
       </div>
       <div className="bottom-cat-page">
