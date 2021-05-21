@@ -28,7 +28,8 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
         </div>
         <OwlCarousel
           className="owl-theme -"
-          loop
+          // loop
+          rewind={true}
           dots={false}
           margin={0}
           autoplay={true}
@@ -38,13 +39,13 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
           autoplayTimeout={3000}
           responsive={{
             0: {
-              items: 1.6,
+              items: 1.5,
             },
             370: {
-              items: 1.85,
+              items: 1.78,
             },
             400: {
-              items: 2,
+              items: 1.9,
             },
             600: {
               items: 3,
@@ -56,10 +57,10 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
               items: 4,
             },
             1200: {
-              items: 5.1,
+              items: 5,
             },
             1700: {
-              items: 6.5,
+              items: 6.3,
             },
           }}
         >

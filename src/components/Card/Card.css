@@ -103,7 +103,7 @@ border-radius: 15px;
 @media(max-width:600px) 
 {
   .card-body{
-    width:184px;
+    width:200px;
     height: 330px;
   }
   
