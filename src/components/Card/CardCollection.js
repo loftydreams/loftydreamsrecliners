@@ -30,6 +30,8 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
           className="owl-theme -"
           // loop
           rewind={true}
+          pullDrag
+          
           dots={false}
           margin={0}
           autoplay={true}
@@ -58,9 +60,11 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
             },
             1200: {
               items: 5,
+            
             },
             1700: {
               items: 6.3,
+              
             },
           }}
         >
