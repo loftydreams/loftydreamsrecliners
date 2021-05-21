@@ -16,7 +16,7 @@ export const useStyles = makeStyles({
     zIndex: "1000",
     bottom: "60px",
     right: "5px",
-    color: "white"
+    color: "white",
   },
   header: {
     width: "100%",
@@ -29,6 +29,7 @@ export const useStyles = makeStyles({
     },
     "& h3": {
       fontSize: "15px",
+      color: "black",
     },
   },
   chat: {
@@ -36,6 +37,6 @@ export const useStyles = makeStyles({
     flexDirection: "column",
     height: "300px",
     overflowY: "scroll",
-    color:"black"
+    color: "black",
   },
 });
