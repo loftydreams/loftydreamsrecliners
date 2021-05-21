@@ -19,7 +19,7 @@ const Home1 = () => {
       </div>
       <div className="home1-right">
         <img
-          src="https://source.unsplash.com/random/700x400/?sofa"
+          src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/Manual%20Recliners%2FCatPagePhoto%2FRecliners-Manufacturer-by-Lofty-Dreams-Recliners-Pvt.-Ltd..jpg?alt=media&token=550900a1-3f90-4d84-8d7b-6e2a2897efdc"
           alt="home1"
         />
       </div>
