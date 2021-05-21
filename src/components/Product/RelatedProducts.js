@@ -56,8 +56,16 @@ const RelatedProducts = ({ category, products }) => {
           }}
         >
           {filteredProducts?.map((data) => {
-            const { id, image1, price, discount, name, category, rating } =
-              data;
+            const {
+              id,
+              image1,
+              price,
+              discount,
+              name,
+              category,
+              rating,
+              stock,
+            } = data;
 
             return (
               <div className="item" key={id}>
@@ -69,6 +77,7 @@ const RelatedProducts = ({ category, products }) => {
                   price={price}
                   discount={discount}
                   rating={rating}
+                  stock={stock}
                 />
               </div>
             );

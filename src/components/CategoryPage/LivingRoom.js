@@ -59,6 +59,7 @@ const LivingRoom = ({ addItem, products }) => {
                 name: name,
                 price: sp,
                 imageUrl: image1,
+                stock: stock,
               };
 
               return (
