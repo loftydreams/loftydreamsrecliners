@@ -30,8 +30,16 @@ const SearchResults = ({ products }) => {
         </span>
         <Grid className={classes.grid} container justify="center" spacing={5}>
           {filteredProducts?.map((data) => {
-            const { id, image1, price, discount, name, category, rating } =
-              data;
+            const {
+              id,
+              image1,
+              price,
+              discount,
+              name,
+              category,
+              rating,
+              stock,
+            } = data;
 
             return (
               <Grid item key={id}>
@@ -44,6 +52,7 @@ const SearchResults = ({ products }) => {
                     price={price}
                     discount={discount}
                     rating={rating}
+                    stock={stock}
                   />
                 </div>
               </Grid>

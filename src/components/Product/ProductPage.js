@@ -3,7 +3,7 @@ import { useHistory, withRouter } from "react-router-dom";
 import { connect } from "react-redux";
 import { useParams } from "react-router-dom";
 import { TransformWrapper, TransformComponent } from "react-zoom-pan-pinch";
-import Button from "@material-ui/core/Button";
+
 import IconButton from "@material-ui/core/IconButton";
 import ZoomInIcon from "@material-ui/icons/ZoomIn";
 import ZoomOutIcon from "@material-ui/icons/ZoomOut";
@@ -22,6 +22,8 @@ import "./ProductPage.css";
 const ProductPage = ({ addItem, product }) => {
   const { productId } = useParams();
   const history = useHistory();
+
+  console.log(product);
 
   const [added, setAdded] = useState(false);
   const [src, setSrc] = useState(product?.image1);
@@ -161,9 +163,7 @@ const ProductPage = ({ addItem, product }) => {
 
           <div className="product-content">
             <h2 className="product-title">{product?.name}</h2>
-            <Button variant="contained" color="" size="small">
-              visit store
-            </Button>
+            <h5>{product?.stock}</h5>
             <div className="product-rating">{ratedStars(product?.rating)}</div>
 
             <div className="product-price">
@@ -222,7 +222,7 @@ const ProductPage = ({ addItem, product }) => {
           description={product?.description}
         />
       </div>
-      <RelatedProducts category={product?.category} />
+      <RelatedProducts category={product?.category} pid={productId} />
     </div>
   ) : null;
 };

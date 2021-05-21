@@ -7,7 +7,17 @@ import { addItem } from "../../redux/cart/cart.actions";
 
 import "./Card.css";
 
-function Card({ id, src, name, category, price, discount, rating, addItem }) {
+function Card({
+  id,
+  src,
+  name,
+  category,
+  price,
+  discount,
+  rating,
+  addItem,
+  stock,
+}) {
   const history = useHistory();
   const [added, setAdded] = useState(false);
 
@@ -18,6 +28,7 @@ function Card({ id, src, name, category, price, discount, rating, addItem }) {
     name: name,
     price: sp,
     imageUrl: src,
+    stock: stock,
   };
 
   const ratedStars = (rating) => {
@@ -80,15 +91,6 @@ function Card({ id, src, name, category, price, discount, rating, addItem }) {
               Add to Cart
             </Button>
           )}
-    {/*       <Button
-            variant="outlined"
-            className="see-details-btn"
-            size="small"
-            onClick={handleClick}
-          >
-            See Details.....
-          </Button>
-          */}
         </div>
         <div className="offer-text">
           <span>-{discount}%</span>
