@@ -54,7 +54,6 @@ const CartItemsPreview = ({ cartItems }) => {
           </Button>
           <Button
             variant="contained"
-            color=""
             onClick={() => history.push("/checkout")}
             className={classes.button}
           >

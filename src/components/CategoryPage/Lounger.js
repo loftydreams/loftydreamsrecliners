@@ -4,7 +4,7 @@ import { createStructuredSelector } from "reselect";
 import { selectCollections } from "../../redux/shop/shop.selector";
 import Typography from "@material-ui/core/Typography";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
-import Link from "@material-ui/core/Link";
+import { Link } from "react-router-dom";
 
 import { addItem } from "../../redux/cart/cart.actions";
 import Card from "./Card";
@@ -21,7 +21,7 @@ const Lounger = ({ addItem, products }) => {
   return (
     <div className="single-seater">
       <Breadcrumbs aria-label="breadcrumb" style={{ margin: "20px" }}>
-        <Link color="inherit" href="/">
+        <Link color="inherit" to="/">
           HOME
         </Link>
 
@@ -37,11 +37,10 @@ const Lounger = ({ addItem, products }) => {
           normal charge for this chair. This chair comes only in the motorized
           mechanism. This chair also known as PVR Recliner Chairs as generally
           installed in most of the PVR Theater.
-          <p className="sigle-seater-content"></p>
-          Note:- Customization just in the following manners: Dimension, Style,
-          Quality of Upholstery (leatherette, fabric, faux leather), Upholstery
-          shading, Upholstery type (Leatherette, Suede Fabric, Molfino Fabric),
-          Mechanism type (manual or electric), Wood, Foam type.
+          <br /> Note:- Customization just in the following manners: Dimension,
+          Style, Quality of Upholstery (leatherette, fabric, faux leather),
+          Upholstery shading, Upholstery type (Leatherette, Suede Fabric,
+          Molfino Fabric), Mechanism type (manual or electric), Wood, Foam type.
         </p>
       </div>
       <div className="bottom-cat-page">
