@@ -15,7 +15,6 @@
   margin-bottom: 2%;
   font-size: 20px;
   color: rgb(95, 93, 93);
- 
 }
 
 .checkout-image {
@@ -43,7 +42,7 @@
 }
 
 .checkout-mid span {
-  font-family:  sans-serif;
+  font-family: sans-serif;
   margin-right: 16px;
   cursor: pointer;
   color: grey;
@@ -80,9 +79,16 @@
 }
 
 .checkout-price span {
-  font-family:  sans-serif;
+  font-family: sans-serif;
   font-size: 15px;
   font-weight: 600;
+}
+
+.checkout-price .stock {
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  color: green;
 }
 
 @media (max-width: 600px) {
