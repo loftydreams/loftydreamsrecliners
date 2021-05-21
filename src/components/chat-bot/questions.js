@@ -1,22 +1,22 @@
 export const chatQuestions = [
   {
     id: 1,
-    ques: "What is Lofty Dreams Recliners?",
+    ques: "Are recliner chairs bad for your back?",
   },
   {
     id: 2,
-    ques: "Where is my order?",
+    ques: "Are recliners bad for your neck?",
   },
   {
     id: 3,
-    ques: "What are your shipping policies and time frames?",
+    ques: "Is sitting in a recliner bad for your back?",
   },
   {
     id: 4,
-    ques: "What is your return policy?",
+    ques: "Is recliner good for back pain?",
   },
   {
     id: 5,
-    ques: "Do you ship internationally?",
+    ques: "Are recliners good for your back?",
   },
 ];
