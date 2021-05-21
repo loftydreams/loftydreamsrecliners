@@ -31,7 +31,7 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
           // loop
           rewind={true}
           pullDrag
-          
+          touchDrag
           dots={false}
           margin={0}
           autoplay={true}
@@ -45,25 +45,32 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
             },
             370: {
               items: 1.78,
+              // slideBy:1.78
             },
             400: {
-              items: 1.9,
+              items: 2,
+              // slideBy:2
             },
             600: {
               items: 3,
+              // slideBy : 3
             },
             890: {
               items: 3,
+              // slideBy: 3
             },
             1000: {
               items: 4,
+              // slideBy:4
             },
             1200: {
               items: 5,
+           
             
             },
             1700: {
-              items: 6.3,
+              items: 6,
+              // slideBy:6
               
             },
           }}
