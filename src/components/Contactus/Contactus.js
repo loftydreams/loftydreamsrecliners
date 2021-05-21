@@ -22,8 +22,25 @@ export default function Contactus() {
               {" "}
               Interested in our hosting? Just pick up the phone and call us.
             </p>
-            <button className="contact-btn">09899027251</button>
-            <button className="contact-btn">09310484130</button>
+            <button className="contact-btn"><a
+            className="__contactus_a"
+            href="tel:+91 9899027251"
+            target="_blank"
+            rel="noreferrer"
+            
+            >09899027251</a></button>
+            <button className="contact-btn">
+              <a className="__contactus_a"
+               href="tel:+91 9310484130"
+               target="_blank"
+               rel="noreferrer"
+              
+              >
+              
+              
+              09310484130
+              </a>
+              </button>
           </div>
           <div className="top-second">
             <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/05/contact-page-for-flatsome-wordpress-theme-pointed-icon-chat-400x400.png" alt=""></img>
@@ -32,7 +49,16 @@ export default function Contactus() {
               {" "}
               Sometimes you need a little help. Don’t worry, We’re here for you.
             </p>
-            <button className="contact-btn">CONTACT SUPPORT</button>
+            <button className="contact-btn">
+              <a className="__contactus_a"
+                href="mailto:loftydreams18@gmail.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                CONTACT SUPPORT
+
+              </a>
+              </button>
           </div>
         </div>
       </div>

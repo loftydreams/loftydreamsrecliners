@@ -56,7 +56,7 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
               items: 4,
             },
             1200: {
-              items: 5,
+              items: 5.1,
             },
             1700: {
               items: 6.5,
