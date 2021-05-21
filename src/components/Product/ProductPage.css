@@ -1,13 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Farro:wght@700&family=Itim&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Farro:wght@700&family=Itim&display=swap");
 .product-page {
   text-align: left;
   margin-bottom: 30px;
 }
-.product-page Button
-{
+.product-page Button {
   margin-left: 6px;
-
 }
 body {
   line-height: 1.5;
@@ -17,17 +15,17 @@ body {
   margin: 0 auto;
   margin-bottom: 0;
 }
-.card
-{
-  box-shadow: 2px 2px 2px 0px rgba(0.2, 0.2, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.card {
+  box-shadow: 2px 2px 2px 0px rgba(0.2, 0.2, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
   transition: all 1s;
 }
-.card:hover
-{
+.card:hover {
   transform: translateY(-10px);
   transform: translateZ(10);
   transition-duration: 1s;
-  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 img {
   width: 100%;
@@ -64,7 +62,6 @@ img {
   margin-bottom: 30px;
   border: 3px solid rgb(216, 216, 216);
   border-radius: 10px;
-
 }
 .img-item:nth-child(1),
 .img-item:nth-child(2),
@@ -77,6 +74,10 @@ img {
 .product-content {
   padding: 2rem 1rem;
 }
+.product-content h5 {
+  font-weight: 600;
+  margin-left: 10px;
+}
 .product-title {
   font-size: 1.7rem;
   text-transform: capitalize;
@@ -84,7 +85,6 @@ img {
   position: relative;
   color: #141f2b;
   margin: 1rem 0;
-
 }
 .product-title::after {
   content: "";
@@ -159,7 +159,6 @@ img {
   font-size: 0.9rem;
   text-align: left;
   margin-left: 10px;
-
 }
 .product-detail ul li {
   margin: 0;
@@ -187,9 +186,7 @@ img {
   width: 200px;
   font-weight: 1000;
 }
-.purchase-info .btn:hover
-{
-
+.purchase-info .btn:hover {
   transform: scale(1.1);
   transition: all 0.5s ease;
 }
@@ -287,40 +284,34 @@ img {
   }
 }
 
-.relatedh2{
+.relatedh2 {
   text-align: left;
   padding-left: 40px;
   padding-top: 20px;
-
-
 }
 .qualityPromise {
-  
-  list-style:disc !important;
-  
+  list-style: disc !important;
 }
-.termsheading{
+.termsheading {
   text-align: left !important;
-   font-size: 15px;
+  font-size: 15px;
 }
 
-.terms ul li{
+.terms ul li {
   font-size: 14px;
-  
 }
-.terms ul{
+.terms ul {
   margin-left: 30px;
 }
-.accordianitems li{
-  font-size:12px;
-  list-style:disc !important;
+.accordianitems li {
+  font-size: 12px;
+  list-style: disc !important;
 }
 .accordianitems {
   margin-left: 10px;
 }
 
-.accodidanHeading{
+.accodidanHeading {
   text-align: left !important;
   font-size: 13px;
-
 }

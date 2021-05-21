@@ -47,7 +47,8 @@ export const Riser = ({ addItem, products }) => {
         <div className="living-room-1">
           {products.length &&
             filteredProducts?.map((data) => {
-              const { id, image1, price, discount, name, category } = data;
+              const { id, image1, price, discount, name, category, stock } =
+                data;
 
               const sp = price - (price * discount) / 100;
 
@@ -70,6 +71,7 @@ export const Riser = ({ addItem, products }) => {
                   sp={sp}
                   addItem={addItem}
                   discount={discount}
+                  stock={stock}
                 />
               );
             })}
