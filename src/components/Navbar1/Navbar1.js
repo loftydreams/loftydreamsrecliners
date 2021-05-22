@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { connect } from "react-redux";
-import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
+import { useCollectionData } from "react-firebase-hooks/firestore";
 
 import { firestore } from "../../firebase";
 import { updateCollections } from "../../redux/shop/shop.actions";
@@ -23,8 +23,8 @@ import {
 import { Link } from "react-router-dom";
 
 const Navbar1 = ({ updateCollections }) => {
-  const [products, loading] = useCollectionDataOnce(
-    firestore.collection("products"),
+  const [products, loading] = useCollectionData(
+    firestore.collection("products").orderBy("name", "asc"),
     { idField: "id" }
   );
 
