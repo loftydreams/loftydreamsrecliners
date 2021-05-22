@@ -5,7 +5,7 @@ const Home3 = () => {
         <div className="home3-body">
 
               
-            <img src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/React-Images%2FWE%20ARE%20THE%20TRUSTED%20SELLER%20AT.jpg?alt=media&token=4efed1f0-5222-45c0-b070-830d62f45455" alt="seller" />
+            <img src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/React-Images%2FWE%20ARE%20THE%20TRUSTED%20SELLER%20AT.gif?alt=media&token=dfa74d71-7359-461d-9cc2-0db9e9d7740b" alt="seller" />
             {/* <div className="home3-heading">
                 <h1> WE ARE THE TRUSTED SELLER AT</h1>
             </div>
