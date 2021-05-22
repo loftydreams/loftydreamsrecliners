@@ -34,6 +34,7 @@ import Manual from "./components/CategoryPage/Manual";
 import Feedback from "./components/Navbar1/Feedback";
 import Testimonial from "./components/Testimonial/Testimonial";
 import ShippingPolicy from "./components/ShippingPolicy/ShippingPolicy";
+import Home3 from "./components/HomePage/Home3";
 
 function App() {
   return (
@@ -48,6 +49,7 @@ function App() {
           <CarouselContainer />
           <Home1 />
           <Home2 />
+          <Home3/>
      
           <CardCollection
             heading={"BEST SELLING PRODUCTS"}

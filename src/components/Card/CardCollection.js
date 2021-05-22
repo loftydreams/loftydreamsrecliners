@@ -41,7 +41,7 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
           autoplayTimeout={3000}
           responsive={{
             0: {
-              items: 1.5,
+              items: 1.35,
             },
             370: {
               items: 1.78,
