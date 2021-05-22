@@ -28,10 +28,13 @@
     padding-bottom: 5px;
     left: 0;
     right: 0;
+    color: white;
     
-    border-top: 5px solid #969696;
+    border-top: 5px solid #f59a9a;
   /*   z-index: 1; */
     animation: bounce 1.5s infinite;
+    background-color: #537895;
+background-image: linear-gradient(315deg, #537895 0%, #09203f 74%);
   }
   ::-webkit-input-placeholder {
     font-size: 1.3em;
@@ -54,7 +57,7 @@
     text-align: center;
   }
   .secondaryTitle{
-    color: grey;
+    color: rgb(207, 207, 207);
     text-align: center;
   }
   
@@ -75,7 +78,7 @@
   }
   
   .email:hover {
-    border-bottom: 5px solid #0e3721;
+    border-bottom: 5px solid rgb(143, 221, 143);
     height: 30px;
     width: 380px;
     transition: ease 0.5s;
