@@ -5,23 +5,32 @@
     overflow: hidden;
     justify-content: center;
    margin-bottom: 50px;
-   margin-top: 40px;
-   padding-right: 30px;
-   padding-left: 30px;
+   /* margin-top: -70px; */
+  
+ color: white;
+background-image: url("https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/React-Images%2FUntitled%20design.svg?alt=media&token=b6819912-f6fa-4f94-8bc3-303a81382c63");
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-size: auto ;
+  padding: 40px;
 }
 .home1-right img
 {
     object-fit: contain;
-    padding-top: 26px;
+    
+
 }
 .home1-left
 {
 width: 30%;
 
+/* margin-top: -46%; */
+
   padding-bottom: 40px;
 }
 .home1-right
 {
+    /* margin-top: -46%; */
   
 }
 .home1-heading
@@ -31,7 +40,7 @@ width: 30%;
     border-bottom: 1px solid black;
     margin-bottom: 25px;
     font-weight: 500;
-    font-family: "Mr Eaves XL Modern", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .home1-p
@@ -48,13 +57,14 @@ width: 30%;
 {
    .home1-body
    {
-       margin-top: 30px;
+       margin-top: 0px;
    }
     .home1-left
     {
         width: 100%;
         padding-right: 0px;
         padding-left: 0px;
+      
 
     }
     .home1-p
@@ -64,5 +74,14 @@ width: 30%;
     .home1-right img 
     {
         padding-top: 0px;
+    }
+    .home1-banner
+    {
+        height: 600px;
+        object-fit: cover;
+    }
+    .home1-right
+    {
+      
     }
 }

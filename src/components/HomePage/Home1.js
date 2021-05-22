@@ -3,6 +3,7 @@ import "./Home1.css";
 const Home1 = () => {
   return (
     <div className="home1-body">
+      {/* <img src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/React-Images%2FUntitled%20design.svg?alt=media&token=b6819912-f6fa-4f94-8bc3-303a81382c63" alt="" className="home1-banner"/> */}
       <div className="home1-left">
         <h4 className="home1-heading">RECLINER MANUFACTURERS</h4>
         <p className="home1-p">

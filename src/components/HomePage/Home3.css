@@ -1,0 +1,17 @@
+.home3-body 
+{
+    margin-top: 20px;
+    margin-bottom:40px;
+  object-fit: contain;
+width: 100%;
+height : fit-content;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+.home3-body img
+{
+    object-fit: contain;
+    width: 100%;
+}
