@@ -48,8 +48,10 @@ function App() {
         <Route path="/" exact>
           <CarouselContainer />
           <Home1 />
-          <Home2 />
           <Home3/>
+
+          <Home2 />
+          
      
           <CardCollection
             heading={"BEST SELLING PRODUCTS"}
