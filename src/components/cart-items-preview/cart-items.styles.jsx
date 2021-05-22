@@ -38,7 +38,7 @@ export const useStyles = makeStyles({
     minWidth: "min-content",
   },
   item: {
-    backgroundColor: "white",
+    backgroundColor: "none",
     height: "130px",
     width: "120px",
     margin: "0 5px",
@@ -50,7 +50,7 @@ export const useStyles = makeStyles({
     flexDirection: "column",
     justifyContent: "center",
     width: "200px",
-    backgroundColor: "white",
+    backgroundColor: "",
     margin: "0 5px 0 20px",
     padding: "10px",
     "@media(max-width: 768px)": {
