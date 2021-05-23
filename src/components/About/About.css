@@ -4,7 +4,7 @@
 
     font-family: "Mr Eaves XL Modern", sans-serif;
     justify-content:center;
-
+  font-family: 'Poppins' , sans-serif;
 
 }
 
@@ -34,6 +34,7 @@
     padding: 8px 0 4px 0;
     font-weight: 600;
     line-height: 1.5;
+    font-family: 'Poppins' , sans-serif;
 }
 .aboutus_left_first p{
    
@@ -43,6 +44,7 @@
     padding: 8px 0 4px 0;
     font-weight: normal;
     line-height: 1.5;
+    font-family: 'Poppins' , sans-serif;
 }
 
 .aboutus_left_second{
@@ -54,12 +56,14 @@
 
 
 .our_product_left h4{
-    font-size: 15px;
+    font-size: 17px;
     color: #ED7745;
     font-weight: bold;
     padding: 8px 0 4px 0;
     font-weight: normal;
     line-height: 1.5;
+    font-family: 'Poppins' , sans-serif;
+    font-weight: bold;
 
 }
 .our_product_left img{
@@ -75,6 +79,7 @@
     font-weight: normal;
     line-height: 1.5;
     padding: 8px 0 4px 0;
+    font-family: 'Poppins' , sans-serif;
 
 
 }
@@ -86,6 +91,7 @@
     font-weight: normal;
     line-height: 1.5;
     padding: 8px 0 4px 0;
+    font-family: 'Poppins' , sans-serif;
 
 
 

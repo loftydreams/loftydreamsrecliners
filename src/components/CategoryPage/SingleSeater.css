@@ -10,6 +10,7 @@
 {
     border-bottom: 1px solid rgb(172, 168, 168);
     margin-left: 20;
+    font-family: "Poppins" , sans-serif;
 }
 .top-cat-page
 {
@@ -32,6 +33,7 @@
 .top-cat-page p
 {
     width: 100%;
+ 
 
 text-align: center;
    
@@ -64,6 +66,7 @@ text-align: center;
         width: 100%;
         padding-left: 0px;
         padding-right: 0px;
+        
     }
     .single-seater h2 
     {
@@ -71,10 +74,12 @@ text-align: center;
         text-align: center;
         font-weight: 600;
         border-bottom: 1px solid rgb(179, 179, 179);
+        font-family: "Poppins" , sans-serif;
     }
     .top-cat-page p 
     {
         font-size: 13px ;
+        
     }
 
 
@@ -83,4 +88,5 @@ text-align: center;
 .single-seater-1 span
 {
     font-size: 12px;
+    font-family: "Poppins" , sans-serif;
 }

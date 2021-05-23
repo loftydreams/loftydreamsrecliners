@@ -35,7 +35,7 @@ const Card = ({
         style={{ cursor: "pointer", display: "flex", flexDirection: "column" }}
       >
         <img src={image1} alt="Product img" />
-        <span style={{ color: "blue" }}>{stock}</span>
+        <span style={{ color: "green" }}>{stock}</span>
         <span>{category}</span>
         <h5>{name}</h5>
       </div>

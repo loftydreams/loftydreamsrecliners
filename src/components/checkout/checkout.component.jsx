@@ -22,7 +22,7 @@ const CheckoutPage = ({ cartItems, total }) => {
         alt=""
         className="ad-banner"
       />
-      <h2 className="checkout-heading" style={{textAlign:"center"}}> YOUR SHOPPING CART </h2>
+      <h2 className="checkout-heading" style={{textAlign:"center" } }> YOUR SHOPPING CART </h2>
       <div className={classes.root}>
         {/* <Breadcrumbs separator=">" aria-label="breadcrumb">
           <Link color="inherit" href="/" aria-current="page">

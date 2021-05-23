@@ -57,18 +57,22 @@
     }
     .top-second  h1{
         margin-bottom: .5rem;
-        font-weight: 100;
+        font-weight: 600;
          line-height: 2.2;
          font-size: 17px !important;
           color: black;
+          font-family: 'Poppins' , sans-serif;
+
 
     }
     .top-first  h1{
         margin-bottom: .5rem;
-        font-weight: 100;
+        font-weight: 600;
          line-height: 2.2;
          font-size: 17px !important;
           color: black;
+          font-family: 'Poppins' , sans-serif;
+          
 
 
     }
@@ -78,6 +82,7 @@
         padding: 6%;
         font-weight: normal;
         line-height: 1.5;
+        font-family: 'Poppins' , sans-serif;
         
 
     }
@@ -87,6 +92,7 @@
         padding: 6%;
         font-weight: normal;
         line-height: 1.5;
+        font-family: 'Poppins' , sans-serif;
         
 
     }
@@ -170,18 +176,20 @@
     }
     .top-second  h1{
         margin-bottom: .5rem;
-        font-weight: 100;
+        font-weight: 600;
          line-height: 2.2;
          font-size: 17px !important;
           color: black;
+          font-family: 'Poppins' , sans-serif;
 
     }
     .top-first  h1{
         margin-bottom: .5rem;
-        font-weight: 100;
+        font-weight: 600;
          line-height: 2.2;
          font-size: 17px !important;
           color: black;
+          font-family: 'Poppins' , sans-serif;
 
 
     }
@@ -191,6 +199,7 @@
         padding: 6%;
         font-weight: normal;
         line-height: 1.5;
+        font-family: 'Poppins' , sans-serif;
         
 
     }
@@ -200,6 +209,7 @@
         padding: 6%;
         font-weight: normal;
         line-height: 1.5;
+        font-family: 'Poppins' , sans-serif;
         
 
     }

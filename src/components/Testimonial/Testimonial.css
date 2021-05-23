@@ -24,6 +24,8 @@ margin-bottom: 40px;
 width: 100%;
    border-bottom: 1px solid black;
    margin-bottom: 3%;
+   font-family: 'Poppins' , sans-serif;
+   font-weight: bold;
 
 }
 .client-card
@@ -72,6 +74,7 @@ width: 100%;
 {
    font-size: 13px;
    padding: 3%;
+   font-family: 'Poppins' , sans-serif;
 }
 .our-clients
 {
@@ -103,7 +106,8 @@ width: 100%;
 }
 .testimonial-items p{
     padding: 10px;
-    font-size: 14px;
+    font-size: 13px;
+    font-family: 'Poppins' , sans-serif;
 }
 
 
