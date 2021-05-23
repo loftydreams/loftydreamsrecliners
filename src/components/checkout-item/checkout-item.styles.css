@@ -9,12 +9,15 @@
 }
 
 .checkout-heading {
-  font-family: sans-serif;
+  font-family: "Poppins" , sans-serif;
   text-align: left;
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 2%;
   font-size: 20px;
-  color: rgb(95, 93, 93);
+  color: rgb(18, 43, 35);
+  font-weight: 600;
+  font-size: 25px;
+
 }
 
 .checkout-image {

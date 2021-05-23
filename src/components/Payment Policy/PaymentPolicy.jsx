@@ -3,19 +3,19 @@ import "./paymentpolicy.css"
 
 export default function PaymentPolicy() {
   return (
-    <div>
+    <div className="payment-policy">
       <h1 className="payment__h">Payment and Security Policy</h1>
       <p className="payment__p" >
         Lofty Dreams ensures that every transaction you conduct with us is in a
         safe and secure environment. Please read this given below details on
         payments and how we ensure security.
       </p>
-      <p className="payment__p_h">What are the payment options which Lofty Dreams provides me?</p>
+      <h2 className="payment__p_h">What are the payment options which Lofty Dreams provides me?</h2>
       <p className="payment__p">Lofty Dreams provides you to shop with any of the following options</p>
       <div className="payment__main">
         <div className="payment__first">
           <div className="p_f_f">
-          <h1>1. Credit and Debit Cards </h1>
+          <h2>1. Credit and Debit Cards </h2>
             <p className="payment__p">
               Accept payments from all major credit and debit card networks like
               Visa, Mastercard, American Express and RuPay. And now also accept
@@ -29,7 +29,7 @@ export default function PaymentPolicy() {
         </div>
         <div className="payment__second">
         <div className="p_f_f">
-            <h1>2. EMI on Credit Card </h1>
+            <h2>2. EMI on Credit Card </h2>
             <p  className="payment__p">
             Customers can pay in monthly installments on major bank credit cards.
             </p>
@@ -40,7 +40,7 @@ export default function PaymentPolicy() {
         </div>
         <div className="payment__third">
         <div className="p_f_f">
-            <h1>3. UPI </h1>
+            <h2>3. UPI </h2>
             <p className="payment__p">
             UPI is a new mobile-first payment mode for making payments to friends or businesses. Accept UPI payments without writing any additional code or remembering your VPA. Simply use apps like PhonePe, BHIM, WhatsApp, etc. to directly accept payments.
             </p>
@@ -51,7 +51,7 @@ export default function PaymentPolicy() {
         </div>
         <div className="payment__fourth">
         <div className="p_f_f">
-            <h1>E-wallets </h1>
+            <h2>E-wallets </h2>
             <p  className="payment__p">
             Customers can pay via popular online wallets like Mobikwik, Freecharge, Amazon Pay, PhonePe, JioMoney, Airtel Money, PayZapp and Ola Money. They can approve payments using OTP  directly for a seamless experience.  
             </p>
@@ -62,7 +62,7 @@ export default function PaymentPolicy() {
         </div >
         <div className="payment__fifth">
         <div className="p_f_f">
-            <h1>5. 50+ Netbanking Options </h1>
+            <h2>5. 50+ Netbanking Options </h2>
             <p  className="payment__p">
             Accept payments through 50+ banks including SBI, ICICI Bank, HDFC Bank, Axis Bank, Kotak Bank and Yes Bank. The bank page opens in a pop-up window so customers can easily come back to Lofty Dreams website, ensuring a great experience.        
             </p>
@@ -73,7 +73,7 @@ export default function PaymentPolicy() {
         </div>
         <div className="payment__six">
         <div className="p_f_f">
-            <h1>6. NEFT/RTGS/IMPS </h1>
+            <h2>6. NEFT/RTGS/IMPS </h2>
             <p  className="payment__p">
             Payment made via NEFT, RTGS and IMPS using Smart Collect. 
             </p>

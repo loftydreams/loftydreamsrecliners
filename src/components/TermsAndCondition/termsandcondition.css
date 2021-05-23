@@ -4,22 +4,26 @@
 .online-offline {
   padding-left: 40px;
   padding-right: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 .styles_row-content__QOGZd {
   height: 100px;
 }
 .styles_faq-row-wrapper__3vA1D h2 {
-  margin: 0 auto;
+  margin: auto;
   color: #f9821c;
-  font-family: "Play", sans-serif;
+width: 100%;
   font-size: 29px;
+  font-family: 'Poppins' , sans-serif !important;
 }
 .styles_faq-row-wrapper__3vA1D
   .styles_row-body__1NvUo
   .styles_faq-row__2YF3c
   .styles_row-title__1YiiY {
   padding: 10px 0px;
-  font-family: "Quicksand", sans-serif;
+  
   display: flex;
   flex-wrap: wrap;
   color: black;
@@ -27,6 +31,7 @@
   cursor: pointer;
   align-items: center;
   font-weight: 600;
+  font-family: 'Poppins' , sans-serif !important;
 }
 .styles_faq-row-wrapper__3vA1D
   .styles_row-body__1NvUo
@@ -59,3 +64,12 @@ styles_faq-row-wrapper__3vA1D
   font-family: "Fira Sans", sans-serif;
 }
 
+@media (max-width:600px) {
+  .online-offline
+  {
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+  }
+  
+}
