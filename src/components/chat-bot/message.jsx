@@ -11,6 +11,8 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "row",
     "& div": {
       marginLeft: "5px",
+      color: "white",
+      backgroundColor: "black",
     },
   },
   ans: {
@@ -46,7 +48,10 @@ const Message = ({ msg }) => {
     </div>
   ) : (
     <div className={classes.ans}>
-      <Avatar className={classes.small}>
+      <Avatar
+        className={classes.small}
+        style={{ color: "white", backgroundColor: "black" }}
+      >
         <FaRobot />
       </Avatar>
       <div className={classes.container}>{msg.ans}</div>

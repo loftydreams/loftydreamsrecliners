@@ -20,7 +20,7 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
   const renderProducts = topSelling ? topSellingProducts : topDiscountProducts;
 
   return (
-    products.length && (
+    products.length > 0 && (
       <div className="card-collection">
         <div className="card-collection-heading">
           <h2 className="card-collection-h2"> {heading}</h2>
@@ -65,13 +65,10 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
             },
             1200: {
               items: 5,
-           
-            
             },
             1700: {
               items: 6,
               // slideBy:6
-              
             },
           }}
         >

@@ -1,4 +1,4 @@
-import React from "react";
+import { useHistory } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
@@ -12,7 +12,8 @@ import {
 import "./checkout-item.styles.css";
 
 const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
-  const { name, imageUrl, quantity, price, stock } = cartItem;
+  const history = useHistory();
+  const { id, name, imageUrl, quantity, price, stock } = cartItem;
 
   const formattedPrice = (price) =>
     new Intl.NumberFormat("en-IN", {
@@ -22,7 +23,10 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
 
   return (
     <div className="checkout-item">
-      <div className="checkout-image">
+      <div
+        className="checkout-image"
+        onClick={() => history.push(`/product/${id}`)}
+      >
         <img src={imageUrl} alt="product img" />
       </div>
 
