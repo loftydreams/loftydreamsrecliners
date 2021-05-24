@@ -24,6 +24,7 @@ import PaymentPolicy from "./components/Payment Policy/PaymentPolicy";
 import TrackOurOrder from "./components/TrackOrder/TrackOurOrder";
 import ProductPage from "./components/Product/ProductPage";
 import SearchResults from "./components/search-products/search-results";
+import AllRecliners from "./components/CategoryPage/AllRecliners";
 import SingleSeater from "./components/CategoryPage/SingleSeater";
 import LivingRoom from "./components/CategoryPage/LivingRoom";
 import HomeTheater from "./components/CategoryPage/HomeTheater";
@@ -34,6 +35,7 @@ import Manual from "./components/CategoryPage/Manual";
 import Feedback from "./components/Navbar1/Feedback";
 import Testimonial from "./components/Testimonial/Testimonial";
 import ShippingPolicy from "./components/ShippingPolicy/ShippingPolicy";
+import Home3 from "./components/HomePage/Home3";
 
 function App() {
   return (
@@ -47,8 +49,8 @@ function App() {
         <Route path="/" exact>
           <CarouselContainer />
           <Home1 />
+          <Home3 />
           <Home2 />
-          <CartItemsPreview />
           <CardCollection
             heading={"BEST SELLING PRODUCTS"}
             topSelling
@@ -59,6 +61,7 @@ function App() {
             topSelling={false}
             topDiscount
           />
+          <CartItemsPreview />
           <Contact />
           <Review />
         </Route>
@@ -88,6 +91,9 @@ function App() {
         </Route>
         <Route path="/search/:keyword">
           <SearchResults />
+        </Route>
+        <Route path="/all-recliners">
+          <AllRecliners />
         </Route>
         <Route path="/single-seater">
           <SingleSeater />

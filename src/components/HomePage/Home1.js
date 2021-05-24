@@ -3,6 +3,7 @@ import "./Home1.css";
 const Home1 = () => {
   return (
     <div className="home1-body">
+      {/* <img src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/React-Images%2FUntitled%20design.svg?alt=media&token=b6819912-f6fa-4f94-8bc3-303a81382c63" alt="" className="home1-banner"/> */}
       <div className="home1-left">
         <h4 className="home1-heading">RECLINER MANUFACTURERS</h4>
         <p className="home1-p">
@@ -19,7 +20,7 @@ const Home1 = () => {
       </div>
       <div className="home1-right">
         <img
-          src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/07/Recliners-Manufacturer-by-Lofty-Dreams-Recliners-Pvt.-Ltd..jpg"
+          src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/Manual%20Recliners%2FCatPagePhoto%2FRecliners-Manufacturer-by-Lofty-Dreams-Recliners-Pvt.-Ltd..jpg?alt=media&token=550900a1-3f90-4d84-8d7b-6e2a2897efdckr"
           alt="home1"
         />
       </div>

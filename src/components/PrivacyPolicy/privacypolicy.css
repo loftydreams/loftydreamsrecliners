@@ -10,12 +10,13 @@
   
 }
 .privacy__main h1{
-    font-size: 17px;
+    font-size: 20px;
     color: #ED7745;
   
     padding: 8px 0 4px 0;
     font-weight: 600;
     line-height: 1.5;
+    font-family: 'Poppins' , sans-serif;
     
 }
 .privacy__main h3{
@@ -25,6 +26,7 @@
     padding: 8px 0 4px 0;
     font-weight: 600;
     line-height: 1.5;
+    font-family: 'Poppins' , sans-serif;
     
 }
 .privacy__main h5{
@@ -34,6 +36,7 @@
     padding: 8px 0 4px 0;
     font-weight: 600;
     line-height: 1.5;
+    font-family: 'Poppins' , sans-serif;
 }
 
 .privacy__p{
@@ -44,6 +47,7 @@
     padding: 8px 0 4px 0;
     font-weight: normal;
     line-height: 1.5;
+    font-family: 'Poppins' , sans-serif;
 
 }
 
@@ -55,6 +59,7 @@
     padding: 8px 0 4px 0;
     font-weight: normal;
     line-height: 1.5;
+    font-family: 'Poppins' , sans-serif;
 
 
 

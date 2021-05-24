@@ -4,14 +4,15 @@
 .online-offline {
   padding-left: 40px;
   padding-right: 40px;
+  
 }
 .styles_row-content__QOGZd {
   height: 100px;
 }
 .styles_faq-row-wrapper__3vA1D h2 {
   margin: 0 auto;
-  color: black !important;
-font-weight: 600;
+  color: #03363d !important;
+font-weight: 800 !important;
   font-size: 25px !important;
   font-family:  sans-serif !important;
 }
@@ -24,10 +25,10 @@ font-weight: 600;
   display: flex;
   flex-wrap: wrap;
   color: black;
-  font-size: 13px;
+  font-size: 14px !important;
   cursor: pointer;
   align-items: center;
-  font-weight: 600;
+  font-weight: 500;
 }
 .styles_faq-row-wrapper__3vA1D
   .styles_row-body__1NvUo
@@ -38,7 +39,7 @@ font-weight: 600;
   font-size: 12px;
   padding: 4px;
 }
-styles_faq-row-wrapper__3vA1D
+.styles_faq-row-wrapper__3vA1D
   .styles_row-body__1NvUo
   .styles_faq-row__2YF3c
   .styles_row-title__1YiiY

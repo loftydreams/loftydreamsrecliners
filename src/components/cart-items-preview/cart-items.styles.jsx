@@ -5,6 +5,8 @@ export const useStyles = makeStyles({
     margin: "10px 20px 30px 20px",
     display: "flex",
     flexDirection: "column",
+    borderBottom: "1px solid grey",
+  
   },
   header: {
     marginBottom: "10px",
@@ -12,13 +14,16 @@ export const useStyles = makeStyles({
     textAlign: "center",
     "& h2": {
       width: "100%",
-      fontSize: "25px",
+      fontSize: "18px",
       fontWeight: "600",
+      fontFamily: "sans-serif",
+      textAlign:"left"
     },
     "& hr": {
       marginTop: "-10px",
       overflow: "visible",
     },
+    
   },
   content: {
     display: "flex",
@@ -33,7 +38,7 @@ export const useStyles = makeStyles({
     minWidth: "min-content",
   },
   item: {
-    backgroundColor: "white",
+    backgroundColor: "none",
     height: "130px",
     width: "120px",
     margin: "0 5px",
@@ -45,8 +50,7 @@ export const useStyles = makeStyles({
     flexDirection: "column",
     justifyContent: "center",
     width: "200px",
-    backgroundColor: "white",
-    border: "1px solid blue",
+    backgroundColor: "",
     margin: "0 5px 0 20px",
     padding: "10px",
     "@media(max-width: 768px)": {

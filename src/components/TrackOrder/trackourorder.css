@@ -1,10 +1,12 @@
 .trackourorder__main h1 {
   text-align: center;
   font-size: 1.5em;
-  font-weight: 400;
-  font-family: system-ui;
+  font-weight: 600;
+  font-family: "Poppins" , sans-serif;
   color: #e57200;
   margin-top: 25px;
+  font-weight: bold;
+
 }
 
 .trackourorder__main p {

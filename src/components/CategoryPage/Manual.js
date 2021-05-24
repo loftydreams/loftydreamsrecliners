@@ -4,7 +4,7 @@ import { createStructuredSelector } from "reselect";
 import { selectCollections } from "../../redux/shop/shop.selector";
 import Typography from "@material-ui/core/Typography";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
-import Link from "@material-ui/core/Link";
+import { Link } from "react-router-dom";
 
 import { addItem } from "../../redux/cart/cart.actions";
 import Card from "./Card";
@@ -21,10 +21,10 @@ const Manual = ({ addItem, products }) => {
   return (
     <div className="single-seater">
       <Breadcrumbs aria-label="breadcrumb" style={{ margin: "20px" }}>
-        <Link color="inherit" href="/">
+        <Link color="inherit" to="/">
           HOME
         </Link>
-        <Link color="inherit" href="/single-seater">
+        <Link color="inherit" to="/single-seater">
           SINGLE SEATER RECLINERS
         </Link>
 
@@ -42,7 +42,7 @@ const Manual = ({ addItem, products }) => {
           <br></br> <br></br>
           <span style={{ fontWeight: 600 }}>
             Customize your Electric Recliner With the assistance of Lofty Dreams
-          </span>{" "}
+          </span>
           If your requirement doesn’t meet with our product specification then
           we offer you another way to fulfill your requirement. Just make
           details with all the dimensions and design and contact us with it.
@@ -59,7 +59,8 @@ const Manual = ({ addItem, products }) => {
         <div className="living-room-1">
           {products.length &&
             filteredProducts?.map((data) => {
-              const { id, image1, price, discount, name, category } = data;
+              const { id, image1, price, discount, name, category, stock } =
+                data;
 
               const sp = price - (price * discount) / 100;
 
@@ -68,6 +69,7 @@ const Manual = ({ addItem, products }) => {
                 name: name,
                 price: sp,
                 imageUrl: image1,
+                stock: stock,
               };
 
               return (
@@ -82,6 +84,7 @@ const Manual = ({ addItem, products }) => {
                   sp={sp}
                   addItem={addItem}
                   discount={discount}
+                  stock={stock}
                 />
               );
             })}

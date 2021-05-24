@@ -53,8 +53,12 @@
 
 }
 .topbar-span span{
-    margin-right: 5px;
-    font-size: 12px;
+    margin-right: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif 
+    
+
 }
 .topbar-span span:hover
 {

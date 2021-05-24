@@ -12,6 +12,7 @@ const Card = ({
   sp,
   addItem,
   discount,
+  stock,
 }) => {
   const history = useHistory();
   const [added, setAdded] = useState(false);
@@ -31,29 +32,33 @@ const Card = ({
       )}
       <div
         onClick={() => history.push(`/product/${id}`)}
-        style={{ cursor: "pointer" }}
+        style={{ cursor: "pointer", display: "flex", flexDirection: "column" }}
       >
         <img src={image1} alt="Product img" />
+        <span style={{ color: "green" }}>{stock}</span>
         <span>{category}</span>
         <h5>{name}</h5>
       </div>
 
       <del>{formattedPrice(price)}</del>
-      <strong style={{ fontSize: "14px" }} className="price-card">{formattedPrice(sp)}</strong>
+      <strong style={{ fontSize: "14px" }} className="price-card">
+        {formattedPrice(sp)}
+      </strong>
       <br />
       {added ? (
         <Button
           variant="outlined"
           color="primary"
-          size="small"
+          size="large"
           onClick={() => history.push(`/checkout`)}
+       
         >
           Checkout
         </Button>
       ) : (
         <Button
           variant="contained"
-          className="add-to-cart-btn"
+          className="add-to-btn"
           color="primary"
           size="large"
           onClick={() => {

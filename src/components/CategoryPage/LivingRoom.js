@@ -4,7 +4,7 @@ import { createStructuredSelector } from "reselect";
 import { selectCollections } from "../../redux/shop/shop.selector";
 import Typography from "@material-ui/core/Typography";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
-import Link from "@material-ui/core/Link";
+import { Link } from "react-router-dom";
 
 import { addItem } from "../../redux/cart/cart.actions";
 import Card from "./Card";
@@ -21,7 +21,7 @@ const LivingRoom = ({ addItem, products }) => {
   return (
     <div className="single-seater">
       <Breadcrumbs aria-label="breadcrumb" style={{ margin: "20px" }}>
-        <Link color="inherit" href="/">
+        <Link color="inherit" to="/">
           HOME
         </Link>
 
@@ -49,7 +49,8 @@ const LivingRoom = ({ addItem, products }) => {
         <div className="living-room-1">
           {products.length &&
             filteredProducts?.map((data) => {
-              const { id, image1, price, discount, name, category } = data;
+              const { id, image1, price, discount, name, category, stock } =
+                data;
 
               const sp = price - (price * discount) / 100;
 
@@ -58,6 +59,7 @@ const LivingRoom = ({ addItem, products }) => {
                 name: name,
                 price: sp,
                 imageUrl: image1,
+                stock: stock,
               };
 
               return (
@@ -72,6 +74,7 @@ const LivingRoom = ({ addItem, products }) => {
                   sp={sp}
                   addItem={addItem}
                   discount={discount}
+                  stock={stock}
                 />
               );
             })}

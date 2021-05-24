@@ -5,7 +5,7 @@ import { selectCollections } from "../../redux/shop/shop.selector";
 
 import Typography from "@material-ui/core/Typography";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
-import Link from "@material-ui/core/Link";
+import { Link } from "react-router-dom";
 
 import { addItem } from "../../redux/cart/cart.actions";
 import Card from "./Card";
@@ -22,10 +22,10 @@ const Electric = ({ addItem, products }) => {
   return (
     <div className="single-seater">
       <Breadcrumbs aria-label="breadcrumb" style={{ margin: "20px" }}>
-        <Link color="inherit" href="/">
+        <Link color="inherit" to="/">
           HOME
         </Link>
-        <Link color="inherit" href="/single-seater">
+        <Link color="inherit" to="/single-seater">
           SINGLE SEATER RECLINERS
         </Link>
         <Typography color="textPrimary">ELECTRIC RECLINERS </Typography>
@@ -39,11 +39,11 @@ const Electric = ({ addItem, products }) => {
           work together, and might be appropriate for a user who wishes to rest
           during the day. Also, termed as Motorized Recliner chair as it
           operates with the help of motor.
-          <br></br> <br></br>{" "}
+          <br></br> <br></br>
           <span style={{ fontWeight: 600 }}>
             Customize your Electric Recliner With the assistance of Lofty Dreams{" "}
           </span>
-          <p className="sigle-seater-content"></p>
+          <br />
           If your requirement doesn’t meet with our product specification then
           we offer you another way to fulfill your requirement. Just make
           details with all the dimensions and design and contact us with it.
@@ -60,7 +60,8 @@ const Electric = ({ addItem, products }) => {
         <div className="living-room-1">
           {products.length &&
             filteredProducts?.map((data) => {
-              const { id, image1, price, discount, name, category } = data;
+              const { id, image1, price, discount, name, category, stock } =
+                data;
 
               const sp = price - (price * discount) / 100;
 
@@ -69,6 +70,7 @@ const Electric = ({ addItem, products }) => {
                 name: name,
                 price: sp,
                 imageUrl: image1,
+                stock: stock,
               };
 
               return (
@@ -83,6 +85,7 @@ const Electric = ({ addItem, products }) => {
                   sp={sp}
                   addItem={addItem}
                   discount={discount}
+                  stock={stock}
                 />
               );
             })}

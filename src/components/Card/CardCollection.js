@@ -28,7 +28,10 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
         </div>
         <OwlCarousel
           className="owl-theme -"
-          loop
+          // loop
+          rewind={true}
+          pullDrag
+          touchDrag
           dots={false}
           margin={0}
           autoplay={true}
@@ -38,34 +41,51 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
           autoplayTimeout={3000}
           responsive={{
             0: {
-              items: 1.6,
+              items: 1.35,
             },
             370: {
-              items: 1.85,
+              items: 1.78,
+              // slideBy:1.78
             },
             400: {
               items: 2,
+              // slideBy:2
             },
             600: {
               items: 3,
+              // slideBy : 3
             },
             890: {
               items: 3,
+              // slideBy: 3
             },
             1000: {
               items: 4,
+              // slideBy:4
             },
             1200: {
               items: 5,
+           
+            
             },
             1700: {
-              items: 6.5,
+              items: 6,
+              // slideBy:6
+              
             },
           }}
         >
           {renderProducts?.map((data) => {
-            const { id, image1, price, discount, name, category, rating } =
-              data;
+            const {
+              id,
+              image1,
+              price,
+              discount,
+              name,
+              category,
+              rating,
+              stock,
+            } = data;
 
             return (
               <div className="item" key={id}>
@@ -77,6 +97,7 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
                   price={price}
                   discount={discount}
                   rating={rating}
+                  stock={stock}
                 />
               </div>
             );

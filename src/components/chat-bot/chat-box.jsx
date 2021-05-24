@@ -25,15 +25,13 @@ const ChatBox = () => {
   return (
     <div className={classes.card}>
       <div className={classes.header}>
-        <h2>Chat Bot</h2>
-        <h3>What can I help you with?</h3>
+        <h2>Have some questions!?</h2>
+        <h3>What can we help you with?</h3>
       </div>
       <div className={classes.chat}>
         <ChatQuestion handleClick={handleClick} />
         {messages.length > 0 &&
           messages.map((message, idx) => <Message key={idx} msg={message} />)}
-        <br />
-        <br />
         <br />
         <br />
         <div ref={dummy} />
