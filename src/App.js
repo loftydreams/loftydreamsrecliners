@@ -53,7 +53,7 @@ function App() {
           <Home3/>
           <Review />
 
-          <Home3 />
+        
 
           <Home2 />
           <CardCollection
