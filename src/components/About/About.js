@@ -70,7 +70,7 @@ export default function AboutUs() {
             <div className="our_product_left">
               <h4 id="product">Our Products</h4>
               <img
-                src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/07/Single-Seater-Recliner-in-Black-Color-by-Lofty-Dreams-Recliners.jpg"
+                src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/Manual%20Recliners%2FWelos%20White%2FLofty-Dreams-Manual-Single-Seater-Recliner-In-White-Color-Leatherite1-510x523.jpg?alt=media&token=8db3250c-fc49-41aa-a4c9-c9b3e54df970"
                 alt="AvoutusRectiliner"
               />
             </div>
