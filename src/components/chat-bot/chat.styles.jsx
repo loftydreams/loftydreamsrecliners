@@ -10,7 +10,7 @@ export const useStyles = makeStyles({
   card: {
     backgroundColor: "white",
     height: "400px",
-    width: "290px",
+    width: "300px",
     border: "1px solid black",
     position: "absolute",
     zIndex: "1000",
