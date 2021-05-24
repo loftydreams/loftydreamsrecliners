@@ -64,6 +64,7 @@ const Feedback = () => {
   return (
     <div className="feedback-wrapper">
       <h2>Feedback Form </h2>
+   
 
       <Form onSubmit={handleSubmit}>
         <Form.Group controlId="formBasicName">
