@@ -9,7 +9,7 @@
 }
 
 .checkout-heading {
-  font-family: "Poppins" , sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: left;
   margin-top: 20px;
   margin-bottom: 2%;
@@ -18,11 +18,9 @@
   font-weight: 600;
   font-size: 25px;
   border-bottom: 1px solid grey;
-
 }
-.checkout-description h6
-{
-  font-family: "Poppins" , sans-serif;
+.checkout-description h6 {
+  font-family: "Poppins", sans-serif;
   text-align: left;
   margin-top: 20px;
   margin-bottom: 2%;
@@ -38,6 +36,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .checkout-image img {
@@ -114,10 +113,8 @@
   .checkout-heading {
     font-size: 20px;
   }
-  .checkout-description h6
-  {
+  .checkout-description h6 {
     font-size: 16px;
-
   }
 
   .checkout-price span {

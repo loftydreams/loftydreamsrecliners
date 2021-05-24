@@ -16,32 +16,35 @@ const useStyles = makeStyles({
     border: "1px solid black",
     borderRadius: "5px",
     marginLeft: "5px",
+    backgroundColor: "black",
   },
   question: {
     width: "100%",
     padding: "3px",
     fontSize: "13px",
+    color: "white",
+    backgroundColor: "black",
     borderBottom: "1px solid black",
     cursor: "pointer",
     "&:hover": {
-      color: "white",
-      backgroundColor: "black",
+      color: "black",
+      backgroundColor: "white",
     },
   },
 });
 
-let audio = new Audio("/preview.mp3")
+let audio = new Audio("/preview.mp3");
 
-  const start = () => {
-    audio.play()
-  }
+const start = () => {
+  audio.play();
+};
 
 const ChatQuestion = ({ handleClick }) => {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <Avatar>
+      <Avatar style={{ color: "white", backgroundColor: "black" }}>
         <PersonIcon />
       </Avatar>
       <div onClick={start} className={classes.container}>
