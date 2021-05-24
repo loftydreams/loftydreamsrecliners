@@ -49,15 +49,16 @@ const Card = ({
         <Button
           variant="outlined"
           color="primary"
-          size="small"
+          size="large"
           onClick={() => history.push(`/checkout`)}
+       
         >
           Checkout
         </Button>
       ) : (
         <Button
           variant="contained"
-          className="add-to-cart-btn"
+          className="add-to-btn"
           color="primary"
           size="large"
           onClick={() => {
