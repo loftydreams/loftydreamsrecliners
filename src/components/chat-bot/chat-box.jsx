@@ -6,7 +6,7 @@ import { chatAnswers } from "./answers";
 
 import { useStyles } from "./chat.styles";
 import Message from "./message";
-
+import "./Chatbot.css";
 const ChatBox = () => {
   const classes = useStyles();
   const dummy = useRef();
@@ -26,7 +26,7 @@ const ChatBox = () => {
     <div className={classes.card}>
       <div className={classes.header}>
         <h2>Have some questions!?</h2>
-        <h3>What can we help you with?</h3>
+        {/* <h3>What can we help you with?</h3> */}
       </div>
       <div className={classes.chat}>
         <ChatQuestion handleClick={handleClick} />
