@@ -12,21 +12,21 @@ const Home2 = () => {
       <div className="home2-top">
         <div onClick={() => history.push("/living-room")}>
           <Home2Card
-            src="https://www.loftydreamsrecliners.com/wp-content/uploads/2013/08/LR-158-247x296.jpg"
+            src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/Manual%20Recliners%2FCatPagePhoto%2FLR-158-247x296.jpg?alt=media&token=bbcddbb1-b540-44c1-9e15-03a8cad4f64b"
             name="LIVING ROOM RECLINERS"
             qt="13 PRODUCTS"
           />
         </div>
         <div onClick={() => history.push("/home-theater")}>
           <Home2Card
-            src="https://www.loftydreamsrecliners.com/wp-content/uploads/2021/02/Lofty-Dreams-Black-Home-Theater-Recliner-e1613484668369-247x296.jpg"
+            src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/Manual%20Recliners%2FCatPagePhoto%2FLofty-Dreams-Black-Home-Theater-Recliner-e1613484668369-247x296.jpg?alt=media&token=a08de8ac-dfb1-4c4b-ace2-54d39c429a72"
             name="HOME THEATER RECLINERS"
             qt="13 PRODUCTS"
           />
         </div>
         <div onClick={() => history.push("/lounger")}>
           <Home2Card
-            src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/07/Recliners-Manufacturer-by-Lofty-Dreams-Recliners-Pvt.-Ltd.-247x296.jpg"
+            src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/Manual%20Recliners%2FCatPagePhoto%2FRecliners-Manufacturer-by-Lofty-Dreams-Recliners-Pvt.-Ltd..jpg?alt=media&token=550900a1-3f90-4d84-8d7b-6e2a2897efdc"
             name="LOUNGER SOFA"
             qt="12 PRODUCTS"
           />
@@ -35,21 +35,21 @@ const Home2 = () => {
       <div className="home2-bottom">
         <div onClick={() => history.push("/lounger")}>
           <Home2Card
-            src="https://www.loftydreamsrecliners.com/wp-content/uploads/2021/02/20190704_123721-247x296.jpg"
+            src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/Manual%20Recliners%2FCatPagePhoto%2F20190704_123721-247x296.jpg?alt=media&token=f443c30d-61b0-4d2e-818b-7380cb0d8c97"
             name="RECLINER CHAIR & SOFA"
             qt="93 PRODUCTS"
           />
         </div>
         <div onClick={() => history.push("/riser")}>
           <Home2Card
-            src="https://www.loftydreamsrecliners.com/wp-content/uploads/2021/02/Lofty-Dreams-Riser-Recliner-for-old-age-people-247x296.jpg"
+            src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/Manual%20Recliners%2FCatPagePhoto%2FLofty-Dreams-Riser-Recliner-for-old-age-people-247x296.jpg?alt=media&token=cf679aca-99c8-4b5a-8925-edd1a4798ac5"
             name="RISER RECLINERS"
             qt="1 PRODUCT"
           />
         </div>
         <div onClick={() => history.push("/single-seater")}>
           <Home2Card
-            src="https://www.loftydreamsrecliners.com/wp-content/uploads/2021/02/Lofty-Recliners-247x296.jpg"
+            src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/Manual%20Recliners%2FCatPagePhoto%2FLofty-Recliners-247x296.jpg?alt=media&token=a039a020-4444-414b-91ad-f50a02f42942"
             name="SINGLE SEATER RECLINERS"
             qt="56 PRODUCTS"
           />

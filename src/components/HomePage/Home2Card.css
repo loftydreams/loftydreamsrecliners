@@ -25,7 +25,8 @@
   .image {
     display: flex;
   width: 220px;
-height: 296;
+height: 296px;
+object-fit: cover;
 
   }
   

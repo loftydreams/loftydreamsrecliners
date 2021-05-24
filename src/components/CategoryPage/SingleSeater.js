@@ -35,7 +35,7 @@ const SingleSeater = () => {
         <Link to="/electric">
           <div className="single-seater-1">
             <img
-              src="https://www.loftydreamsrecliners.com/wp-content/uploads/2019/07/15-247x296.jpg"
+              src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/Manual%20Recliners%2FCatPagePhoto%2Flofty-dreams-recliner-chairs-scaled-247x296.jpg?alt=media&token=8b912872-85e0-49bf-8304-66b900b35e9e"
               alt=""
             />
             <span> ELECTRIC RECLINER</span> <br></br>
@@ -45,7 +45,7 @@ const SingleSeater = () => {
         <Link to="/manual">
           <div className="single-seater-1">
             <img
-              src="https://www.loftydreamsrecliners.com/wp-content/uploads/2019/07/lofty-dreams-recliner-chairs-scaled-247x296.jpg"
+              src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/Manual%20Recliners%2FCatPagePhoto%2F15-247x296.jpg?alt=media&token=d04465b9-23be-4939-9b04-f96368f47f5e"
               alt=""
             />
             <span> MANUAL RECLINER</span> <br></br>
