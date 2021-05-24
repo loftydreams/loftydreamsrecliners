@@ -9,14 +9,14 @@ const Testimonial = () => {
   return (
     <div className="testimonial-body">
       <div className="testimonial-heading">
-        <img src="Images/testimonial.jpg" alt="" />
+        <img src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/React-Images%2Ftestimonial.jpg?alt=media&token=aede337e-457f-42e6-8339-409dadedc3ef" alt="" />
       </div>
       <h4> OUR CLIENTS </h4>
       <div className="our-clients">
         <div className="client-card">
           <div className="client-card-top">
             <img
-              src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/07/Welson-White-Manual-Recliner-Chair-by-Lofty-Dreams-225x280.jpg"
+              src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/React-Images%2Ftestimonial-1.jpeg?alt=media&token=ad73df53-15e0-4101-87c1-f8f5955cf942g"
               alt=""
             />
           </div>
@@ -35,7 +35,7 @@ const Testimonial = () => {
         <div className="client-card">
           <div className="client-card-top">
             <img
-              src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/07/Brown-Manual-Recline-Chairr-by-Lofty-Dreams.jpg"
+              src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/React-Images%2Ftestimonial-2.jpeg?alt=media&token=4bc2bacf-8b53-4d69-a8f9-319bb6fcc70c"
               alt=""
             />
           </div>
@@ -52,7 +52,7 @@ const Testimonial = () => {
         <div className="client-card">
           <div className="client-card-top">
             <img
-              src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/07/Two-Seater-Grey-Recliner-Chair-by-lofty-dreams-recliners.jpg"
+              src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/React-Images%2Ftestimonial-3.jpeg?alt=media&token=36f82108-5c59-46cc-9596-8f43684ed78e"
               alt=""
             />
           </div>
