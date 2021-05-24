@@ -7,6 +7,9 @@ const Navbar3 = () => {
   return (
     <>
       <div className="navbar3-body">
+      <Link to="/all-recliners">
+          <span> All Recliners </span>
+        </Link>
         <Link to="/single-seater">
           <span> Single Seater Recliners </span>
         </Link>

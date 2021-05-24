@@ -19,13 +19,15 @@ import { faGoogle } from "@fortawesome/free-brands-svg-icons";
 
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth, signInWithGoogle } from "../../firebase";
-
+import "./Sidebar.css";
 const useStyles = makeStyles({
   list: {
     width: 240,
+   
   },
   fullList: {
     width: "auto",
+    
   },
 });
 
@@ -71,6 +73,7 @@ export default function SwipeableTemporaryDrawer() {
     >
       <List>
         {[
+           {text: "All Recliners" , link:"/all-recliners"},
           { text: "Single Seater Recliners", link: "/single-seater" },
           { text: "Living Room Recliners", link: "/living-room" },
           { text: "Home Theater Recliners", link: "/home-theater" },

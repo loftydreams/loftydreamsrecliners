@@ -48,10 +48,11 @@ width: 30%;
     font-size: 14px;
     width: 100%;
     text-align: center;
-    padding: 34px;
+    padding: 30px;
     text-align: left;
     font-weight: 300;
     font-family: "Poppins", sans-serif;
+    padding-left: 0px;
 
 }
 @media (max-width:815px)
@@ -59,6 +60,8 @@ width: 30%;
    .home1-body
    {
        margin-top: 0px;
+       padding: 10px;
+
    }
     .home1-left
     {
@@ -71,6 +74,7 @@ width: 30%;
     .home1-p
     {
         padding:0px;
+        font-size: 12px;
     }
     .home1-right img 
     {
