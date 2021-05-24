@@ -49,7 +49,7 @@ function App() {
           <CarouselContainer />
           <Home1 />
           <Home3/>
-
+          <Review />
           <Home2 />
           
      
@@ -65,7 +65,8 @@ function App() {
           />
                <CartItemsPreview />
           <Contact />
-          <Review />
+       
+          
         </Route>
         <Route path="/checkout">
           <CheckoutPage />

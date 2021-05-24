@@ -42,7 +42,7 @@ const Navbar2 = ({ hidden }) => {
         </div>
         <Link to="/">
           <div className="logo">
-            <img alt="Logo" src="Image/output-onlinepngtools.png" />
+            <img alt="Logo" src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/React-Images%2Foutput-onlinepngtools.png?alt=media&token=1c43700e-11ab-431c-ae5c-f6a2f5f25016" />
           </div>
         </Link>
         <SearchBar cname="search-bar" />

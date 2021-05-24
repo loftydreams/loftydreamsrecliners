@@ -47,7 +47,7 @@ const Navbar1 = ({ updateCollections }) => {
               style={{ fontSize: 12 }}
               rel="noreferrer"
             >
-              buy from amazon.in
+              buy from amazon
             </Button>
           </div>
 
