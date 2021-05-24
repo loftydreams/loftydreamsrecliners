@@ -16,7 +16,7 @@ export default function Contactus() {
         </div>
         <div className="aboutustop__second">
           <div className="top-first">
-            <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/05/contact-page-for-flatsome-wordpress-theme-pointed-icon-phone-400x400.png" alt=""></img>
+            <img src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/paymentPolicy%2Fcontact-page-for-flatsome-wordpress-theme-pointed-icon-phone-400x400.png?alt=media&token=9b54f0d2-3f06-449a-be76-449b9fa80e66" alt=""></img>
             <h1> Talk to sales </h1>
             <p>
               {" "}
@@ -43,7 +43,7 @@ export default function Contactus() {
               </button>
           </div>
           <div className="top-second">
-            <img src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/05/contact-page-for-flatsome-wordpress-theme-pointed-icon-chat-400x400.png" alt=""></img>
+            <img src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/paymentPolicy%2Fcontact-page-for-flatsome-wordpress-theme-pointed-icon-chat-400x400.png?alt=media&token=2c5e66b0-2ed9-49c1-825b-9222a8273c93" alt=""></img>
             <h1> Contact support</h1>
             <p>
               {" "}

@@ -24,7 +24,7 @@ export default function PaymentPolicy() {
             </p>
           </div>
           <div className="p_f_s">
-              <img className="payment-img" src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/06/Credit-Cards.jpg" alt="credit-debit-card"/>
+              <img className="payment-img" src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/paymentPolicy%2FCredit-Cards.jpg?alt=media&token=6a5bb2fb-2d50-40bf-a230-00aa046704bb" alt="credit-debit-card"/>
           </div>
         </div>
         <div className="payment__second">
@@ -35,7 +35,7 @@ export default function PaymentPolicy() {
             </p>
           </div>
           <div className="p_f_s">
-              <img className="payment-img" src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/06/EMI-card.jpg" alt="EMI"/>
+              <img className="payment-img" src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/paymentPolicy%2FEMI-card.jpg?alt=media&token=1b4b7702-d9f8-46f6-b40a-b4a1ebd46450" alt="EMI"/>
           </div>
         </div>
         <div className="payment__third">
@@ -46,18 +46,18 @@ export default function PaymentPolicy() {
             </p>
           </div>
           <div className="p_f_s">
-              <img className="payment-img" src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/06/UPI.jpg" alt="UPI"/>
+              <img className="payment-img" src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/paymentPolicy%2FUPI.jpg?alt=media&token=1ca16e2e-471d-491e-930b-d9cf18067dca" alt="UPI"/>
           </div>
         </div>
         <div className="payment__fourth">
         <div className="p_f_f">
-            <h2>E-wallets </h2>
+            <h2>4. E-wallets </h2>
             <p  className="payment__p">
             Customers can pay via popular online wallets like Mobikwik, Freecharge, Amazon Pay, PhonePe, JioMoney, Airtel Money, PayZapp and Ola Money. They can approve payments using OTP  directly for a seamless experience.  
             </p>
           </div>
           <div className="p_f_s">
-              <img className="payment-img" src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/06/NEFT-RTGS-IMPS.jpg" alt="E-wallets"/>
+              <img className="payment-img" src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/paymentPolicy%2FE-Wallets.jpg?alt=media&token=2bea83c8-d07a-4d6e-be85-eeb9fd67a35c" alt="E-wallets"/>
           </div>
         </div >
         <div className="payment__fifth">
@@ -68,7 +68,7 @@ export default function PaymentPolicy() {
             </p>
           </div>
           <div className="p_f_s">
-              <img className="payment-img" src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/06/UPI.jpg" alt="Netbanking"/>
+              <img className="payment-img" src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/paymentPolicy%2FBanks.jpg?alt=media&token=def63701-4c22-400a-90ad-5aa5360ad2e7" alt="Netbanking"/>
           </div>
         </div>
         <div className="payment__six">
@@ -79,7 +79,7 @@ export default function PaymentPolicy() {
             </p>
           </div>
           <div className="p_f_s">
-              <img className="payment-img"  src="https://www.loftydreamsrecliners.com/wp-content/uploads/2020/06/NEFT-RTGS-IMPS.jpg" alt="NEFT/rtgs/imps"/>
+              <img className="payment-img"  src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/paymentPolicy%2FNEFT-RTGS-IMPS.jpg?alt=media&token=f8a4188c-9366-4f00-9b36-71049d77a47b" alt="NEFT/rtgs/imps"/>
           </div>
         </div>
       </div>
