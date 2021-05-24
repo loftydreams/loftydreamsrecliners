@@ -12,12 +12,16 @@
     transition: all 0.6s;
 
 }
+@media (min-width:1200px) {
+  
+
 .container:hover
 {
   transform: translateY(-10px);
   transform: translateZ(10);
   transition-duration: 0.6s;
   box-shadow: 20px 20px 20px 20px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 }
 
   
