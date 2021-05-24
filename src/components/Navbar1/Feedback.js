@@ -66,7 +66,7 @@ const Feedback = () => {
       <h2>Feedback Form </h2>
 
       <Form onSubmit={handleSubmit}>
-        <Form.Group controlId="formBasicEmail">
+        <Form.Group controlId="formBasicName">
           <Form.Control
             type="name"
             placeholder="Name"
@@ -75,7 +75,7 @@ const Feedback = () => {
             onChange={(e) => setName(e.target.value)}
           />
         </Form.Group>
-        <Form.Group controlId="formBasicEmail">
+        <Form.Group controlId="formBasicPhone">
           <Form.Control
             type="phone"
             placeholder="Contact"

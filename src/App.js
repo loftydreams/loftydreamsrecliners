@@ -49,7 +49,12 @@ function App() {
         <Route path="/" exact>
           <CarouselContainer />
           <Home1 />
+
+          <Home3/>
+          <Review />
+
           <Home3 />
+
           <Home2 />
           <CardCollection
             heading={"BEST SELLING PRODUCTS"}
@@ -63,7 +68,8 @@ function App() {
           />
           <CartItemsPreview />
           <Contact />
-          <Review />
+       
+          
         </Route>
         <Route path="/checkout">
           <CheckoutPage />
