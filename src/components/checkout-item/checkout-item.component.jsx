@@ -31,7 +31,7 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
       </div>
 
       <div className="checkout-description">
-        <h6 className="">{name}</h6>
+        <h6 onClick={() => history.push(`/product/${id}`)}>{name}</h6>
 
         <div className="checkout-mid">
           <div className="checkout-quantity">
