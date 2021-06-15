@@ -20,7 +20,7 @@ font-weight: 800 !important;
   .styles_row-body__1NvUo
   .styles_faq-row__2YF3c
   .styles_row-title__1YiiY {
-  padding: 10px 0px;
+  padding: 20px 0px !important;
 
   display: flex;
   flex-wrap: wrap;
@@ -37,20 +37,20 @@ font-weight: 800 !important;
   .styles_row-content-text__2sgAB {
   color: #969696 !important;
   font-size: 12px;
-  padding: 4px;
+  
 }
 .styles_faq-row-wrapper__3vA1D
   .styles_row-body__1NvUo
   .styles_faq-row__2YF3c
   .styles_row-title__1YiiY
   .styles_row-title-text__1MuhU {
-  padding-right: 0em;
+  padding-right: 0px;
 }
 .styles_faq-row-wrapper__3vA1D .styles_faq-row__2YF3c {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 1px 13px;
+  padding: 4px 20px !important;
   border-bottom: 1px solid #ccc !important;
 }
 

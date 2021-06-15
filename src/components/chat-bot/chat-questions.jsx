@@ -20,11 +20,11 @@ const useStyles = makeStyles({
   },
   question: {
     width: "100%",
-    padding: "3px",
+    padding: "8px",
     fontSize: "13px",
     color: "white",
     backgroundColor: "black",
-    borderBottom: "1px solid black",
+    borderBottom: "2px solid white",
     cursor: "pointer",
     "&:hover": {
       color: "black",
@@ -33,7 +33,7 @@ const useStyles = makeStyles({
   },
 });
 
-let audio = new Audio("/preview.mp3");
+let audio = new Audio("/1_second_tone.mp3");
 
 const start = () => {
   audio.play();
