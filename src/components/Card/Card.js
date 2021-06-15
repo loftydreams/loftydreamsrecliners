@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 
 import { Button } from "@material-ui/core";
 import { addItem } from "../../redux/cart/cart.actions";
+import { pixelTrackCustom, pixelTrackDefault } from "../../utils/pixel-track";
 
 import "./Card.css";
 
@@ -47,6 +48,13 @@ function Card({
 
   const handleClick = () => {
     history.push(`/product/${id}`);
+    pixelTrackDefault("ViewContent", {
+      id,
+      name,
+      category,
+      price,
+      discount,
+    });
   };
 
   return (
@@ -85,6 +93,13 @@ function Card({
               onClick={() => {
                 addItem(item);
                 setAdded(true);
+                pixelTrackCustom("AddToCart", {
+                  id,
+                  name,
+                  category,
+                  price,
+                  discount,
+                });
               }}
               variant="contained"
               color="primary"

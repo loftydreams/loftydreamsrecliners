@@ -4,6 +4,7 @@ import { createStructuredSelector } from "reselect";
 import Button from "@material-ui/core/Button";
 
 import { selectCartItems } from "../../redux/cart/cart.selectors";
+import { pixelTrackDefault } from "../../utils/pixel-track";
 
 import { useStyles } from "./cart-items.styles";
 
@@ -30,7 +31,10 @@ const CartItemsPreview = ({ cartItems }) => {
                 <div
                   key={id}
                   className={classes.item}
-                  onClick={() => handleClick(id)}
+                  onClick={() => {
+                    handleClick(id);
+                    pixelTrackDefault("ViewContent", cartItem);
+                  }}
                 >
                   <img
                     src={imageUrl}

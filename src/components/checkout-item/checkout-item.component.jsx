@@ -2,6 +2,7 @@ import { useHistory } from "react-router-dom";
 import { connect } from "react-redux";
 
 import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
+import { pixelTrackCustom, pixelTrackDefault } from "../../utils/pixel-track";
 
 import {
   clearItemFromCart,
@@ -25,24 +26,40 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
     <div className="checkout-item">
       <div
         className="checkout-image"
-        onClick={() => history.push(`/product/${id}`)}
+        onClick={() => {
+          history.push(`/product/${id}`);
+          pixelTrackDefault("ViewContent", cartItem);
+        }}
       >
         <img src={imageUrl} alt="product img" />
       </div>
 
       <div className="checkout-description">
-        <h6 onClick={() => history.push(`/product/${id}`)}>{name}</h6>
+        <h6
+          onClick={() => {
+            history.push(`/product/${id}`);
+            pixelTrackDefault("ViewContent", cartItem);
+          }}
+        >
+          {name}
+        </h6>
 
         <div className="checkout-mid">
           <div className="checkout-quantity">
             <AiOutlineMinusCircle
               className="qt-icon"
-              onClick={() => removeItem(cartItem)}
+              onClick={() => {
+                removeItem(cartItem);
+                pixelTrackCustom("RemoveFromCart", cartItem);
+              }}
             />
             <span>{quantity}</span>
             <AiOutlinePlusCircle
               className="qt-icon"
-              onClick={() => addItem(cartItem)}
+              onClick={() => {
+                addItem(cartItem);
+                pixelTrackCustom("AddToCart", cartItem);
+              }}
             />
           </div>
           <span onClick={() => clearItem(cartItem)}>Remove Item</span>
