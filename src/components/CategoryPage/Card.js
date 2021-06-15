@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useHistory } from "react-router-dom";
 import { Button } from "@material-ui/core";
+import { pixelTrackCustom, pixelTrackDefault } from "../../utils/pixel-track";
 
 const Card = ({
   id,
@@ -31,7 +32,16 @@ const Card = ({
         </div>
       )}
       <div
-        onClick={() => history.push(`/product/${id}`)}
+        onClick={() => {
+          history.push(`/product/${id}`);
+          pixelTrackDefault("ViewContent", {
+            id,
+            name,
+            category,
+            price,
+            discount,
+          });
+        }}
         style={{ cursor: "pointer", display: "flex", flexDirection: "column" }}
       >
         <img src={image1} alt="Product img" />
@@ -51,7 +61,6 @@ const Card = ({
           color="primary"
           size="large"
           onClick={() => history.push(`/checkout`)}
-       
         >
           Checkout
         </Button>
@@ -64,6 +73,13 @@ const Card = ({
           onClick={() => {
             addItem(item);
             setAdded(true);
+            pixelTrackCustom("AddToCart", {
+              id,
+              name,
+              category,
+              price,
+              discount,
+            });
           }}
         >
           Add to Basket
