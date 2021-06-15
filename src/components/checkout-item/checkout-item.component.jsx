@@ -62,7 +62,14 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, removeItem }) => {
               }}
             />
           </div>
-          <span onClick={() => clearItem(cartItem)}>Remove Item</span>
+          <span
+            onClick={() => {
+              clearItem(cartItem);
+              pixelTrackCustom("RemoveFromCart", cartItem);
+            }}
+          >
+            Remove Item
+          </span>
         </div>
 
         <div className="checkout-price">
