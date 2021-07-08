@@ -6,28 +6,32 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  
-  
-
+  height: 60px;
+  position: sticky !important;
+  top: 0;
+  z-index: 3;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
   
 }
 .navbar3-body span {
-  margin-right: 11px;
-  margin-left: 14px;
+  margin-right: 16px;
+  margin-left: 9px;
   font-size: 16px;
-  color: rgb(73, 72, 72);
+  color:white;
 
   font-family: "Barlow Semi Condensed", sans-serif;
-  padding-left: 20px;
+  padding-left: 18px;
+  text-decoration: none;
 
 }
 .navbar3-body span:hover {
 
   cursor: pointer;
+  border-bottom: 2px solid white;
 }
 .hr-bottom {
-  margin-top: 10px;
+  margin-top: 0px;
   border: 1px solid rgb(236, 236, 236);
   margin-bottom: 0px;
 }
