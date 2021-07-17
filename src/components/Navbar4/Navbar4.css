@@ -4,7 +4,7 @@
   background-color: #485461;
 background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
    color:  white;
- 
+  
  
 }
 .navbar4-body h5{
@@ -15,4 +15,14 @@ background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
     padding: 3px;
     margin-bottom: 0;
     
+}
+@media (min-width: 1000px)
+{
+   .navbar4-body
+   {
+      position: sticky !important;
+      top: 60px;
+      z-index: 3;
+
+   }
 }

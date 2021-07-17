@@ -10,6 +10,17 @@ import { store, persistor } from "./redux/store";
 import "./index.css";
 import App from "./App";
 
+import TagManager from 'react-gtm-module'
+
+const tagManagerArgs = {
+    gtmId: 'UA-170328233-1',
+  
+}
+
+TagManager.initialize(tagManagerArgs)
+
+
+
 ReactPixel.init("438119346781142", {}, { debug: true, autoConfig: false });
 ReactPixel.pageView();
 ReactPixel.fbq("track", "PageView");
