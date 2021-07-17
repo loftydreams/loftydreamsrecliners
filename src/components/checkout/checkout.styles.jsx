@@ -14,6 +14,21 @@ export const useStyles = makeStyles({
       marginBottom: "20px",
     },
   },
+  headerSec: {
+    display: "flex",
+    backgroundColor: "#fff",
+    border: "1px solid blue",
+    borderRadius: "5px",
+    justifyContent: "space-between",
+    alignItems: "center",
+    margin: "5px 10px",
+    padding: "5px",
+
+    "& h5": {
+      margin: "auto 10px",
+      fontStyle: "italic",
+    },
+  },
   checkoutTotal: {
     width: "100%",
     display: "flex",
