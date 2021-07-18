@@ -9,7 +9,10 @@ const Testimonial = () => {
   return (
     <div className="testimonial-body">
       <div className="testimonial-heading">
-        <img src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/React-Images%2Ftestimonial.jpg?alt=media&token=aede337e-457f-42e6-8339-409dadedc3ef" alt="" />
+        <img
+          src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/React-Images%2Ftestimonial.jpg?alt=media&token=aede337e-457f-42e6-8339-409dadedc3ef"
+          alt=""
+        />
       </div>
       <h4> OUR CLIENTS </h4>
       <div className="our-clients">
@@ -22,7 +25,7 @@ const Testimonial = () => {
           </div>
 
           <div className="client-card-bottom">
-            <Rating value={"5"}></Rating>
+            <Rating value={5} readOnly></Rating>
             <p>
               I purchased “welson white manual recliner Chair” is much better
               than I thought and I am happy to invest in the right recliner
@@ -41,7 +44,7 @@ const Testimonial = () => {
           </div>
 
           <div className="client-card-bottom">
-            <Rating value={"5"}></Rating>
+            <Rating value={5} readOnly></Rating>
             <p>
               Quality and Durability of this recliner chair are very good. Great
               chair highly recommend. Thanks 🙂
@@ -58,7 +61,7 @@ const Testimonial = () => {
           </div>
 
           <div className="client-card-bottom">
-            <Rating value={"4"}></Rating>
+            <Rating value={4} readOnly></Rating>
             <p>
               Excellent Product. According to my room size, we customized the 2
               seater home theater recliner with console. Thanks to Lofty Dreams
@@ -108,7 +111,7 @@ const Testimonial = () => {
           }}
         >
           <div className="testimonial-items">
-            <Rating value={"4"} className="test-rating" />
+            <Rating value={4} readOnly className="test-rating" />
             <p>
               {" "}
               The product is really good in comfort and quality-wise, in fact,
@@ -117,7 +120,7 @@ const Testimonial = () => {
             <span> Poonam / Whatsapp</span>
           </div>
           <div className="testimonial-items">
-            <Rating value={"4"} className="test-rating" />
+            <Rating value={4} readOnly className="test-rating" />
             <p>
               {" "}
               The product price is fine when compared to its quality. This is
@@ -128,7 +131,7 @@ const Testimonial = () => {
             <span> Dr. Manoj / E-Mail</span>
           </div>
           <div className="testimonial-items">
-            <Rating value={"5"} className="test-rating" />
+            <Rating value={5} readOnly className="test-rating" />
             <p>
               {" "}
               I bought Swivel recliner chair. Working fine from the last 8
@@ -137,12 +140,12 @@ const Testimonial = () => {
             <span> Priyank / E-Mail </span>
           </div>
           <div className="testimonial-items">
-            <Rating value={"4"} className="test-rating" />
+            <Rating value={4} readOnly className="test-rating" />
             <p> Nice Recliner, Thanks a lot to deliver on time.</p>
             <span> Aarti / Whatsapp </span>
           </div>
           <div className="testimonial-items">
-            <Rating value={"5"} className="test-rating" />
+            <Rating value={5} readOnly className="test-rating" />
             <p>
               {" "}
               Amazing! Perfect recliner design and dimension that completely fit
@@ -151,7 +154,7 @@ const Testimonial = () => {
             <span> Sanju / E-Mail </span>
           </div>
           <div className="testimonial-items">
-            <Rating value={"5"} className="test-rating" />
+            <Rating value={5} readOnly className="test-rating" />
             <p>
               {" "}
               Wow! Thanks for giving us the best quality recliner. I really
