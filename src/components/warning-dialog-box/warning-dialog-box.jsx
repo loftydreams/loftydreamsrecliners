@@ -17,18 +17,19 @@ export default function AlertDialog({ open, handleClose }) {
         {"Payment service is not available!"}
       </DialogTitle>
       <DialogContent>
-        <DialogContentText id="alert-dialog-description">
+        <DialogContentText id="alert-dialog-description"> <strong>
           Payment service is currently not available. Please! buy our products
-          from amazon.in!
+          from Pepperfry!
+          </strong>
         </DialogContentText>
       </DialogContent>
       <DialogActions>
         <Button
-          href="https://www.amazon.in/s?me=A1YF33ZDTB7JEG&marketplaceID=A21TJRUUN4KGV"
+          href="https://www.pepperfry.com/site_product/search?q=Lofty+dreams"
           target="_blank"
           color="primary"
         >
-          amazon.in
+       <strong> Pepperfry </strong>   
         </Button>
         <Button onClick={handleClose} color="primary" autoFocus>
           Close

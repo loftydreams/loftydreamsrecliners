@@ -42,12 +42,12 @@ const Navbar1 = ({ updateCollections }) => {
             <Button
               variant="contained"
               className="amazon"
-              href="https://www.amazon.in/s?me=A1YF33ZDTB7JEG&marketplaceID=A21TJRUUN4KGV"
+              href="https://www.pepperfry.com/site_product/search?q=Lofty+dreams"
               target="_blank"
-              style={{ fontSize: 12 }}
+              style={{ fontSize: 13 }}
               rel="noreferrer"
             >
-              buy from amazon
+              buy @ pepperfry
             </Button>
           </div>
 
@@ -97,6 +97,10 @@ const Navbar1 = ({ updateCollections }) => {
             <Link to="/feedback">
               {" "}
               <span> Feedback </span>{" "}
+            </Link>
+            <Link to="/testimonial">
+              {" "}
+              <span> Testimony </span>{" "}
             </Link>
           </div>
           <div className="social-icons">

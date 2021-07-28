@@ -81,7 +81,8 @@ export default function SwipeableTemporaryDrawer() {
           { text: "Riser Recliner", link: "/riser" },
           {text: "Feedback" , link:"/feedback"},
           {text: "Contact Us" , link:"/Contactus"},
-          {text: "About" , link:"/about"}
+          {text: "About" , link:"/about"},
+          {text: "Testimony" , link:"/testimonial"}
         ].map((item) => (
           <ListItem
             button
