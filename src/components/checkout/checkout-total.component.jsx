@@ -11,7 +11,7 @@ import AlertDialog from "../warning-dialog-box/warning-dialog-box";
 
 import { useStyles } from "./checkout.styles";
 
-const CheckoutTotal = ({ total }) => {
+const CheckoutTotal = ({ total, isDisabled }) => {
   const classes = useStyles();
   const [open, setOpen] = useState(false);
 
@@ -53,6 +53,7 @@ const CheckoutTotal = ({ total }) => {
             color="primary"
             variant="contained"
             onClick={handleClickOpen}
+            disabled={isDisabled}
           >
             Proceed to Checkout
           </Button>
