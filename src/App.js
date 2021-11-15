@@ -109,7 +109,7 @@ import Home3 from "./components/HomePage/Home3";
           <AllRecliners />
         </Route>
         <Route path="/single-seater">
-          <SingleSeater />
+          <Electric />
         </Route>
         <Route path="/living-room">
           <LivingRoom />
@@ -124,7 +124,7 @@ import Home3 from "./components/HomePage/Home3";
           <Riser />
         </Route>
         <Route path="/electric">
-          <Electric />
+          <SingleSeater />
         </Route>
         <Route path="/manual">
           <Manual />
