@@ -36,6 +36,9 @@ import Feedback from "./components/Navbar1/Feedback";
 import Testimonial from "./components/Testimonial/Testimonial";
 import ShippingPolicy from "./components/ShippingPolicy/ShippingPolicy";
 import Home3 from "./components/HomePage/Home3";
+import PaymentPage from "./components/Payment/PaymentPage";
+import PaymentStatus from "./components/Payment/PaymentStatus";
+import Authenticated from "./components/Authenticated/Authenticated";
 
 function App() {
   return (
@@ -49,12 +52,8 @@ function App() {
         <Route path="/" exact>
           <CarouselContainer />
           <Home1 />
-
-          <Home3/>
+          <Home3 />
           <Review />
-
-        
-
           <Home2 />
           <CardCollection
             heading={"BEST SELLING PRODUCTS"}
@@ -68,8 +67,6 @@ function App() {
           />
           <CartItemsPreview />
           <Contact />
-       
-          
         </Route>
         <Route path="/checkout">
           <CheckoutPage />
@@ -130,6 +127,17 @@ function App() {
         </Route>
         <Route path="/shipping-policy">
           <ShippingPolicy />
+        </Route>
+
+        <Route exact path="/payment">
+          <Authenticated>
+            <PaymentPage />
+          </Authenticated>
+        </Route>
+        <Route path="/payment">
+          <Authenticated>
+            <PaymentStatus />
+          </Authenticated>
         </Route>
 
         <Route path="*">
