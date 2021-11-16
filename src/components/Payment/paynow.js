@@ -76,34 +76,18 @@ const Paynow = (props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const { checkoutJsInstance, showCheckout, openInPopup } = state;
+  const { showCheckout, openInPopup } = state;
 
   return (
-    <div>
-      <div>
-        <button
-          disabled={!checkoutJsInstance}
-          type="button"
-          onClick={toggleCheckout}
-        >
-          Toggle Checkout Screen
-        </button>
-      </div>
-      <br />
-
-      <div>
-        <b>CHECKOUT VISIBILITY :</b> {showCheckout.toString()}
-      </div>
-      <CheckoutProvider
-        config={state.config}
-        checkoutJsInstance={state.checkoutJsInstance}
-        openInPopup={openInPopup}
-        env="STAGE"
-      >
-        <InjectedCheckout />
-        {showCheckout && <Checkout />}
-      </CheckoutProvider>
-    </div>
+    <CheckoutProvider
+      config={state.config}
+      checkoutJsInstance={state.checkoutJsInstance}
+      openInPopup={openInPopup}
+      env="STAGE"
+    >
+      <InjectedCheckout toggleCheckout={toggleCheckout} />
+      {showCheckout && <Checkout />}
+    </CheckoutProvider>
   );
 };
 

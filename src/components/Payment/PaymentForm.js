@@ -111,7 +111,7 @@ const PaymentForm = ({ handleSubmit, loading }) => {
           color="primary"
           disabled={loading}
         >
-          Pay now
+          Save and Continue
         </Button>
       </form>
     </div>

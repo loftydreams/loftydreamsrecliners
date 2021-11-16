@@ -50,7 +50,6 @@ const PaymentPage = ({ cartItems }) => {
 
       const data = await res.json();
       setConfig(data);
-      console.log(data);
     } catch (err) {
       console.log(err);
     }

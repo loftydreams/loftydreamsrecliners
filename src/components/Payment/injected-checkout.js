@@ -1,13 +1,23 @@
+import Button from "@material-ui/core/Button";
 import { injectCheckout } from "paytm-blink-checkout-react";
 
 const InjectedCheckout = (props) => {
   const checkoutJsInstance = props.checkoutJsInstance;
 
   return (
-    <div>
-      <b>IS CHECKOUT JS INJECTED : </b>
-      {Boolean(checkoutJsInstance).toString()}
-    </div>
+    <Button
+      style={{
+        width: "100px",
+        margin: "10px auto",
+      }}
+      color="primary"
+      variant="contained"
+      disabled={!checkoutJsInstance}
+      type="button"
+      onClick={props.toggleCheckout}
+    >
+      Paynow
+    </Button>
   );
 };
 

@@ -86,9 +86,6 @@ function App() {
         <Route path="/payment-security-policy">
           <PaymentPolicy />
         </Route>
-        <Route path="/track-order">
-          <TrackOurOrder />
-        </Route>
         <Route path="/product/:productId">
           <ProductPage />
         </Route>
@@ -134,9 +131,14 @@ function App() {
             <PaymentPage />
           </Authenticated>
         </Route>
-        <Route path="/payment">
+        <Route exact path="/payment/status">
           <Authenticated>
             <PaymentStatus />
+          </Authenticated>
+        </Route>
+        <Route exact path="/track-order">
+          <Authenticated>
+            <TrackOurOrder />
           </Authenticated>
         </Route>
 

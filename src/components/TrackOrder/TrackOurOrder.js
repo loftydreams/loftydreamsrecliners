@@ -1,32 +1,48 @@
-import React from "react";
-import "./trackourorder.css";
+import { Link } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
 
-export default function TrackOurOrder() {
-  return (
-    <div className="trackourorder__main">
-      <h1>Track Your Order</h1>
-      <p>
-        To track your order please enter your Order ID in the box below and
-        press the "Track" button. This was given to you on your receipt and in
-        the confirmation email you should have received.
-      </p>
-      <div className="order-div">
-        <form className="order-form">
-          <label className="order-form-label">Order ID:</label>
-          <input
-            className="orderid-input"
-            placeholder=" Found in your order confirmation email."
-          />
+import { useStyles } from "./TrackOrder.styles";
+import { auth, firestore } from "../../firebase";
+import Loader from "../Loader/Loader";
 
-          <label className="order-form-label">Billing email: </label>
-          <input
-            placeholder="Email you used during checkout."
-            className="orderemail-input"
-          />
+const TrackOurOrder = () => {
+  const classes = useStyles();
+  const [user] = useAuthState(auth);
+  const [orders, loading, error] = useCollectionDataOnce(
+    user.uid && firestore.collection("orders").where("userId", "==", user.uid),
+    { idField: "id" }
+  );
 
-          <button className="order-btn">Track</button>
-        </form>
+  if (loading && !error) {
+    return <Loader />;
+  }
+
+  if (orders && !loading && !error) {
+    return (
+      <div className={classes.root}>
+        <h1>View Your Orders</h1>
+        {orders.map((order) => (
+          <div key={order.id}>
+            <p>Order Id: {order.id}</p>
+            <p>Order total price: {order.totalPrice}</p>
+            <p>Payment status: {order.paymentStatus.resultStatus}</p>
+            <p>
+              <Link to={`/payment/status?orderId=${order.id}`}>
+                View Order Details
+              </Link>
+            </p>
+          </div>
+        ))}
       </div>
+    );
+  }
+
+  return (
+    <div className={classes.root}>
+      <h1>Error 400: Something went wrong!</h1>
     </div>
   );
-}
+};
+
+export default TrackOurOrder;
