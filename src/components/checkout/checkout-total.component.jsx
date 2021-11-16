@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
@@ -7,27 +7,22 @@ import Typography from "@material-ui/core/Typography";
 import TextField from "@material-ui/core/TextField";
 import LocalOfferIcon from "@material-ui/icons/LocalOffer";
 import Divider from "@material-ui/core/Divider";
-import AlertDialog from "../warning-dialog-box/warning-dialog-box";
 
 import { useStyles } from "./checkout.styles";
 
 const CheckoutTotal = ({ total, isDisabled }) => {
   const classes = useStyles();
-  const [open, setOpen] = useState(false);
-
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
+  const history = useHistory();
 
   const formattedPrice = (price) =>
     new Intl.NumberFormat("en-IN", {
       style: "currency",
       currency: "INR",
     }).format(price);
+
+  const handleCheckout = () => {
+    history.push("/payment");
+  };
 
   return (
     <>
@@ -52,7 +47,7 @@ const CheckoutTotal = ({ total, isDisabled }) => {
             className={classes.content}
             color="primary"
             variant="contained"
-            onClick={handleClickOpen}
+            onClick={handleCheckout}
             disabled={isDisabled}
           >
             Proceed to Checkout
@@ -86,7 +81,6 @@ const CheckoutTotal = ({ total, isDisabled }) => {
           </Button>
         </CardActions>
       </Card>
-      <AlertDialog open={open} handleClose={handleClose} />
     </>
   );
 };
