@@ -20,8 +20,6 @@ export const updatedItems = async (cartItems) => {
           price: sp(price, discount),
         };
         updatedItems.push(updatedItem);
-      } else {
-        console.log("No such document!");
       }
     })
   );

@@ -24,7 +24,6 @@ const CheckoutPage = ({ cartItems, total, clearCart, clearItem, addItem }) => {
 
   useEffect(() => {
     updatedItems(cartItems).then((items) => {
-      console.log("updatedItems", items);
       for (const item of items) {
         clearItem(item);
         addItem(item);
