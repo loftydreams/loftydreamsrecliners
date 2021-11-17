@@ -36,6 +36,9 @@ import Feedback from "./components/Navbar1/Feedback";
 import Testimonial from "./components/Testimonial/Testimonial";
 import ShippingPolicy from "./components/ShippingPolicy/ShippingPolicy";
 import Home3 from "./components/HomePage/Home3";
+import PaymentPage from "./components/Payment/PaymentPage";
+import PaymentStatus from "./components/Payment/PaymentStatus";
+import Authenticated from "./components/Authenticated/Authenticated";
 
 
 
@@ -56,12 +59,8 @@ import Home3 from "./components/HomePage/Home3";
         <Route path="/" exact>
           <CarouselContainer />
           <Home1 />
-
-          <Home3/>
+          <Home3 />
           <Review />
-
-        
-
           <Home2 />
           <CardCollection
             heading={"BEST SELLING PRODUCTS"}
@@ -75,8 +74,6 @@ import Home3 from "./components/HomePage/Home3";
           />
           <CartItemsPreview />
           <Contact />
-       
-          
         </Route>
         <Route path="/checkout">
           <CheckoutPage />
@@ -95,9 +92,6 @@ import Home3 from "./components/HomePage/Home3";
         </Route>
         <Route path="/payment-security-policy">
           <PaymentPolicy />
-        </Route>
-        <Route path="/track-order">
-          <TrackOurOrder />
         </Route>
         <Route path="/product/:productId">
           <ProductPage />
@@ -137,6 +131,22 @@ import Home3 from "./components/HomePage/Home3";
         </Route>
         <Route path="/shipping-policy">
           <ShippingPolicy />
+        </Route>
+
+        <Route exact path="/payment">
+          <Authenticated>
+            <PaymentPage />
+          </Authenticated>
+        </Route>
+        <Route exact path="/payment/status">
+          <Authenticated>
+            <PaymentStatus />
+          </Authenticated>
+        </Route>
+        <Route exact path="/track-order">
+          <Authenticated>
+            <TrackOurOrder />
+          </Authenticated>
         </Route>
 
         <Route path="*">

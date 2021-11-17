@@ -23,8 +23,6 @@ const ProductPage = ({ addItem, product }) => {
   const { productId } = useParams();
   const history = useHistory();
 
-  console.log(product);
-
   const [added, setAdded] = useState(false);
   const [src, setSrc] = useState(product?.image1);
 
