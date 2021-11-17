@@ -1,5 +1,5 @@
 import { Switch, Route } from "react-router-dom";
-
+import React from 'react';
 import Navbar1 from "./components/Navbar1/Navbar1";
 import Navbar2 from "./components/Navbar2/Navbar2";
 import Navbar3 from "./components/Navbar3/Navbar3";
@@ -37,9 +37,16 @@ import Testimonial from "./components/Testimonial/Testimonial";
 import ShippingPolicy from "./components/ShippingPolicy/ShippingPolicy";
 import Home3 from "./components/HomePage/Home3";
 
-function App() {
+
+
+
+
+ function App()
+{
+
   return (
     <div className="App">
+    
       <Navbar1 />
       <Navbar2 />
       <Navbar3 />
@@ -102,7 +109,7 @@ function App() {
           <AllRecliners />
         </Route>
         <Route path="/single-seater">
-          <SingleSeater />
+          <Electric />
         </Route>
         <Route path="/living-room">
           <LivingRoom />
@@ -117,7 +124,7 @@ function App() {
           <Riser />
         </Route>
         <Route path="/electric">
-          <Electric />
+          <SingleSeater />
         </Route>
         <Route path="/manual">
           <Manual />

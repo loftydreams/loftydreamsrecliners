@@ -24,7 +24,7 @@ import { Link } from "react-router-dom";
 
 const Navbar1 = ({ updateCollections }) => {
   const [products, loading] = useCollectionData(
-    firestore.collection("products").orderBy("name", "asc"),
+    firestore.collection("products").orderBy("discount", "asc"),
     { idField: "id" }
   );
 

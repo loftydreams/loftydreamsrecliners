@@ -9,7 +9,9 @@ import { Link } from "react-router-dom";
 import { addItem } from "../../redux/cart/cart.actions";
 import Card from "./Card";
 
-const AllRecliners = ({ addItem, products }) => {
+const AllRecliners = ({ addItem, products , trending }) => {
+  
+
   return (
     <div className="single-seater">
       <Breadcrumbs aria-label="breadcrumb" style={{ margin: "20px" }}>
