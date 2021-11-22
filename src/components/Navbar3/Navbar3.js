@@ -8,20 +8,18 @@ const Navbar3 = () => {
     <>
       <div className="navbar3-body">
       <Link to="/all-recliners">
-          <span> All Recliners </span>
+          <span> Trending </span>
         </Link>
         <Link to="/single-seater">
           <span> Single Seater Recliners </span>
         </Link>
         <Link to="/living-room">
-          <span> Living Room Recliners </span>
+          <span> Living & Lounger Recliners </span>
         </Link>
         <Link to="/home-theater">
           <span> Home Theater Recliners </span>
         </Link>
-        <Link to="/lounger">
-          <span> Lounger Sofa </span>
-        </Link>
+        
         <Link to="/riser">
           <span> Riser Recliners </span>
         </Link>

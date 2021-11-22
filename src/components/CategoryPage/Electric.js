@@ -16,8 +16,10 @@ const Electric = ({ addItem, products }) => {
   const filteredProducts = products?.filter((product) => {
     return product.category
       ?.toLowerCase()
-      .includes("ELECTRIC RECLINER".toLowerCase());
+      .includes("ELECTRIC RECLINER".toLowerCase()) || product.category?.toLowerCase().includes("MANUAL RECLINER".toLowerCase());  
   });
+ 
+  
 
   return (
     <div className="single-seater">
@@ -31,7 +33,7 @@ const Electric = ({ addItem, products }) => {
         <Typography color="textPrimary">ELECTRIC RECLINERS </Typography>
       </Breadcrumbs>
       <br></br>
-      <h2> ELECTRIC RECLINERS</h2>
+      <h2> SINGLE SEATER RECLINERS</h2>
       <div className="top-cat-page">
         <p className="single-seater-content">
           Electric Recliners have a reclining motorized mechanism that is run by
@@ -64,7 +66,8 @@ const Electric = ({ addItem, products }) => {
                 data;
 
               const sp = price - (price * discount) / 100;
-
+             
+             
               const item = {
                 id: id,
                 name: name,
@@ -88,7 +91,7 @@ const Electric = ({ addItem, products }) => {
                   stock={stock}
                 />
               );
-            })}
+            }) }
         </div>
       </div>
     </div>

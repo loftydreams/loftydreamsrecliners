@@ -15,7 +15,7 @@ const LivingRoom = ({ addItem, products }) => {
   const filteredProducts = products?.filter((product) => {
     return product.category
       ?.toLowerCase()
-      .includes("LIVING ROOM RECLINERS".toLowerCase());
+      .includes("LIVING ROOM RECLINERS".toLowerCase()) || product.category?.toLowerCase().includes("LOUNGER SOFA RECLINERS".toLowerCase());
   });
 
   return (
@@ -25,10 +25,10 @@ const LivingRoom = ({ addItem, products }) => {
           HOME
         </Link>
 
-        <Typography color="textPrimary">LIVING ROOM RECLINERS </Typography>
+        <Typography color="textPrimary">LIVING ROOM {"&"} LOUNGER RECLINERS </Typography>
       </Breadcrumbs>
       <br></br>
-      <h2> LIVING ROOM RECLINERS</h2>
+      <h2>LIVING ROOM {"&"} LOUNGER RECLINERS</h2>
       <div className="top-cat-page">
         <p className="single-seater-content">
           Living Room Recliners have had a very miracle history in home design
