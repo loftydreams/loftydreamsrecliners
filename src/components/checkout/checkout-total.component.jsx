@@ -9,6 +9,7 @@ import LocalOfferIcon from "@material-ui/icons/LocalOffer";
 import Divider from "@material-ui/core/Divider";
 
 import { useStyles } from "./checkout.styles";
+import Contactusform from "../Contactus/Contactusform";
 
 const CheckoutTotal = ({ total, isDisabled }) => {
   const classes = useStyles();
@@ -81,6 +82,7 @@ const CheckoutTotal = ({ total, isDisabled }) => {
           </Button>
         </CardActions>
       </Card>
+
     </>
   );
 };

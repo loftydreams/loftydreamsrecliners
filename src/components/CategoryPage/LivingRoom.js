@@ -10,6 +10,7 @@ import { addItem } from "../../redux/cart/cart.actions";
 import Card from "./Card";
 
 import "./LivingRoom.css";
+import Contactusform from "../Contactus/Contactusform";
 
 const LivingRoom = ({ addItem, products }) => {
   const filteredProducts = products?.filter((product) => {
@@ -80,6 +81,7 @@ const LivingRoom = ({ addItem, products }) => {
             })}
         </div>
       </div>
+      <Contactusform/>
     </div>
   );
 };

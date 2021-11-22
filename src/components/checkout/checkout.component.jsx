@@ -17,6 +17,7 @@ import {
   addItem,
 } from "../../redux/cart/cart.actions";
 import { updatedItems } from "../../utils/db.utils";
+import Contactusform from "../Contactus/Contactusform";
 
 const CheckoutPage = ({ cartItems, total, clearCart, clearItem, addItem }) => {
   const classes = useStyles();
@@ -72,7 +73,10 @@ const CheckoutPage = ({ cartItems, total, clearCart, clearItem, addItem }) => {
             total={total}
             isDisabled={updateItems || !cartItems.length}
           />
+
+
         </div>
+        <Contactusform/>
       </div>
     </>
   );
