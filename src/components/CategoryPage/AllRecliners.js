@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 
 import { addItem } from "../../redux/cart/cart.actions";
 import Card from "./Card";
+import Contactusform from "../Contactus/Contactusform";
 
 const AllRecliners = ({ addItem, products , trending }) => {
   
@@ -58,6 +59,7 @@ const AllRecliners = ({ addItem, products , trending }) => {
             })}
         </div>
       </div>
+      <Contactusform/>
     </div>
   );
 };

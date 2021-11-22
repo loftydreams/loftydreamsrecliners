@@ -18,6 +18,7 @@ import ProductAccordion from "./ProductAccordian";
 import RelatedProducts from "./RelatedProducts";
 
 import "./ProductPage.css";
+import Contactusform from "../Contactus/Contactusform";
 
 const ProductPage = ({ addItem, product }) => {
   const { productId } = useParams();
@@ -221,6 +222,7 @@ const ProductPage = ({ addItem, product }) => {
         />
       </div>
       <RelatedProducts category={product?.category} pid={productId} />
+      <Contactusform/>
     </div>
   ) : null;
 };
