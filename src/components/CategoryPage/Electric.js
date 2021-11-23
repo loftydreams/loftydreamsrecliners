@@ -11,6 +11,7 @@ import { addItem } from "../../redux/cart/cart.actions";
 import Card from "./Card";
 
 import "./LivingRoom.css";
+import Contactusform from "../Contactus/Contactusform";
 
 const Electric = ({ addItem, products }) => {
   const filteredProducts = products?.filter((product) => {
@@ -94,6 +95,7 @@ const Electric = ({ addItem, products }) => {
             }) }
         </div>
       </div>
+      <Contactusform/>
     </div>
   );
 };
