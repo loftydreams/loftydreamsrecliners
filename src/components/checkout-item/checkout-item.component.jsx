@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 import { pixelTrackCustom, pixelTrackDefault } from "../../utils/pixel-track";
-import Contactusform from '../Contactus/Contactusform'
+
 import {
   clearItemFromCart,
   addItem,
