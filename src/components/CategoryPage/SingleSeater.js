@@ -3,6 +3,7 @@ import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import { Link } from "react-router-dom";
 
 import "./SingleSeater.css";
+import Contactusform from "../Contactus/Contactusform";
 
 const SingleSeater = () => {
   return (
@@ -53,6 +54,7 @@ const SingleSeater = () => {
           </div>
         </Link>
       </div>
+      <Contactusform/>
     </div>
   );
 };

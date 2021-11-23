@@ -20,10 +20,10 @@ const AllRecliners = ({ addItem, products , trending }) => {
           HOME
         </Link>
 
-        <Typography color="textPrimary">ALL RECLINERS</Typography>
+        <Typography color="textPrimary">TRENDING RECLINERS</Typography>
       </Breadcrumbs>
       <br></br>
-      <h2>ALL RECLINERS</h2>
+      <h2>TRENDING RECLINERS</h2>
       <div className="bottom-cat-page">
         <div className="living-room-1">
           {products.length &&
