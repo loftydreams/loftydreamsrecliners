@@ -82,7 +82,7 @@ const Paynow = (props) => {
       config={state.config}
       checkoutJsInstance={state.checkoutJsInstance}
       openInPopup={openInPopup}
-      env="STAGE"
+      env={process.env.REACT_APP_PAYTM_ENV}
     >
       <InjectedCheckout toggleCheckout={toggleCheckout} />
       {showCheckout && <Checkout />}
