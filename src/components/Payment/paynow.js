@@ -32,8 +32,7 @@ const Paynow = (props) => {
   };
 
   const loadCheckoutScript = () => {
-    const url =
-      "https://securegw-stage.paytm.in/merchantpgpui/checkoutjs/merchants/";
+    const url = `${process.env.REACT_APP_HOSTNAME}/merchantpgpui/checkoutjs/merchants/`;
     const scriptElement = document.createElement("script");
     scriptElement.async = true;
     scriptElement.src = url.concat(CONFIG.merchant.mid);
