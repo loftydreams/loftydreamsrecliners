@@ -25,7 +25,7 @@ const PaymentForm = ({ handleSubmit, loading }) => {
         className={classes.form}
         autoComplete="off"
       >
-        <h3 className={classes.gap}>Payment Test</h3>
+        <h3 className={classes.gap}>Personal Details</h3>
         <TextField
           fullWidth
           className={classes.gap}
