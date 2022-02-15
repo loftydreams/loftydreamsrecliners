@@ -31,18 +31,21 @@ const PaymentPage = ({ cartItems }) => {
 
     try {
       const idToken = await user.getIdToken();
-      const res = await fetch("http://localhost:3001/api/paynow", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          idToken,
-          customerData,
-          shippingAddress,
-          itemsToPurchase,
-        }),
-      });
+      const res = await fetch(
+        `${process.env.REACT_APP_SERVER_URL}/api/paynow`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            idToken,
+            customerData,
+            shippingAddress,
+            itemsToPurchase,
+          }),
+        }
+      );
 
       if (!res.ok) {
         throw new Error("Failed!");
