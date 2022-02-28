@@ -39,6 +39,7 @@ import Home3 from "./components/HomePage/Home3";
 import PaymentPage from "./components/Payment/PaymentPage";
 import PaymentStatus from "./components/Payment/PaymentStatus";
 import Authenticated from "./components/Authenticated/Authenticated";
+import Landing from "./components/Landing/Landing";
 
 
 
@@ -50,14 +51,16 @@ import Authenticated from "./components/Authenticated/Authenticated";
   return (
     <div className="App">
     
-      <Navbar1 />
+    
+    <Navbar1 />
       <Navbar2 />
       <Navbar3 />
       <Navbar4 />
       <ChatContainer />
       <Switch>
-        <Route path="/" exact>
-          <CarouselContainer />
+      <Route path="/" exact>
+
+      <CarouselContainer />
           <Home1 />
           <Home3 />
           <Review />
@@ -74,82 +77,141 @@ import Authenticated from "./components/Authenticated/Authenticated";
           />
           <CartItemsPreview />
           <Contact />
+
+
         </Route>
+
+        <Route path="/landing" exact>
+       
+      
+                
+          <Landing />
+          <CardCollection
+            heading={"BEST SELLING PRODUCTS"}
+            topSelling
+            topDiscount={false}
+          />
+          <CardCollection
+            heading={"TOP DISCOUNTED PRODUCTS"}
+            topSelling={false}
+            topDiscount
+          />
+        </Route>
+
         <Route path="/checkout">
+     
           <CheckoutPage />
         </Route>
         <Route path="/about">
           <AboutUs />
         </Route>
         <Route path="/contactus">
+       
           <Contactus />
         </Route>
         <Route path="/privacy-policy">
+       
           <PrivacyPolicy />
         </Route>
         <Route path="/terms-and-condition">
+      
           <TermsAndCondition />
         </Route>
         <Route path="/payment-security-policy">
+        
           <PaymentPolicy />
         </Route>
         <Route path="/product/:productId">
+     
           <ProductPage />
         </Route>
         <Route path="/search/:keyword">
+        
           <SearchResults />
         </Route>
         <Route path="/all-recliners">
+     
           <AllRecliners />
         </Route>
         <Route path="/single-seater">
+        
           <Electric />
         </Route>
         <Route path="/living-room">
+      
           <LivingRoom />
         </Route>
         <Route path="/home-theater">
+      
           <HomeTheater />
         </Route>
         <Route path="/lounger">
+      
           <Lounger />
         </Route>
         <Route path="/riser">
+        
           <Riser />
         </Route>
         <Route path="/electric">
+       
           <SingleSeater />
         </Route>
         <Route path="/manual">
+        <Navbar1 />
+      <Navbar2 />
+      <Navbar3 />
+      <Navbar4 />
           <Manual />
         </Route>
         <Route path="/feedback">
+        <Navbar1 />
+      <Navbar2 />
+      <Navbar3 />
+      <Navbar4 />
           <Feedback />
         </Route>
         <Route path="/testimonial">
+        <Navbar1 />
+      <Navbar2 />
+      <Navbar3 />
+      <Navbar4 />
           <Testimonial />
         </Route>
+
         <Route path="/shipping-policy">
+        <Navbar1 />
+      <Navbar2 />
+      <Navbar3 />
+      <Navbar4 />
+
           <ShippingPolicy />
         </Route>
 
         <Route exact path="/payment">
+        <Navbar1 />
+      <Navbar2 />
+      <Navbar3 />
+      <Navbar4 />
           <Authenticated>
             <PaymentPage />
           </Authenticated>
         </Route>
         <Route exact path="/payment/status">
+      
           <Authenticated>
             <PaymentStatus />
           </Authenticated>
         </Route>
         <Route exact path="/track-order">
+      
           <Authenticated>
             <TrackOurOrder />
           </Authenticated>
         </Route>
 
         <Route path="*">
+      
           <h1>Error 404: Page not found</h1>
         </Route>
       </Switch>
