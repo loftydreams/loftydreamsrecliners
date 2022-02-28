@@ -1,0 +1,94 @@
+.landing-container
+{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  
+flex-wrap: wrap;
+margin-bottom: 50px;
+}
+.landing-testimonial-txt 
+{
+
+  border-bottom: 2px solid black;
+  font-weight: 800;
+  text-align: center;
+  font-family: 'Poppins' sans-serif;
+}
+
+.lading-image  img
+{
+    object-fit: contain;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+ 
+   
+}
+.landing-img
+{
+    height: 650px;
+}
+.landing-image-text h1,h6,p
+{
+  font-weight: 800;
+  font-style: bold;
+  text-align: center;
+  margin-top: 10px;
+}
+.landing-image-text ul
+{
+  text-align: left;
+}
+
+.utube-video 
+{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.utube-video iframe{
+  width: 600px;
+  height: 400px;
+}
+
+.shop-now-btn
+{
+  border: 1px solid rgba(4, 152, 189, 0.5);
+  background-color: rgb(0, 162, 255);
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
+  align-self: center;
+  margin: 10px;
+  margin-bottom: 30px;
+}
+.shop-now-btn:hover{
+  transform: scale(1.2);
+  animation: ease-in-out;
+  animation-delay: 1s;
+}
+
+@media (max-width:700px) {
+
+  .utube-video iframe{
+    width: 370px;
+    height: 300px;
+  }
+  .landing-img 
+  {
+    height: 250px;
+  }
+  
+
+}
