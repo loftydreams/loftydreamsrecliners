@@ -19,8 +19,8 @@ const CarouselContainer = () => {
       <Carousel.Item interval={4000}>
         <img
           className="d-block w-100"
-          src="https://www.royaloakindia.com/uploads/ROYIND-royaloak-recliner3S-mesure37.webp"
-          alt="Third slide"
+          src="https://ec2b-css.microdinc.com/css/1972/customercontent/uploads/recliners-motion-furniture.jpg"
+          alt="Second slide"
         />
         <Carousel.Caption>
         <h3 style={{color:"black"}}>   <strong>   </strong>   </h3>
