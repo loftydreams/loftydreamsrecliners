@@ -40,6 +40,7 @@ import PaymentPage from "./components/Payment/PaymentPage";
 import PaymentStatus from "./components/Payment/PaymentStatus";
 import Authenticated from "./components/Authenticated/Authenticated";
 import Landing from "./components/Landing/Landing";
+import Chair from "./components/CategoryPage/Chair";
 
 
 
@@ -148,6 +149,10 @@ import Landing from "./components/Landing/Landing";
         <Route path="/lounger">
       
           <Lounger />
+        </Route>
+        <Route path="/chair">
+      
+          <Chair />
         </Route>
         <Route path="/riser">
         
