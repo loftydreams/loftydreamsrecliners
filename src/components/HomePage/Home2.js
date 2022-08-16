@@ -33,10 +33,10 @@ const Home2 = () => {
         </div>
       </div>
       <div className="home2-bottom">
-        <div onClick={() => history.push("/lounger")}>
+        <div onClick={() => history.push("/chair")}>
           <Home2Card
-            src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/Manual%20Recliners%2FCatPagePhoto%2F20190704_123721-247x296.jpg?alt=media&token=f443c30d-61b0-4d2e-818b-7380cb0d8c97"
-            name="RECLINER CHAIR & SOFA"
+            src="https://firebasestorage.googleapis.com/v0/b/loftydreams-307f2.appspot.com/o/Arm%20Chair%2Flofty%20dreams%20arm%20chair%205.jpg?alt=media&token=073d7477-3e6a-4496-9969-4f2e1c967cd9"
+            name="CHAIRS"
             qt="93 PRODUCTS"
           />
         </div>

@@ -76,6 +76,7 @@ export default function SwipeableTemporaryDrawer() {
            {text: "All Recliners" , link:"/all-recliners"},
           { text: "Single Seater Recliners", link: "/single-seater" },
           { text: "Living & Lounger Recliners", link: "/living-room" },
+          { text: "Chairs", link: "/chair" },
           { text: "Home Theater Recliners", link: "/home-theater" },
           { text: "Riser Recliner", link: "/riser" },
           {text: "Feedback" , link:"/feedback"},

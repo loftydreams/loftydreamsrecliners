@@ -13,6 +13,9 @@ const Navbar3 = () => {
         <Link to="/single-seater">
           <span> Single Seater Recliners </span>
         </Link>
+        <Link to="/chair">
+          <span> Chairs </span>
+        </Link>
         <Link to="/living-room">
           <span> Living & Lounger Recliners </span>
         </Link>
