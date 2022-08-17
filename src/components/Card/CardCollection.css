@@ -8,7 +8,6 @@
 width: 100%;
  justify-content: space-around;
  transition-duration: 5s;
-
 text-align: center;
 margin-bottom: 3%;
 margin-top: 3%;
@@ -61,4 +60,10 @@ margin-top: 3%;
     font-weight: 600;
   }
   
+}
+
+.cards{
+display: flex;
+overflow-y: hidden;
+overflow-x: scroll;
 }
