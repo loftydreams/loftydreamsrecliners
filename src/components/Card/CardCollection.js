@@ -5,7 +5,7 @@ import { selectCollections } from "../../redux/shop/shop.selector";
 
 import Card from "./Card";
 
-import OwlCarousel from "react-owl-carousel";
+// import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.min.css";
 import "owl.carousel/dist/assets/owl.theme.default.min.css";
 import "./CardCollection.css";
@@ -26,7 +26,7 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
           <h2 className="card-collection-h2"> {heading}</h2>
           <hr className="card-collection-hr"></hr>
         </div>
-        <OwlCarousel
+        {/* <OwlCarousel
           className="owl-theme -"
           // loop
           rewind={true}
@@ -71,7 +71,8 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
               // slideBy:6
             },
           }}
-        >
+        > */}
+        <div className="cards">
           {renderProducts?.map((data) => {
             const {
               id,
@@ -83,7 +84,6 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
               rating,
               stock,
             } = data;
-
             return (
               <div className="item" key={id}>
                 <Card
@@ -99,7 +99,8 @@ function CardCollection({ heading, topSelling, topDiscount, products }) {
               </div>
             );
           })}
-        </OwlCarousel>
+          </div>
+        {/* </OwlCarousel> */}
       </div>
     )
   );
