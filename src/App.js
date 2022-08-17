@@ -163,41 +163,23 @@ import Chair from "./components/CategoryPage/Chair";
           <SingleSeater />
         </Route>
         <Route path="/manual">
-        <Navbar1 />
-      <Navbar2 />
-      <Navbar3 />
-      <Navbar4 />
+
           <Manual />
         </Route>
         <Route path="/feedback">
-        <Navbar1 />
-      <Navbar2 />
-      <Navbar3 />
-      <Navbar4 />
+
           <Feedback />
         </Route>
         <Route path="/testimonial">
-        <Navbar1 />
-      <Navbar2 />
-      <Navbar3 />
-      <Navbar4 />
+
           <Testimonial />
         </Route>
 
         <Route path="/shipping-policy">
-        <Navbar1 />
-      <Navbar2 />
-      <Navbar3 />
-      <Navbar4 />
-
           <ShippingPolicy />
         </Route>
 
         <Route exact path="/payment">
-        <Navbar1 />
-      <Navbar2 />
-      <Navbar3 />
-      <Navbar4 />
           <Authenticated>
             <PaymentPage />
           </Authenticated>
