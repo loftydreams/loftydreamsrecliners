@@ -152,7 +152,7 @@ import Chair from "./components/CategoryPage/Chair";
         </Route>
         <Route path="/chair">
       
-          <Chair />
+          {/* <Chair /> */}
         </Route>
         <Route path="/riser">
         

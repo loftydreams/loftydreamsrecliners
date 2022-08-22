@@ -5,7 +5,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   height: 60px;
   position: sticky !important;
   top: 0;
@@ -15,13 +15,9 @@
   
 }
 .navbar3-body span {
-  margin-right: 16px;
-  margin-left: 9px;
   font-size: 16px;
   color:white;
-
   font-family: "Barlow Semi Condensed", sans-serif;
-  padding-left: 18px;
   text-decoration: none;
 
 }
