@@ -315,6 +315,7 @@ img {
 }
 .qualityPromise {
   list-style: disc !important;
+  text-align: left !important;
 }
 .termsheading {
   text-align: left !important;
@@ -323,16 +324,20 @@ img {
 
 .terms ul li {
   font-size: 14px;
+  text-align: left !important;
 }
 .terms ul {
   margin-left: 30px;
+  text-align: left !important;
 }
 .accordianitems li {
   font-size: 12px;
   list-style: disc !important;
+  text-align: left !important;
 }
 .accordianitems {
   margin-left: 10px;
+  text-align: left !important;
 }
 
 .accodidanHeading {

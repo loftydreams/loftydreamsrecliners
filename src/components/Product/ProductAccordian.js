@@ -5,6 +5,7 @@ import AccordionSummary from "@material-ui/core/AccordionSummary";
 import AccordionDetails from "@material-ui/core/AccordionDetails";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import "./ProductPage.css"
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -133,7 +134,7 @@ export default function ProductAccordion({ name, description }) {
         <h6 className="accodidanHeading">  What is the warranty period of the product?</h6>
         <ul className="makeStyles-list-10 accordianitems">
           <li>
-          This product comes with 2-years warranty which covers manufacturing
+           This product comes with 2-years warranty which covers manufacturing
             defects, inherent termite and borer issues. For more details please
             visit the "warranty tab"
           </li>
