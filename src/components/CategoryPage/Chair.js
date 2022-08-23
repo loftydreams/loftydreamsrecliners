@@ -78,6 +78,7 @@ const chair = ({ addItem, products }) => {
             })}
         </div>
       </div>
+      <span> {filteredProducts.length} Products</span>
     </div>
   );
 };
