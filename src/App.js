@@ -7,7 +7,6 @@ import { Navbar4 } from "./components/Navbar4/Navbar4";
 import ChatContainer from "./components/chat-bot/chat-icon";
 import { Footer } from "./components/Footer/Footer";
 import "./App.css";
-
 import CarouselContainer from "./components/Carousel/Carousel";
 import Home1 from "./components/HomePage/Home1";
 import Home2 from "./components/HomePage/Home2";
@@ -42,17 +41,11 @@ import Authenticated from "./components/Authenticated/Authenticated";
 import Landing from "./components/Landing/Landing";
 import Chair from "./components/CategoryPage/Chair";
 
-
-
-
-
  function App()
 {
-
   return (
     <div className="App">
-    
-    
+      
     <Navbar1 />
       <Navbar2 />
       <Navbar3 />
@@ -151,8 +144,7 @@ import Chair from "./components/CategoryPage/Chair";
           <Lounger />
         </Route>
         <Route path="/chair">
-      
-          {/* <Chair /> */}
+          <Chair />
         </Route>
         <Route path="/riser">
         
