@@ -248,8 +248,7 @@ export default function ProductMenu({ name, description }) {
       <TabPanel value={value} index={3} className="terms">
         <h6 className="termsheading">
           For any inquiries or explanations regarding with the product, do not
-          hesitate to contact our Customer Support on +91-8287621445,
-          9899027251.
+          hesitate to contact our Customer Support on +91-9899027251.
         </h6>
         <h6 className="termsheading">Understanding Your Product:</h6>
         <ul className="makeStyles-list-10 qualityPromise ">
