@@ -118,8 +118,7 @@ export default function ProductAccordion({ name, description }) {
           <Typography>
           <h6 className="accodidanHeading">
           For any inquiries or explanations regarding with the product, do not
-          hesitate to contact our Customer Support on +91-8287621445,
-          9899027251.
+          hesitate to contact our Customer Support on  +91-9899027251.
         </h6>
         <h6 className="accodidanHeading"> Does Lofty Dreams Recliner Chair require Installation?</h6>
         <h6 className="accodidanHeading">Understanding Your Product:</h6>
@@ -259,8 +258,7 @@ export default function ProductAccordion({ name, description }) {
           <Typography>
           <h6 className="accodidanHeading">
           For any inquiries or explanations regarding with the product, do not
-          hesitate to contact our Customer Support on +91-8287621445,
-          9899027251.
+          hesitate to contact our Customer Support on +91-9899027251.
         </h6>
         <h6 className="accodidanHeading">Understanding Your Product:</h6>
         <ul className="makeStyles-list-10 accordianitems ">
