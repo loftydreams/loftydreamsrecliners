@@ -113,6 +113,9 @@
          border: 1px solid white;
     }
 
+    .submit{
+        margin-left: 102px !important;
+    }
     
 }
 
@@ -228,6 +231,9 @@
          background-color:#d26e4b;
          font-weight: 600;
          border: 1px solid white;
+    }
+    .submit{
+        margin-left: 85px !important;
     }
     
 }
