@@ -10,6 +10,7 @@ import { addItem } from "../../redux/cart/cart.actions";
 import Card from "./Card";
 
 import "./LivingRoom.css";
+import "./Chair.css";
 
 const chair = ({ addItem, products }) => {
   const filteredProducts = products?.filter((product) => {
